@@ -1,0 +1,506 @@
+
+/* -----------------------------------
+
+VARIABLES
+
+-------------------------------------*/
+
+$color:  #000000;
+$greenish: #007F6F;
+$pink: #d24979;
+
+
+/* -----------------------------------
+
+MAIN INFO
+
+-------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-family: 'Mulish', sans-serif;
+    color: #444;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    color: #444;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+hr {
+    border-top: 1px solid rgba(160, 160, 160, 0.1)
+}
+
+.hr-small {
+    border: 0px;
+    border-top: 2px solid #000;
+    width: 100px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+  
+.bg-black {
+    background-color: #121212;
+}
+
+.bg-primary-transparent {
+    background-color: #0997909c;
+}
+  
+.text-black {
+    color: #000;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+small {
+    font-size: .85rem;
+}
+
+/* -----------------------------------
+
+HEADINGS
+
+-------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Palanquin', sans-serif;
+    letter-spacing: 1px;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+    color: #444;
+}
+
+
+/* -----------------------------------
+
+NAVBAR
+
+-------------------------------------*/
+  
+.logo-main {
+    width: 100px;
+}
+
+.nav-item a {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+    color: $pink !important;
+    transition-duration: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/* -----------------------------------
+
+HEADER
+
+-------------------------------------*/
+
+header {
+    background: url(../img/vrr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh; 
+}
+
+
+/* -----------------------------------
+
+FOOTER
+
+-------------------------------------*/
+
+
+/* -----------------------------------
+
+BUTTONS
+
+-------------------------------------*/
+
+.btn {
+    text-transform: uppercase;
+    min-width: 150px;
+}
+
+.btn-gradient {
+    background: rgb(181,52,113);
+    background: linear-gradient(45deg, rgba(181,52,113,1) 0%, rgba(151,82,165,1) 8%, rgba(85,111,197,1) 31%, rgba(0,132,201,1) 56%, rgba(0,146,180,1) 71%, rgba(0,154,147,1) 100%);
+}
+
+.btn-sm {
+    padding: 10px 24px;
+}
+
+/* -----------------------------------
+
+MODALS
+
+-------------------------------------*/
+
+.close {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.modal-dialog {
+    max-width: 1200px !important;
+}
+
+.modal {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+
+
+/* -----------------------------------
+
+FORMS
+
+-------------------------------------*/
+
+
+/* -----------------------------------
+
+ANIMATIONS
+
+-------------------------------------*/
+
+.js--wp-1,
+.js--wp-2 {
+    opacity: 0; 
+}
+
+.js--wp-1 .animated,
+.js--wp-2 .animated {
+    opacity: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.js--wp-2 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+
+/* -----------------------------------
+
+QUERIES
+
+-------------------------------------*/
+
+// Small devices
+@media (min-width: 576px) {}
+
+// Medium devices
+@media (min-width: 768px) {}
+
+// Large devices
+@media (min-width: 992px) {
+    .nav-dropdown {
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        top: 63px;
+        left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
+    }
+}
+
+// Extra large devices
+@media (min-width: 1200px) {}
+
+
+
+
+
+
+
+
+
+/* -----------------------------------
+
+USEFUL
+
+-------------------------------------*/
+
+// CROP IMAGE TO SQUARE AUTOMATICALLY
+
+.img-container {
+    position: relative;
+  
+    &::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+  
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+  
+// MAKE DARKEN AFTER HOVER (USED AS POSITION-ABSOLUTE IN DIV)
+  
+.hover-dark {
+    background-color: transparent;
+}
+  
+.hover-dark:hover {
+    background-color: rgba(0, 0, 0, 0.123);
+}
+  
+// MAKE THE OFFSET OF AN ANCHOR HIGHER
+  
+.anchor {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+  
+// CHANGE THE COLOR OF THE FOOTER LINKS WHEN HOVER 
+  
+.link-hover .link-icon-hover {
+    color: #000;
+}
+    
+.link-hover:hover .link-icon-hover {
+    color: #ff0000;
+    transition-duration: 1s;
+}
+
+.bg-gradient {
+    background: rgb(181,52,113);
+    background: linear-gradient(45deg, rgba(181,52,113,1) 0%, rgba(151,82,165,1) 8%, rgba(85,111,197,1) 31%, rgba(0,132,201,1) 56%, rgba(0,146,180,1) 71%, rgba(0,154,147,1) 100%);
+}
+
+.rounded-xl {
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+
+.rounded-top-xl {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.border-bottom-wide {
+    border-bottom: 2px solid $pink;
+}
+
+.shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1) !important;
+}
+
+.opacity-half {
+    opacity: .5;
+}
+
+
+
+.option-toggle {
+    color: #000;
+    border-bottom: 2px solid transparent;
+    margin-bottom: 0px;
+    transition-duration: 0.4s; 
+}
+  
+.option-toggle:hover {
+    color: $pink;
+    transition-duration: 0.4s;
+    border-bottom: 2px solid $pink;
+}
+  
+.option-toggle-active {
+    color: $pink;
+    border-bottom: 2px solid $pink;
+    transition-duration: 0.4s; 
+}
+
+
+// RANGE
+  
+.range-container {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $pink;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $pink;
+    cursor: pointer;
+  }
+
+.hover-primary {
+      color: #222;
+}
+
+.hover-primary:hover {
+    color: $pink;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: $pink;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+
+// .circle-active {
+//     transition-duration: 1s;
+//     background-color: $pink;
+// }
+
+// .circle-xs-active {
+//     transition-duration: 1s;
+//     background-color: #111;
+// }
+
+.circle-xs {
+    width: 10px;
+    height: 10px;
+    background-color: #d3d3d3;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+
+.shine-bg {
+    background: url(../img/shine-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-abstract {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hover-primary {
+    color: #444;
+}
+
+.hover-primary:hover {
+    color: $pink;
+}
+
+.butter-bottom {
+    padding-bottom: 63px;
+}
