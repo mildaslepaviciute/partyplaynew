@@ -78,10 +78,6 @@ button:focus {
     color: #000;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-
 small {
     font-size: .85rem;
 }
@@ -113,10 +109,12 @@ h1 {
 
 h2 {
     text-transform: uppercase;
+    font-size: 1.75rem;
 }
 
 h3 {
     text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 h4 {
@@ -130,6 +128,10 @@ h5 {
 p {
     font-family: 'Mulish', sans-serif;
     color: #444;
+}
+
+.display-2 {
+    font-size: 3.5rem;
 }
 
 
@@ -274,10 +276,30 @@ QUERIES
 -------------------------------------*/
 
 // Small devices
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .display-2 {
+        font-size: 5rem;
+    }
+}
 
 // Medium devices
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .display-2 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .option-toggle {
+        font-size: 1rem;
+    }
+}
 
 // Large devices
 @media (min-width: 992px) {
@@ -298,10 +320,22 @@ QUERIES
     .w-md-75 {
         width: 75%
     }
+
+    .display-2 {
+        font-size: 5rem;
+    }
+
+    .option-toggle {
+        font-size: 1.25rem;
+    }
 }
 
 // Extra large devices
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .display-2 {
+        font-size: 5.5rem;
+    }
+}
 
 
 
