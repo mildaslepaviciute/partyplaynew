@@ -127,7 +127,7 @@ HEADER
 
 -------------------------------------*/
 header {
-  background: url(../img/vrr.jpg);
+  background: url(../img/superhot-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,15 +144,22 @@ BUTTONS
 
 -------------------------------------*/
 .btn {
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 500;
+  font-size: .75rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  min-width: 150px; }
+  min-width: 150px;
+  padding: 14px 28px;
+  border: 0px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1); }
+
+.btn-lg {
+  padding: 16px 32px; }
 
 .btn-gradient {
   background: #b53471;
-  background: linear-gradient(45deg, #b53471 0%, #9752a5 8%, #556fc5 31%, #0084c9 56%, #0092b4 71%, #009a93 100%); }
-
-.btn-sm {
-  padding: 10px 24px; }
+  background: linear-gradient(45deg, #b53471 0%, #9752a5 100%); }
 
 /* -----------------------------------
 
@@ -211,7 +218,13 @@ QUERIES
     top: 63px;
     left: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05); } }
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05); }
+
+  .w-md-50 {
+    width: 50%; }
+
+  .w-md-75 {
+    width: 75%; } }
 /* -----------------------------------
 
 USEFUL
@@ -248,16 +261,13 @@ USEFUL
 
 .bg-gradient {
   background: #b53471;
-  background: linear-gradient(45deg, #b53471 0%, #9752a5 8%, #556fc5 31%, #0084c9 56%, #0092b4 71%, #009a93 100%); }
+  background: linear-gradient(45deg, #b53471 0%, #9752a5 100%); }
 
-.rounded-xl {
-  border-radius: 20px !important;
-  -webkit-border-radius: 20px !important;
-  -moz-border-radius: 20px !important;
-  -ms-border-radius: 20px !important;
-  -o-border-radius: 20px !important; }
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; }
 
-.rounded-top-xl {
+.rounded-top {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px; }
 
@@ -266,6 +276,9 @@ USEFUL
 
 .shadow {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1) !important; }
+
+.shadow-white {
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.219), 0 3px 6px rgba(243, 231, 235, 0.315) !important; }
 
 .opacity-half {
   opacity: .5; }
@@ -319,16 +332,22 @@ USEFUL
   background: #d24979;
   cursor: pointer; }
 
-.hover-primary {
-  color: #222; }
+.link-hover {
+  color: #444; }
 
-.hover-primary:hover {
-  color: #d24979; }
+.link-hover-light {
+  color: #6c757d; }
+
+.link-hover:hover,
+.link-hover-light:hover {
+  color: #d24979;
+  transition-duration: 0.4s; }
 
 .circle {
   width: 80px;
   height: 80px;
-  background-color: #d24979;
+  background: #d24979;
+  background: linear-gradient(45deg, #d24979 0%, #c73d9d 30%, #9752a5 100%);
   border-radius: 200px;
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
@@ -336,8 +355,8 @@ USEFUL
   -o-border-radius: 200px; }
 
 .circle-xs {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: #d3d3d3;
   border-radius: 200px;
   -webkit-border-radius: 200px;
@@ -357,11 +376,19 @@ USEFUL
   background-repeat: no-repeat;
   background-size: cover; }
 
-.hover-primary {
-  color: #444; }
-
-.hover-primary:hover {
-  color: #d24979; }
-
 .butter-bottom {
   padding-bottom: 63px; }
+
+.mt-negative {
+  margin-top: -10px; }
+
+#iranga .card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  transition-duration: .4s; }
+
+.gradient-red {
+  background: #30032c;
+  background: linear-gradient(127deg, #aa4b6b 3%, #6b6b83 50%, #3b8d99 97%); }
+
+.bg-dark {
+  background: #31354e !important; }

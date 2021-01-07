@@ -8,6 +8,8 @@ VARIABLES
 $color:  #000000;
 $greenish: #007F6F;
 $pink: #d24979;
+// $red: #de2012;
+// $darkRed: #911317;
 
 
 /* -----------------------------------
@@ -165,7 +167,7 @@ HEADER
 -------------------------------------*/
 
 header {
-    background: url(../img/vrr.jpg);
+    background: url(../img/superhot-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -187,17 +189,24 @@ BUTTONS
 -------------------------------------*/
 
 .btn {
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 500;
+    font-size: .75rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
     min-width: 150px;
+    padding: 14px 28px;
+    border: 0px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.btn-lg {
+    padding: 16px 32px;
 }
 
 .btn-gradient {
     background: rgb(181,52,113);
-    background: linear-gradient(45deg, rgba(181,52,113,1) 0%, rgba(151,82,165,1) 8%, rgba(85,111,197,1) 31%, rgba(0,132,201,1) 56%, rgba(0,146,180,1) 71%, rgba(0,154,147,1) 100%);
-}
-
-.btn-sm {
-    padding: 10px 24px;
+    background: linear-gradient(45deg, rgba(181,52,113,1) 0%, rgba(151,82,165,1) 100%);
 }
 
 /* -----------------------------------
@@ -281,6 +290,14 @@ QUERIES
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
     }
+
+    .w-md-50 {
+        width: 50%
+    }
+
+    .w-md-75 {
+        width: 75%
+    }
 }
 
 // Extra large devices
@@ -349,18 +366,15 @@ USEFUL
 
 .bg-gradient {
     background: rgb(181,52,113);
-    background: linear-gradient(45deg, rgba(181,52,113,1) 0%, rgba(151,82,165,1) 8%, rgba(85,111,197,1) 31%, rgba(0,132,201,1) 56%, rgba(0,146,180,1) 71%, rgba(0,154,147,1) 100%);
+    background: linear-gradient(45deg, rgba(181,52,113,1) 0%, rgba(151,82,165,1) 100%);
 }
 
-.rounded-xl {
-    border-radius: 20px !important;
-    -webkit-border-radius: 20px !important;
-    -moz-border-radius: 20px !important;
-    -ms-border-radius: 20px !important;
-    -o-border-radius: 20px !important;
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.rounded-top-xl {
+.rounded-top {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -373,11 +387,13 @@ USEFUL
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1) !important;
 }
 
+.shadow-white {
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.219), 0 3px 6px rgba(243, 231, 235, 0.315) !important;
+}
+
 .opacity-half {
     opacity: .5;
 }
-
-
 
 .option-toggle {
     color: #000;
@@ -439,18 +455,25 @@ USEFUL
     cursor: pointer;
   }
 
-.hover-primary {
-      color: #222;
+.link-hover {
+    color: #444;
 }
 
-.hover-primary:hover {
+.link-hover-light {
+    color: #6c757d;
+}
+
+.link-hover:hover,
+.link-hover-light:hover {
     color: $pink;
+    transition-duration: 0.4s;
 }
 
 .circle {
     width: 80px;
     height: 80px;
-    background-color: $pink;
+    background: $pink;
+    background: linear-gradient(45deg, $pink 0%, rgb(199, 61, 157) 30%, rgba(151,82,165,1) 100%);
     border-radius: 200px;
     -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
@@ -458,19 +481,9 @@ USEFUL
     -o-border-radius: 200px;
 }
 
-// .circle-active {
-//     transition-duration: 1s;
-//     background-color: $pink;
-// }
-
-// .circle-xs-active {
-//     transition-duration: 1s;
-//     background-color: #111;
-// }
-
 .circle-xs {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #d3d3d3;
     border-radius: 200px;
     -webkit-border-radius: 200px;
@@ -493,14 +506,24 @@ USEFUL
     background-size: cover;
 }
 
-.hover-primary {
-    color: #444;
-}
-
-.hover-primary:hover {
-    color: $pink;
-}
-
 .butter-bottom {
     padding-bottom: 63px;
+}
+
+.mt-negative {
+    margin-top: -10px;
+}
+
+#iranga .card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16), 0 4px 8px rgba(0,0,0,0.2) !important;
+    transition-duration: .4s;
+}
+
+.gradient-red {
+    background: rgb(48,3,44);
+    background: linear-gradient(127deg, #aa4b6b 3%, #6b6b83 50%, #3b8d99 97%);
+}
+
+.bg-dark {
+    background:#31354e !important;
 }
