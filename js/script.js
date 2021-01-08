@@ -59,4 +59,22 @@ $("#option5-toggle").click(function(){
     $("#option5-toggle").addClass("option-toggle-active");
 });
 
+$("#option6-toggle").click(function(){
+    $(".option-content").removeClass("d-flex");
+    $(".option-content").addClass("d-none");
+    $("#option6").removeClass("d-none");
+    $("#option6").addClass("d-flex");
+    $(".option-toggle").removeClass("option-toggle-active");
+    $("#option6-toggle").addClass("option-toggle-active");
+});
+
+$("#option7-toggle").click(function(){
+    $(".option-content").removeClass("d-flex");
+    $(".option-content").addClass("d-none");
+    $("#option7").removeClass("d-none");
+    $("#option7").addClass("d-flex");
+    $(".option-toggle").removeClass("option-toggle-active");
+    $("#option6-toggle").addClass("option-toggle-active");
+});
+
   

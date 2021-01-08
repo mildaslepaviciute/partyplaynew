@@ -101,6 +101,12 @@ p {
 .display-2 {
   font-size: 3.5rem; }
 
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
+
 /* -----------------------------------
 
 NAVBAR
@@ -128,7 +134,7 @@ NAVBAR
 HEADER
 
 -------------------------------------*/
-header {
+#header-main {
   background: url(../img/superhot-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -214,7 +220,10 @@ QUERIES
 -------------------------------------*/
 @media (min-width: 576px) {
   .display-2 {
-    font-size: 5rem; } }
+    font-size: 5rem; }
+
+  .butter-bottom {
+    padding-bottom: 63px; } }
 @media (min-width: 768px) {
   .display-2 {
     font-size: 3.5rem; }
@@ -278,13 +287,6 @@ USEFUL
   padding-top: 100px;
   margin-top: -100px; }
 
-.link-hover .link-icon-hover {
-  color: #000; }
-
-.link-hover:hover .link-icon-hover {
-  color: #ff0000;
-  transition-duration: 1s; }
-
 .bg-gradient {
   background: #b53471;
   background: linear-gradient(45deg, #b53471 0%, #9752a5 100%); }
@@ -324,39 +326,6 @@ USEFUL
   color: #d24979;
   border-bottom: 2px solid #d24979;
   transition-duration: 0.4s; }
-
-.range-container {
-  width: 100%; }
-
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 10px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s; }
-
-.slider:hover {
-  opacity: 1; }
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #d24979;
-  cursor: pointer; }
-
-.slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #d24979;
-  cursor: pointer; }
 
 .link-hover {
   color: #444; }
@@ -402,9 +371,6 @@ USEFUL
   background-repeat: no-repeat;
   background-size: cover; }
 
-.butter-bottom {
-  padding-bottom: 63px; }
-
 .mt-negative {
   margin-top: -10px; }
 
@@ -425,3 +391,51 @@ USEFUL
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh; }
+
+.bg-xbox {
+  background: url("/img/bg-console.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
+
+/* -----  MODALS   ----- */
+.modal-content {
+  border: 0px; }
+
+.modal-body {
+  position: relative;
+  border: 0px;
+  top: 0;
+  left: 0;
+  padding: 0px;
+  height: 90vh; }
+
+.modal-header {
+  border: 0px;
+  height: 0px;
+  padding: 0px; }
+
+.modal iframe {
+  height: 90vh;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: relative;
+  border: 0px;
+  top: -36px;
+  left: 0; }
+
+.close {
+  position: relative;
+  font-weight: 100;
+  font-size: 2rem;
+  color: #222;
+  z-index: 2;
+  right: 25px;
+  top: 25px; }
+
+.close:hover {
+  color: #000; }
