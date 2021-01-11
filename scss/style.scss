@@ -74,13 +74,7 @@ button:focus {
     background-color: #0997909c;
 }
   
-.text-black {
-    color: #000;
-}
 
-small {
-    font-size: .85rem;
-}
 
 /* -----------------------------------
 
@@ -141,6 +135,17 @@ p {
     overflow: hidden;
 }
 
+.text-small {
+    font-size: 0.8rem;
+}
+
+.text-black {
+    color: #000;
+}
+
+small {
+    font-size: .85rem;
+}
 
 /* -----------------------------------
 
@@ -275,78 +280,6 @@ ANIMATIONS
     animation-delay: 0.5s;
 }
 
-
-/* -----------------------------------
-
-QUERIES
-
--------------------------------------*/
-
-// Small devices
-@media (min-width: 576px) {
-    .display-2 {
-        font-size: 5rem;
-    }
-
-    .butter-bottom {
-        padding-bottom: 63px;
-    }
-}
-
-// Medium devices
-@media (min-width: 768px) {
-    .display-2 {
-        font-size: 3.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-    
-    h3 {
-        font-size: 1.75rem;
-    }
-
-    .option-toggle {
-        font-size: 1rem;
-    }
-}
-
-// Large devices
-@media (min-width: 992px) {
-    .nav-dropdown {
-        background-color: #ffffff;
-        position: absolute;
-        width: 100%;
-        top: 63px;
-        left: 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
-    }
-
-    .w-md-50 {
-        width: 50%
-    }
-
-    .w-md-75 {
-        width: 75%
-    }
-
-    .display-2 {
-        font-size: 5rem;
-    }
-
-    .option-toggle {
-        font-size: 1.25rem;
-    }
-}
-
-// Extra large devices
-@media (min-width: 1200px) {
-    .display-2 {
-        font-size: 5.5rem;
-    }
-}
 
 
 
@@ -486,14 +419,14 @@ USEFUL
 }
 
 .shine-bg {
-    background: url(../img/shine-bg.png);
+    background: url('../img/shine-bg-sm.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .bg-abstract {
-    background-image: url(../img/bg.jpg);
+    background-image: url('../img/bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -531,6 +464,22 @@ USEFUL
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
+}
+
+.bg-main-header {
+    background: url('/img/main-xs.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.bg-vr-header {
+    background: url('/img/header-vr-xs.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
 }
   
 
@@ -580,4 +529,136 @@ USEFUL
   
 .close:hover {
     color: #000;
+}
+
+
+
+
+
+
+/* -----------------------------------
+
+QUERIES
+
+-------------------------------------*/
+
+// Small devices
+@media (min-width: 576px) {
+    .display-2 {
+        font-size: 5rem;
+    }
+
+    .butter-bottom {
+        padding-bottom: 63px;
+    }
+
+    .bg-main-header {
+        background: url('/img/main-sm.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+
+    .bg-vr-header {
+        background: url('/img/header-vr-sm.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+}
+
+// Medium devices
+@media (min-width: 768px) {
+    .display-2 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .option-toggle {
+        font-size: 1rem;
+    }
+
+    .bg-main-header {
+        background: url('/img/main-md.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+
+    .bg-vr-header {
+        background: url('/img/header-vr-md.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+
+    .shine-bg {
+        background: url('../img/shine-bg.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+// Large devices
+@media (min-width: 992px) {
+    .nav-dropdown {
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        top: 63px;
+        left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .w-md-50 {
+        width: 50%
+    }
+
+    .w-md-75 {
+        width: 75%
+    }
+
+    .display-2 {
+        font-size: 5rem;
+    }
+
+    .option-toggle {
+        font-size: 1.25rem;
+    }
+
+    .bg-main-header {
+        background: url('/img/main.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+
+    .bg-vr-header {
+        background: url('/img/header-vr-lg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+}
+
+// Extra large devices
+@media (min-width: 1200px) {
+    .display-2 {
+        font-size: 5.5rem;
+    }
 }

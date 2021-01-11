@@ -39,9 +39,30 @@
 
     <body>
 
+        <!-- PRE-NAVBAR -->
+
+        <div class="bg-light d-none d-md-block">
+            <div class="container">
+                <div class="d-flex justify-content-between py-2">
+                    <div class="text-small">
+                        <a href="" class="text-primary mr-2">Kaunas</a>|
+                        <a href="klaipeda/" class="link-hover ml-2">Klaipėda</a>
+                    </div>
+                    <div class="d-flex align-items-center text-small">
+                        <i class="fas fa-mobile-alt text-primary mr-2"></i>
+                        <a href="tel:+37062114494" class="link-hover">+3706 211 4494</a>
+                    </div>
+                    <div class="d-flex align-items-center text-small">
+                        <i class="fab fa-facebook-f text-primary mr-2"></i>
+                        <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover">facebook.com/PartyPlayNuoma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- NAVBAR -->
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top shadow bg-white">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img src="img/Logo/logo.png" width="130" alt="">
@@ -50,41 +71,56 @@
                     <ion-icon name="menu-outline"></ion-icon>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <hr class="d-md-none my-2">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link text-uppercase">Pradžia</a>
                         </li>
-                        <li class="nav-item ml-lg-3">
+                        <li class="nav-item ml-md-3">
                             <a href="#" class="nav-link text-uppercase link-hover" data-target="#dropdown1" data-toggle="collapse">Nuoma<i class="fas fa-chevron-down fa-xs ml-2"></i></a>
                             <div id="dropdown1" class="collapse nav-dropdown">
-                                <div class="container py-3 py-lg-4">
+                                <div class="container py-3 py-md-4">
                                     <div class="row w-100">
-                                        <div class="col-lg-4">
-                                            <a href="virtuali-realybe.html" class="text-primary text-uppercase">Virtualios realybės įranga</a>
-                                            <a href="oculus-quest.html" class="d-block link-hover mt-3">Oculus Quest</a>
-                                            <a href="oculus-quest-2.html" class="d-block link-hover mt-2">Oculus Quest 2</a>
+                                        <div class="col-md-4">
+                                            <a href="virtuali-realybe.html" class="d-block text-primary text-uppercase mb-3">Virtualios realybės įranga</a>
+                                            <a href="oculus-quest.html" class="d-block link-hover mb-2">Oculus Quest</a>
+                                            <a href="oculus-quest-2.html" class="d-block link-hover">Oculus Quest 2</a>
                                         </div>
-                                        <div class="col-lg-4 pt-3 pt-lg-0">
-                                            <a href="zaidimu-konsoles.html" class="text-primary text-uppercase">Žaidimų konsolės</a>
-                                            <a href="xbox-360.html" class="d-block link-hover mt-3">XBOX 360 + Kinect</a>
-                                            <a href="xbox-one.html" class="d-block link-hover mt-2">XBOX One</a>
+                                        <div class="col-md-4 pt-3 pt-md-0">
+                                            <a href="zaidimu-konsoles.html" class="d-block text-primary text-uppercase mb-3">Žaidimų konsolės</a>
+                                            <a href="xbox-360.html" class="d-block link-hover mb-2">XBOX 360 + Kinect</a>
+                                            <a href="xbox-one.html" class="d-block link-hover">XBOX One</a>
                                         </div>
-                                        <div class="col-lg-4 pt-3 pt-lg-0">
-                                            <a href="projektoriai.html" class="text-primary text-uppercase">Projektoriai</a>
-                                            <a href="#" class="d-block link-hover mt-3">Geras</a>
-                                            <a href="#" class="d-block link-hover mt-2">Geresnis</a>
-                                            <a href="#" class="d-block link-hover mt-2">Geriausias</a>
+                                        <div class="col-md-4 pt-3 pt-md-0">
+                                            <a href="projektoriai.html" class="d-block text-primary text-uppercase mb-3">Projektoriai</a>
+                                            <a href="garso-iranga.html" class="d-block text-primary text-uppercase">Garso įranga</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item ml-lg-3">
-                            <a href="naudinga.html" class="nav-link text-uppercase">Naudinga</a>
+                        <li class="nav-item ml-md-3">
+                            <a href="#" class="nav-link text-uppercase link-hover" data-target="#dropdown2" data-toggle="collapse">Naudinga<i class="fas fa-chevron-down fa-xs ml-2"></i></a>
+                            <div id="dropdown2" class="collapse nav-dropdown">
+                                <div class="container py-3 py-md-4">
+                                    <div class="row w-100">
+                                        <div class="col-md-4">
+                                            <a href="naujienos.html" class="d-block text-primary text-uppercase mb-2">Naujienos</a>
+                                            <a href="duk.html" class="d-block text-primary text-uppercase mb-2">D. U. K.</a>
+                                            <a href="dovanu-kuponai.html" class="d-block text-primary text-uppercase">Dovanų kuponai</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item ml-lg-3">
+                        <li class="nav-item ml-md-3">
                             <a href="kontaktai.html" class="nav-link text-uppercase">Kontaktai</a>
                         </li>
+                        <hr class="d-md-none my-2">
+                        <div class="d-md-none text-small py-2">
+                            <a href="" class="text-primary mr-2">Kaunas</a>|
+                            <a href="klaipeda/" class="link-hover ml-2">Klaipėda</a>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -144,7 +180,7 @@
                                 <i class="fas fa-check text-primary mr-3"></i>
                                 <h6>Apie 30 žaidimų
                                     <span>
-                                        <a href="#"><small> (peržiūrėti sąrašą)</small></a>
+                                        <a href="#zaidimu-sarasas"><small> (peržiūrėti sąrašą)</small></a>
                                     </span>
                                 </h6>
                             </div>
@@ -300,7 +336,7 @@
                             <h5 id="option1-toggle" class="option-toggle option-toggle-active text-center text-uppercase pointer py-2 py-md-3">Visi</h5>
                         </div>
                         <div class="col-8 col-md px-1">
-                            <h5 id="option2-toggle" class="option-toggle text-center text-uppercase pointer py-2 py-md-3">Judesio (Kinect)</h5>
+                            <h5 id="option2-toggle" class="option-toggle text-center text-uppercase pointer py-2 py-md-3">Judesio</h5>
                         </div>
                         <div class="col-8 col-md px-1">
                             <h5 id="option3-toggle" class="option-toggle text-center text-uppercase pointer py-2 py-md-3">Sporto</h5>
@@ -309,10 +345,10 @@
                             <h5 id="option4-toggle" class="option-toggle text-center pointer py-2 py-md-3">Vaikams</h5>
                         </div>
                         <div class="col-8 col-md px-1">
-                            <h5 id="option5-toggle" class="option-toggle text-center pointer py-2 py-md-3">Šaudyklės</h5>
+                            <h5 id="option5-toggle" class="option-toggle text-center pointer py-2 py-md-3">Siužetiniai</h5>
                         </div>
                         <div class="col-8 col-md px-1">
-                            <h5 id="option6-toggle" class="option-toggle text-center pointer py-2 py-md-3">Siaubo</h5>
+                            <h5 id="option6-toggle" class="option-toggle text-center pointer py-2 py-md-3">> 1 žaidėjui</h5>
                         </div>
                     </div>
 
@@ -320,21 +356,24 @@
                         <div class="row justify-content-center align-items-stretch">
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/Xbox360-games/just-dance-2015-header.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/justdance2017.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Just Dance 2015</h5>
+                                        <h5 class="text-primary">Just Dance 2017</h5>
                                         <p>
-                                            Tai vienas iš populiariausių virtualios realybės žaidimų. Turėsite judėti greitai ir tiksliai, kad surinktumėte kuo daugiau taškų. Išbandykite savo reakciją muzikos ritmu!
+                                            Atkartok šokių judesius ir rink taškus! Pasirink savo mėgstamiausią dainą iš 2017 metų katalogo ir pirmyn!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -342,21 +381,514 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/recroom.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/just-dance-2015-header.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Rec Room</h5>
+                                        <h5 class="text-primary">Just Dance 2015</h5>
                                         <p>
-                                            Žaisk sporto žaidimus ir bendrauk su kitais žaidėjais online! Šis žaidimas - puikus pasirinkimas, kai norisi atsipalaiduoti ir pajuokauti su kitais.
+                                            Atkartok šokių judesius ir rink taškus! Pasirink savo mėgstamiausią dainą iš 2015 metų katalogo ir pirmyn!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/kinect_adventures001.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Kinect Adventures</h5>
+                                        <p>
+                                            Įveik kliūčių ruožą šokinėdamas, traukdamasis kairėn arba dešinėn bei atsitūpdamas. Atsargiai, neįpulk!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/mortal-combat.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Mortal Kombat</h5>
+                                        <p>
+                                            Kovinis žaidimas pulteliais dviems asmenims. Išsirink savo mėgstamiausią personažą ir stok į kovą!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/fifa18.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Fifa 18</h5>
+                                        <p>
+                                            Fifa 2018 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/nba18.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">NBA 18</h5>
+                                        <p>
+                                            NBA 2018 futbolo žaidimas. Pelbyk lemtingą tašką ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/gta5.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">GTA V</h5>
+                                        <p>
+                                            Tai naujausia Grand Theft Auto dalis. Įvykdyk visas misijas ir laimėk!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudymas</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/tombrider.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">The Rise of Tomb Rider</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/kinect-sports.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Kinect Sports</h5>
+                                        <p>
+                                            Tai smagus įvairių sporto šakų žaidimas. Žaidime varžosi dvi komandos, taigi vienu metu gali žaisti daug žmonių!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/left4dead.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Left 4 Dead 2</h5>
+                                        <p>
+                                            Pasaulį ištikus zombių apokalipsei, tu ir tavo komanda bandote išlikti gyvi. Ar pavyks apsiginti ir laimėti šį mūšį?
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudymas</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-skull text-primary mr-2"></i><small>Siaubo</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/limbo.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Limbo</h5>
+                                        <p>
+                                            Tai arkadinis žaidimas su siaubo elementais. Saugokis milžiniškų vorų ir stenkis išsigelbėti!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-skull text-primary mr-2"></i><small>Siaubo</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/justdance-kids.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Just Dance Kids 2014</h5>
+                                        <p>
+                                            Šis šokių žaidimas sukurtas būtent vaikams. Pasirink savo mėgstamiausią dainą iš 2014 metų katalogo ir pirmyn!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/rayman.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Rayman</h5>
+                                        <p>
+                                            Tai linksmas arkadinis žaidimas. Išgelbės savo įkalintus draugus eidamas per kliūčių ruožą!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/red-dead-redemption.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Red Dead Redemption</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/minecraft.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Minecraft</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/minecraft_story.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Minecraft Story Mode</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/castle-crashers.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Castle Crashers</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/portal2.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Portal 2</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/sponge-bob.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Spong Bob</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/simpsons.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">The Simpsons Game</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/sonic.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Sonic Generations</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/dishonored.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Dishonored</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/forza-horizon.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Forza Horizon 2</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/lego.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Lego</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/far-cry.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Far Cry 4</h5>
+                                        <p>
+                                            
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/nba15.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">NBA 15</h5>
+                                        <p>
+                                            NBA 2015 futbolo žaidimas. Pelbyk lemtingą tašką ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/fifa15.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Fifa 15</h5>
+                                        <p>
+                                            Fifa 2015 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -369,21 +901,24 @@
                         <div class="row justify-content-center align-items-stretch">
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/beatsaber.png" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/just-dance-2015-header.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Beat Saber</h5>
+                                        <h5 class="text-primary">Just Dance 2015</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Atkartok šokių judesius ir rink taškus! Pasirink savo mėgstamiausią dainą iš 2015 metų katalogo ir pirmyn!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -391,21 +926,24 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/thrillofthefight.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/justdance2017.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Thrill of the Fight</h5>
+                                        <h5 class="text-primary">Just Dance 2017</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Atkartok šokių judesius ir rink taškus! Pasirink savo mėgstamiausią dainą iš 2017 metų katalogo ir pirmyn!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -413,21 +951,24 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/fruitninja.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/kinect_adventures001.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Fruit Ninja</h5>
+                                        <h5 class="text-primary">Kinect Adventures</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Įveik kliūčių ruožą šokinėdamas, traukdamasis kairėn arba dešinėn bei atsitūpdamas. Atsargiai, neįpulk!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -435,21 +976,21 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/rush.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/kinect-sports.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Rush</h5>
+                                        <h5 class="text-primary">Kinect Sports</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Tai smagus įvairių sporto šakų žaidimas. Žaidime varžosi dvi komandos, taigi vienu metu gali žaisti daug žmonių!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                         </div>
                                     </div>
@@ -462,21 +1003,15 @@
                         <div class="row justify-content-center align-items-stretch">
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/vaderimmortal1.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/fifa18.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal I</h5>
+                                        <h5 class="text-primary">Fifa 18</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Fifa 2018 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -484,21 +1019,18 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/vaderimmortal2.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/nba18.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal II</h5>
+                                        <h5 class="text-primary">NBA 18</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            NBA 2018 futbolo žaidimas. Pelbyk lemtingą tašką ir tapk čempionu!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -506,21 +1038,56 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/vaderimmortal3.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/kinect-sports.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal III</h5>
+                                        <h5 class="text-primary">Kinect Sports</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Tai smagus įvairių sporto šakų žaidimas. Žaidime varžosi dvi komandos, taigi vienu metu gali žaisti daug žmonių!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/nba15.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">NBA 15</h5>
+                                        <p>
+                                            NBA 2015 futbolo žaidimas. Pelbyk lemtingą tašką ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/fifa15.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Fifa 15</h5>
+                                        <p>
+                                            Fifa 2015 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -533,18 +1100,18 @@
                         <div class="row justify-content-center align-items-stretch">
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/richiesplankexperience.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/just-dance-2015-header.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Richie's Plank Experience</h5>
+                                        <h5 class="text-primary">Just Dance 2015</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Atkartok šokių judesius ir rink taškus! Pasirink savo mėgstamiausią dainą iš 2015 metų katalogo ir pirmyn!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
@@ -555,21 +1122,90 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/youtube.jpg" alt="" class="card-img-top border-bottom">
+                                    <img src="img/Xbox360-games/justdance2017.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">YouYube VR</h5>
+                                        <h5 class="text-primary">Just Dance 2017</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Atkartok šokių judesius ir rink taškus! Pasirink savo mėgstamiausią dainą iš 2017 metų katalogo ir pirmyn!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/kinect_adventures001.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Kinect Adventures</h5>
+                                        <p>
+                                            Įveik kliūčių ruožą šokinėdamas, traukdamasis kairėn arba dešinėn bei atsitūpdamas. Atsargiai, neįpulk!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/kinect-sports.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Kinect Sports</h5>
+                                        <p>
+                                            Tai smagus įvairių sporto šakų žaidimas. Žaidime varžosi dvi komandos, taigi vienu metu gali žaisti daug žmonių!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/rayman.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Rayman</h5>
+                                        <p>
+                                            Tai linksmas arkadinis žaidimas. Išgelbės savo įkalintus draugus eidamas per kliūčių ruožą!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
                                             </div>
                                         </div>
                                     </div>
@@ -582,21 +1218,21 @@
                         <div class="row justify-content-center align-items-stretch">
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/jobsimulator.png" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/mortal-combat.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Job Simulator</h5>
+                                        <h5 class="text-primary">Mortal Kombat</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Kovinis žaidimas pulteliais dviems asmenims. Išsirink savo mėgstamiausią personažą ir stok į kovą!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -604,110 +1240,42 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/acron.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/left4dead.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Acron</h5>
+                                        <h5 class="text-primary">Left 4 Dead 2</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Pasaulį ištikus zombių apokalipsei, tu ir tavo komanda bandote išlikti gyvi. Ar pavyks apsiginti ir laimėti šį mūšį?
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudymas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                                <i class="fas fa-skull text-primary mr-2"></i><small>Siaubo</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/bogo.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Bogo</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
+                            <div class="card shadow rounded-lg border-0 h-100">
+                                <img src="img/Xbox360-games/gta5.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">GTA V</h5>
+                                    <p>
+                                        Tai naujausia Grand Theft Auto dalis. Įvykdyk visas misijas ir laimėk!
+                                    </p>
+                                    <div class="d-flex flex-wrap">
+                                        <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                            <i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudymas</small>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/fruitninja.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Fruit Ninja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/epicrollercoasters.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Epic Roller Coasters</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/tiltbrush.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Tilt Brush</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
+                                        <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                            <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
                                         </div>
                                     </div>
                                 </div>
@@ -719,21 +1287,24 @@
                         <div class="row justify-content-center align-items-stretch">
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/superhot.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/just-dance-2015-header.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">SuperHot</h5>
+                                        <h5 class="text-primary">Just Dance 2015</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Atkartok šokių judesius ir rink taškus! Pasirink savo mėgstamiausią dainą iš 2015 metų katalogo ir pirmyn!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -741,21 +1312,24 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/spacepirate.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/justdance2017.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Space Pirate</h5>
+                                        <h5 class="text-primary">Just Dance 2017</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Atkartok šokių judesius ir rink taškus! Pasirink savo mėgstamiausią dainą iš 2017 metų katalogo ir pirmyn!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -763,48 +1337,24 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/deathhorizont.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/kinect_adventures001.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Death Horizon</h5>
+                                        <h5 class="text-primary">Kinect Adventures</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Įveik kliūčių ruožą šokinėdamas, traukdamasis kairėn arba dešinėn bei atsitūpdamas. Atsargiai, neįpulk!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="option7" class="option-content d-none">
-                        <div class="row justify-content-center align-items-stretch">
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/deathhorizont.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Death Horizon</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -812,21 +1362,138 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/dreadhalls.jpg" alt="" class="card-img-top">
+                                    <img src="img/Xbox360-games/mortal-combat.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Dreadhalls</h5>
+                                        <h5 class="text-primary">Mortal Kombat</h5>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Kovinis žaidimas pulteliais dviems asmenims. Išsirink savo mėgstamiausią personažą ir stok į kovą!
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/fifa18.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Fifa 18</h5>
+                                        <p>
+                                            Fifa 2018 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/nba18.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">NBA 18</h5>
+                                        <p>
+                                            NBA 2018 futbolo žaidimas. Pelbyk lemtingą tašką ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/kinect-sports.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Kinect Sports</h5>
+                                        <p>
+                                            Tai smagus įvairių sporto šakų žaidimas. Žaidime varžosi dvi komandos, taigi vienu metu gali žaisti daug žmonių!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
                                                 <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/left4dead.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Left 4 Dead 2</h5>
+                                        <p>
+                                            Pasaulį ištikus zombių apokalipsei, tu ir tavo komanda bandote išlikti gyvi. Ar pavyks apsiginti ir laimėti šį mūšį?
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudymas</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-skull text-primary mr-2"></i><small>Siaubo</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-hiking text-primary mr-2"></i><small>Lygių vykdymas</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/nba15.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">NBA 15</h5>
+                                        <p>
+                                            NBA 2015 futbolo žaidimas. Pelbyk lemtingą tašką ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                                            </div>
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xl-4 mb-3">
+                                <div class="card shadow rounded-lg border-0 h-100">
+                                    <img src="img/Xbox360-games/fifa15.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">Fifa 15</h5>
+                                        <p>
+                                            Fifa 2015 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
+                                        </p>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
+                                                <i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>
                                             </div>
                                         </div>
                                     </div>
@@ -846,7 +1513,7 @@
                     <div class="row pb-4 pb-md-5">
                         <div class="col-md-4 mb-3 mb-md-0">
                             <h5 class="text-light">
-                                Apie mus
+                                Susipažink
                             </h5>
                             <p class="text-secondary pr-md-3 mb-0">
                                 Party Play!<br>
@@ -855,7 +1522,7 @@
                         </div>
                         <div class="col-md-4 mb-3 mb-md-0">
                             <h5 class="text-light">
-                                Nuoma
+                                Išsinuomok
                             </h5>
                             <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
                             <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
@@ -864,7 +1531,7 @@
                         </div>
                         <div class="col-md-4">
                             <h5 class="text-light">
-                                Kontaktai
+                                Susisiek
                             </h5>
                             <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
                                 Tel. nr.: +370 621 14494
@@ -872,7 +1539,7 @@
                             <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
                                 El. paštas: info@partyplay.lt
                             </a>
-                            <a href="#" class="d-block link-hover-light">
+                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
                                 Adresas: Nemuno g. 26<br>
                             </a>
                             <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>

@@ -39,9 +39,30 @@
 
     <body>
 
+        <!-- PRE-NAVBAR -->
+
+        <div class="bg-light d-none d-md-block">
+            <div class="container">
+                <div class="d-flex justify-content-between py-2">
+                    <div class="text-small">
+                        <a href="" class="text-primary mr-2">Kaunas</a>|
+                        <a href="klaipeda/" class="link-hover ml-2">Klaipėda</a>
+                    </div>
+                    <div class="d-flex align-items-center text-small">
+                        <i class="fas fa-mobile-alt text-primary mr-2"></i>
+                        <a href="tel:+37062114494" class="link-hover">+3706 211 4494</a>
+                    </div>
+                    <div class="d-flex align-items-center text-small">
+                        <i class="fab fa-facebook-f text-primary mr-2"></i>
+                        <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover">facebook.com/PartyPlayNuoma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- NAVBAR -->
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top shadow bg-white">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img src="img/Logo/logo.png" width="130" alt="">
@@ -50,41 +71,56 @@
                     <ion-icon name="menu-outline"></ion-icon>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <hr class="d-md-none my-2">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link text-uppercase">Pradžia</a>
                         </li>
-                        <li class="nav-item ml-lg-3">
+                        <li class="nav-item ml-md-3">
                             <a href="#" class="nav-link text-uppercase link-hover" data-target="#dropdown1" data-toggle="collapse">Nuoma<i class="fas fa-chevron-down fa-xs ml-2"></i></a>
                             <div id="dropdown1" class="collapse nav-dropdown">
-                                <div class="container py-3 py-lg-4">
+                                <div class="container py-3 py-md-4">
                                     <div class="row w-100">
-                                        <div class="col-lg-4">
-                                            <a href="virtuali-realybe.html" class="text-primary text-uppercase">Virtualios realybės įranga</a>
-                                            <a href="oculus-quest.html" class="d-block link-hover mt-3">Oculus Quest</a>
-                                            <a href="oculus-quest-2.html" class="d-block link-hover mt-2">Oculus Quest 2</a>
+                                        <div class="col-md-4">
+                                            <a href="virtuali-realybe.html" class="d-block text-primary text-uppercase mb-3">Virtualios realybės įranga</a>
+                                            <a href="oculus-quest.html" class="d-block link-hover mb-2">Oculus Quest</a>
+                                            <a href="oculus-quest-2.html" class="d-block link-hover">Oculus Quest 2</a>
                                         </div>
-                                        <div class="col-lg-4 pt-3 pt-lg-0">
-                                            <a href="zaidimu-konsoles.html" class="text-primary text-uppercase">Žaidimų konsolės</a>
-                                            <a href="xbox-360.html" class="d-block link-hover mt-3">XBOX 360 + Kinect</a>
-                                            <a href="xbox-one.html" class="d-block link-hover mt-2">XBOX One</a>
+                                        <div class="col-md-4 pt-3 pt-md-0">
+                                            <a href="zaidimu-konsoles.html" class="d-block text-primary text-uppercase mb-3">Žaidimų konsolės</a>
+                                            <a href="xbox-360.html" class="d-block link-hover mb-2">XBOX 360 + Kinect</a>
+                                            <a href="xbox-one.html" class="d-block link-hover">XBOX One</a>
                                         </div>
-                                        <div class="col-lg-4 pt-3 pt-lg-0">
-                                            <a href="projektoriai.html" class="text-primary text-uppercase">Projektoriai</a>
-                                            <a href="#" class="d-block link-hover mt-3">Geras</a>
-                                            <a href="#" class="d-block link-hover mt-2">Geresnis</a>
-                                            <a href="#" class="d-block link-hover mt-2">Geriausias</a>
+                                        <div class="col-md-4 pt-3 pt-md-0">
+                                            <a href="projektoriai.html" class="d-block text-primary text-uppercase mb-3">Projektoriai</a>
+                                            <a href="garso-iranga.html" class="d-block text-primary text-uppercase">Garso įranga</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item ml-lg-3">
-                            <a href="naudinga.html" class="nav-link text-uppercase">Naudinga</a>
+                        <li class="nav-item ml-md-3">
+                            <a href="#" class="nav-link text-uppercase link-hover" data-target="#dropdown2" data-toggle="collapse">Naudinga<i class="fas fa-chevron-down fa-xs ml-2"></i></a>
+                            <div id="dropdown2" class="collapse nav-dropdown">
+                                <div class="container py-3 py-md-4">
+                                    <div class="row w-100">
+                                        <div class="col-md-4">
+                                            <a href="naujienos.html" class="d-block text-primary text-uppercase mb-2">Naujienos</a>
+                                            <a href="duk.html" class="d-block text-primary text-uppercase mb-2">D. U. K.</a>
+                                            <a href="dovanu-kuponai.html" class="d-block text-primary text-uppercase">Dovanų kuponai</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item ml-lg-3">
+                        <li class="nav-item ml-md-3">
                             <a href="kontaktai.html" class="nav-link text-uppercase">Kontaktai</a>
                         </li>
+                        <hr class="d-md-none my-2">
+                        <div class="d-md-none text-small py-2">
+                            <a href="" class="text-primary mr-2">Kaunas</a>|
+                            <a href="klaipeda/" class="link-hover ml-2">Klaipėda</a>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -140,7 +176,7 @@
                                 <i class="fas fa-check text-primary mr-3"></i>
                                 <h6>"Xbox Game Pass" žaidimų prenumerata 
                                     <span>
-                                        <a href="#"><small> (peržiūrėti sąrašą)</small></a>
+                                        <a href="https://www.xbox.com/en-US/xbox-game-pass/games" target="_blank"><small> (peržiūrėti sąrašą)</small></a>
                                     </span>
                                 </h6>
                             </div>
@@ -148,7 +184,7 @@
                                 <i class="fas fa-check text-primary mr-3"></i>
                                 <h6>"EA Access" žaidimų prenumerata
                                     <span>
-                                        <a href="#"><small> (peržiūrėti sąrašą)</small></a>
+                                        <a href="https://www.ea.com/ea-play/games-xbox-one" target="_blank"><small> (peržiūrėti sąrašą)</small></a>
                                     </span>
                                 </h6>
                             </div>
@@ -299,27 +335,20 @@
             <section id="zaidimu-sarasas" class="pb-4 pb-md-5">
                 <div class="container">
                     <h2 class="text-center text-primary mb-4">Žaidimai, kuriuos rekomenduojame išbandyti 🎮</h2>
+                    <p class="text-justify text-md-center w-md-75 mx-auto">
+                        Čia rasite pagrindinius žaidimus, kuriuos siūlome išbandyti. Išsinuomoję konsolę gausite prieigą prie visų "EA Play" ir "Xbox Game Pass" žaidimų. Norėdami kurio nors žaidimo, kurio nėra mūsų sąraše, turėsite patys juos parsisiųsti. Pilnus žaidimų sąrašus rasite čia:
+                        <span><a href="https://www.xbox.com/en-US/xbox-game-pass/games" target="_blank">Xbox Game Pass</a></span> ir 
+                        <span><a href="https://www.ea.com/ea-play/games-xbox-one" target="_blank">EA Play</a></span>
+                    </p>
                     <div class="row justify-content-center mb-4">
-                        <div class="col-8 col-md px-1">
-                            <h5 id="option1-toggle" class="option-toggle option-toggle-active text-center text-uppercase pointer py-2 py-md-3">Visi</h5>
+                        <div class="col-8 col-md">
+                            <h5 id="option1-toggle" class="option-toggle option-toggle-active text-center text-uppercase pointer py-2 py-md-3">Visi žaidimai</h5>
                         </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="option2-toggle" class="option-toggle text-center text-uppercase pointer py-2 py-md-3">Aktyvūs</h5>
+                        <div class="col-8 col-md">
+                            <h5 id="option2-toggle" class="option-toggle text-center text-uppercase pointer py-2 py-md-3">EA Play</h5>
                         </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="option3-toggle" class="option-toggle text-center text-uppercase pointer py-2 py-md-3">Siužetiniai</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="option4-toggle" class="option-toggle text-center pointer py-2 py-md-3">Patirtys</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="option5-toggle" class="option-toggle text-center pointer py-2 py-md-3">Vaikams</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="option6-toggle" class="option-toggle text-center pointer py-2 py-md-3">Šaudyklės</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="option7-toggle" class="option-toggle text-center pointer py-2 py-md-3">Siaubo</h5>
+                        <div class="col-8 col-md">
+                            <h5 id="option3-toggle" class="option-toggle text-center text-uppercase pointer py-2 py-md-3">XBOX game pass</h5>
                         </div>
                     </div>
 
@@ -327,11 +356,11 @@
                         <div class="row justify-content-center align-items-stretch">
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/beatsaber.png" alt="" class="card-img-top">
+                                    <img src="img/XboxOne-games/fifa20.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Beat Saber</h5>
+                                        <h5 class="text-primary">Fifa 20</h5>
                                         <p>
-                                            Tai vienas iš populiariausių virtualios realybės žaidimų. Turėsite judėti greitai ir tiksliai, kad surinktumėte kuo daugiau taškų. Išbandykite savo reakciją muzikos ritmu!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
@@ -349,74 +378,11 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/acron.jpg" alt="" class="card-img-top">
+                                    <img src="img/XboxOne-games/needforspeed.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Acron</h5>
+                                        <h5 class="text-primary">Need for Speed. Heat</h5>
                                         <p>
-                                            Šis liksmas nuotykių žaidimas tinka didesnei žmonių komapnijai. Žaidimas unikalus tuo, kad jį gali žaisti keli asmenys tuo pačiu metu - vienas su virtualios realybės akiniais, o kiti - per mobiliuosius telefonus.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-users text-primary mr-2"></i><small>Keli žaidėjai</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/superhot.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Super Hot</h5>
-                                        <p>
-                                            Tai loginis šaudymo žaidimas matricos pasaulyje. Šiame žaidime laiko tėkmė priklauso nuo žaidžiančiojo judesių spartumo. Taigi kiekvienas judesys yra svarbus! Gerai apgalvok savo strategiją ir - pirmyn!
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-puzzle-piece text-primary mr-2"></i></i><small>Strateginis</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudymas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/richiesplankexperience.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Richie's Plank Experience</h5>
-                                        <p>
-                                            Ar išdrįsi pažvelgti žemyn nuo dangoraižio viršaus? O ar išdrįsi užlipti ant šitokiame aukštyje pastatyto liepto? Nugalėk savo baimę!
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-surprise text-primary mr-2"></i><small>Ekstremalus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/fruitninja.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Fruit Ninja</h5>
-                                        <p>
-                                            Judrus, nuotaikingas ir greitas žaidimas Fruit Ninja abejingų nepaliks nei vaikų, nei suaugusių. Žaidimas pareikalaus greitos reakcijos ir tikslumo. Atsargiai - saugokis bombų!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
@@ -434,62 +400,11 @@
                             </div>
                             <div class="col-md-5 col-xl-4 mb-3">
                                 <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/jobsimulator.png" alt="" class="card-img-top">
+                                    <img src="img/XboxOne-games/nba20.jpg" alt="" class="card-img-top">
                                     <div class="card-body">
-                                        <h5 class="text-primary">Job Simulator</h5>
+                                        <h5 class="text-primary">NBA 20</h5>
                                         <p>
-                                            Žaidimas patiks tiems, kuriems nepakanka vien stebėti žaidimo aplinką, ir norisi viską, kas yra aplink paimti, atidaryti, sudaužyti. Gamink maistą, remontuok mašiną, dirbk kasoje, nusiausk ofisą. Visa laisvė tau!
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-puzzle-piece text-primary mr-2"></i></i><small>Strateginis</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/deathhorizont.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Death Horizon</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-skull text-primary mr-2"></i><small>Siaubo</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudymas</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/dreadhalls.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Dreadhalls</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-skull text-primary mr-2"></i><small>Siaubo</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/rush.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Rush</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                         <div class="d-flex flex-wrap">
                                             <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
@@ -505,679 +420,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/thrillofthefight.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Thrill of the Fight</h5>
-                                        <p>
-                                            Ši tikroviška bokso simuliacija privers jus pasijausti kaip tikrame kovos ringe. Smūgiuok greitai ir taikliai, jei nori ištverti iki raundo pabaigos! Įspėjame, bus karšta!
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/vaderimmortal1.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal I</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/vaderimmortal2.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal II</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/vaderimmortal3.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal III</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/spacepirate.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Space Pirate</h5>
-                                        <p>
-                                            Apsaugok savo skraidantį laivą nuo kosminių piratų! Kad išneštum sveiką kailį, tau prireiks greitos reakcijos, taiklumo ir vikrumo. Tvirtai laikyk skydą ir pirmyn!
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudymas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/epicrollercoasters.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Epic Roller Coasters</h5>
-                                        <p>
-                                            Prisisek saugos diržus, nes greičio, aukščio ir stačių pakalnių linkmuosiuose kalneliuose niekada nebus per mažai! Ar pasiruošęs pasivažinėti?
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-exclamation-triangle text-primary mr-2"></i><small>Gali svaigti galva</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/tiltbrush.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Tilt Brush</h5>
-                                        <p>
-                                            Išlaisvink savo kūrybines idėjas su 3D piešimu. Nupiešk namą ir į jį įeik, kėdę - ir ant jos atsisėsk, žmogų - ir jį apkabink. Kurk!
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-paint-brush text-primary mr-2"></i><small>Kūrybiškas</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/annefrankhouse.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Anne Frank House</h5>
-                                        <p>
-                                            Tai dokumentinis žaidimas. Turo po Anos Frank namus metu bus supažindinama su jos gyvenimu, jos šeima, tragišku likimu. Išnaudok virtualią patirtį prasmingai!
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-book-reader text-primary mr-2"></i><small>Edukacinis</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-male text-primary mr-2"></i><small>Nereikia judėti</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/bogo.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">BoGo</h5>
-                                        <p>
-                                            Stebėk, kaip auga tavo BoGo gyvūnėlis. Nepamiršk duoti jam skanėstų, žaisk su juo, paglostyk bei nuprausk. Mylėk jį ir jis mylės tave!
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-mug-hot text-primary mr-2"></i><small>Ramus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/bait.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Bait</h5>
-                                        <p>
-                                            Nesvarbu, ar esi užkietėjęs žvejys, ar nė karto nebandei žvejoti - šis žaidimas kaip tik tau! Čiupk meškerę ir pirmyn! 
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/recroom.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Rec Room</h5>
-                                        <p>
-                                            Žaisk sporto žaidimus ir bendrauk su kitais žaidėjais online! Šis žaidimas - puikus pasirinkimas, kai norisi atsipalaiduoti ir pajuokauti su kitais.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://www.xbox.com/en-US/xbox-game-pass/games" target="_blank" class="btn btn-primary rounded-pill mr-2 mt-3">Visi "Xbox Game Pass" žaidimai</a>
+                            <a href="https://www.ea.com/ea-play/games-xbox-one" target="_blank" class="btn btn-primary rounded-pill ml-2 mt-3">Visi "EA Play" žaidimai</a>
                         </div>
                     </div>
 
                     <div id="option2" class="option-content d-none">
                         <div class="row justify-content-center align-items-stretch">
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/beatsaber.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Beat Saber</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/thrillofthefight.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Thrill of the Fight</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/fruitninja.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Fruit Ninja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/rush.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Rush</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                            <a href="https://www.ea.com/ea-play/games-xbox-one" target="_blank" class="btn btn-primary rounded-pill mx-auto mt-3">Visi "EA Play" žaidimai</a>
                         </div>
                     </div>
                     
                     <div id="option3" class="option-content d-none">
                         <div class="row justify-content-center align-items-stretch">
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/vaderimmortal1.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal I</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/vaderimmortal2.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal II</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/vaderimmortal3.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal III</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div id="option4" class="option-content d-none">
-                        <div class="row justify-content-center align-items-stretch">
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/richiesplankexperience.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Richie's Plank Experience</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/youtube.jpg" alt="" class="card-img-top border-bottom">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">YouYube VR</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="option5" class="option-content d-none">
-                        <div class="row justify-content-center align-items-stretch">
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/jobsimulator.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Job Simulator</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/acron.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Acron</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/bogo.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Bogo</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/fruitninja.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Fruit Ninja</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/epicrollercoasters.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Epic Roller Coasters</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/tiltbrush.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Tilt Brush</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="option6" class="option-content d-none">
-                        <div class="row justify-content-center align-items-stretch">
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/superhot.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">SuperHot</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/spacepirate.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Space Pirate</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/deathhorizont.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Death Horizon</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="option7" class="option-content d-none">
-                        <div class="row justify-content-center align-items-stretch">
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/deathhorizont.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Death Horizon</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-xl-4 mb-3">
-                                <div class="card shadow rounded-lg border-0 h-100">
-                                    <img src="img/VR-games/dreadhalls.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Dreadhalls</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio harum hic quidem voluptatem, illo, facere possimus rem aliquid nulla laborum, laboriosam inventore. Cumque doloribus ipsa, quam reprehenderit aliquid culpa.
-                                        </p>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="far fa-clock text-primary mr-2"></i><small>Greitas</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-glass-cheers text-primary mr-2"></i><small>Vakarėliams</small>
-                                            </div>
-                                            <div class="border rounded-lg px-2 py-1 mr-1 mb-1">
-                                                <i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://www.xbox.com/en-US/xbox-game-pass/games" target="_blank" class="btn btn-primary rounded-pill mx-auto mt-3">Visi "Xbox Game Pass" žaidimai</a>
                         </div>
                     </div>
 
@@ -1192,7 +450,7 @@
                     <div class="row pb-4 pb-md-5">
                         <div class="col-md-4 mb-3 mb-md-0">
                             <h5 class="text-light">
-                                Apie mus
+                                Susipažink
                             </h5>
                             <p class="text-secondary pr-md-3 mb-0">
                                 Party Play!<br>
@@ -1201,7 +459,7 @@
                         </div>
                         <div class="col-md-4 mb-3 mb-md-0">
                             <h5 class="text-light">
-                                Nuoma
+                                Išsinuomok
                             </h5>
                             <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
                             <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
@@ -1210,7 +468,7 @@
                         </div>
                         <div class="col-md-4">
                             <h5 class="text-light">
-                                Kontaktai
+                                Susisiek
                             </h5>
                             <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
                                 Tel. nr.: +370 621 14494
@@ -1218,7 +476,7 @@
                             <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
                                 El. paštas: info@partyplay.lt
                             </a>
-                            <a href="#" class="d-block link-hover-light">
+                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
                                 Adresas: Nemuno g. 26<br>
                             </a>
                             <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>

@@ -39,9 +39,30 @@
 
     <body>
 
+        <!-- PRE-NAVBAR -->
+
+        <div class="bg-light d-none d-md-block">
+            <div class="container">
+                <div class="d-flex justify-content-between py-2">
+                    <div class="text-small">
+                        <a href="" class="text-primary mr-2">Kaunas</a>|
+                        <a href="klaipeda/" class="link-hover ml-2">Klaipėda</a>
+                    </div>
+                    <div class="d-flex align-items-center text-small">
+                        <i class="fas fa-mobile-alt text-primary mr-2"></i>
+                        <a href="tel:+37062114494" class="link-hover">+3706 211 4494</a>
+                    </div>
+                    <div class="d-flex align-items-center text-small">
+                        <i class="fab fa-facebook-f text-primary mr-2"></i>
+                        <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover">facebook.com/PartyPlayNuoma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- NAVBAR -->
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top shadow bg-white">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img src="img/Logo/logo.png" width="130" alt="">
@@ -50,41 +71,56 @@
                     <ion-icon name="menu-outline"></ion-icon>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <hr class="d-md-none my-2">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link text-uppercase">Pradžia</a>
                         </li>
-                        <li class="nav-item ml-lg-3">
+                        <li class="nav-item ml-md-3">
                             <a href="#" class="nav-link text-uppercase link-hover" data-target="#dropdown1" data-toggle="collapse">Nuoma<i class="fas fa-chevron-down fa-xs ml-2"></i></a>
                             <div id="dropdown1" class="collapse nav-dropdown">
-                                <div class="container py-3 py-lg-4">
+                                <div class="container py-3 py-md-4">
                                     <div class="row w-100">
-                                        <div class="col-lg-4">
-                                            <a href="virtuali-realybe.html" class="text-primary text-uppercase">Virtualios realybės įranga</a>
-                                            <a href="oculus-quest.html" class="d-block link-hover mt-3">Oculus Quest</a>
-                                            <a href="oculus-quest-2.html" class="d-block link-hover mt-2">Oculus Quest 2</a>
+                                        <div class="col-md-4">
+                                            <a href="virtuali-realybe.html" class="d-block text-primary text-uppercase mb-3">Virtualios realybės įranga</a>
+                                            <a href="oculus-quest.html" class="d-block link-hover mb-2">Oculus Quest</a>
+                                            <a href="oculus-quest-2.html" class="d-block link-hover">Oculus Quest 2</a>
                                         </div>
-                                        <div class="col-lg-4 pt-3 pt-lg-0">
-                                            <a href="zaidimu-konsoles.html" class="text-primary text-uppercase">Žaidimų konsolės</a>
-                                            <a href="#" class="d-block link-hover mt-3">XBOX 360 + Kinect</a>
-                                            <a href="#" class="d-block link-hover mt-2">XBOX One</a>
+                                        <div class="col-md-4 pt-3 pt-md-0">
+                                            <a href="zaidimu-konsoles.html" class="d-block text-primary text-uppercase mb-3">Žaidimų konsolės</a>
+                                            <a href="xbox-360.html" class="d-block link-hover mb-2">XBOX 360 + Kinect</a>
+                                            <a href="xbox-one.html" class="d-block link-hover">XBOX One</a>
                                         </div>
-                                        <div class="col-lg-4 pt-3 pt-lg-0">
-                                            <a href="projektoriai.html" class="text-primary text-uppercase">Projektoriai</a>
-                                            <a href="#" class="d-block link-hover mt-3">Geras</a>
-                                            <a href="#" class="d-block link-hover mt-2">Geresnis</a>
-                                            <a href="#" class="d-block link-hover mt-2">Geriausias</a>
+                                        <div class="col-md-4 pt-3 pt-md-0">
+                                            <a href="projektoriai.html" class="d-block text-primary text-uppercase mb-3">Projektoriai</a>
+                                            <a href="garso-iranga.html" class="d-block text-primary text-uppercase">Garso įranga</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item ml-lg-3">
-                            <a href="naudinga.html" class="nav-link text-uppercase">Naudinga</a>
+                        <li class="nav-item ml-md-3">
+                            <a href="#" class="nav-link text-uppercase link-hover" data-target="#dropdown2" data-toggle="collapse">Naudinga<i class="fas fa-chevron-down fa-xs ml-2"></i></a>
+                            <div id="dropdown2" class="collapse nav-dropdown">
+                                <div class="container py-3 py-md-4">
+                                    <div class="row w-100">
+                                        <div class="col-md-4">
+                                            <a href="naujienos.html" class="d-block text-primary text-uppercase mb-2">Naujienos</a>
+                                            <a href="duk.html" class="d-block text-primary text-uppercase mb-2">D. U. K.</a>
+                                            <a href="dovanu-kuponai.html" class="d-block text-primary text-uppercase">Dovanų kuponai</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item ml-lg-3">
+                        <li class="nav-item ml-md-3">
                             <a href="kontaktai.html" class="nav-link text-uppercase">Kontaktai</a>
                         </li>
+                        <hr class="d-md-none my-2">
+                        <div class="d-md-none text-small py-2">
+                            <a href="" class="text-primary mr-2">Kaunas</a>|
+                            <a href="klaipeda/" class="link-hover ml-2">Klaipėda</a>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -94,6 +130,409 @@
 
             <!-- SECTIONS -->
 
+            <section class="py-4 py-md-5">
+                <div class="container h-100">
+                    <div class="row align-items-center h-100">
+                        <div class="col-md-6">
+                            <h1 class="display-4 text-center text-md-left">Projektoriai</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/Devices/projektorius.jpg" alt="" class="img-fluid rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-light py-4 py-md-5">
+                <div class="container">
+                    <div class="w-md-75 mx-auto">
+                        <h2 class="text-center text-primary mb-4">ViewSonic PX700HD</h2>
+                        <p class="text-justify text-md-center">
+                            Itin aukštų parametrų ryškus ir kokybiškas Full HD projektorius puikiai tinkamas naudoti net dienos šviesoje. Puikiai tinka namų kinui, prezentacijoms ir kitiems tikslams, kai reikalinga didelė raiška
+                        </p>
+                        <div class="row align-items-center mb-3">
+                            <div class="col-md-6">
+                                <img src="img/Devices/viewsonic_fullhd.jpg" alt="" class="img-fluid rounded-lg">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-center text-md-left">Savybės:</h5>
+                                <p class="text-center text-md-left">
+                                    Ryškumas: 3500 lm<br>
+                                    Kontrastas: 12,000:1<br>
+                                    Raiška: 1920:1080 (Full HD)
+                                </p>
+                                <h5 class="text-center text-md-left">Į komplektaciją įeina:</h5>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>Projektorius</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>Meniu pultelis</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>HDMI, VGA, maitinimo laidas</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>Galime pridėti "C-type" adapterį</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-center mb-3">Nuomos kaina</h3>
+                        <div class="d-none d-sm-block">
+                            <table class="table table-hover shadow rounded bg-white">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="rounded-top border-0 text-center" colspan="8">Kainų lentelė</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th class="text-primary">Parų skaičius:</th>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">6</td>
+                                    <td class="text-center">7</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-primary">Nuomos kaina:</th>
+                                    <td class="text-center">15€</td>
+                                    <td class="text-center">25€</td>
+                                    <td class="text-center">35€</td>
+                                    <td class="text-center">42€</td>
+                                    <td class="text-center">49€</td>
+                                    <td class="text-center">56€</td>
+                                    <td class="text-center">60€</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <table class="table table-hover shadow rounded bg-white d-sm-none">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="align-middle rounded-top border-0 text-center" colspan="8">Kainų lentelė</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th class="text-center text-primary">Parų skaičius:</th>
+                                <th class="text-center text-primary">Nuomos kaina:</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">15€</td>  
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">25€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">42€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td class="text-center">49€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td class="text-center">56€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td class="text-center">60€</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-4 py-md-5">
+                <div class="container">
+                    <div class="w-md-75 mx-auto">
+                        <h2 class="text-center text-primary mb-4">ViewSonic PA502XP</h2>
+                        <p class="text-justify text-md-center">
+                            Aukštų parametrų ryškus ir kokybiškas projektorius. Formuojamas vaizdas yra ryškus, puikiai matomas net dienos šviesoje. Puikiai tinka prezentacijoms, namų kinui ir kitiems tikslams.
+                        </p>
+                        <div class="row align-items-center mb-3">
+                            <div class="col-md-6">
+                                <img src="img/Devices/viewsonic.jpg" alt="" class="img-fluid rounded-lg">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-center text-md-left">Savybės:</h5>
+                                <p class="text-center text-md-left">
+                                    Ryškumas: 3500 lm<br>
+                                    Kontrastas: 22,000:1<br>
+                                    Raiška: 1024 x 768 (XGA)
+                                </p>
+                                <h5 class="text-center text-md-left">Į komplektaciją įeina:</h5>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>Projektorius</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>Meniu pultelis</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>HDMI, VGA, maitinimo laidas</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>Galime pridėti "C-type" adapterį</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-center mb-3">Nuomos kaina</h3>
+                        <div class="d-none d-sm-block">
+                            <table class="table table-hover shadow rounded bg-white">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="rounded-top border-0 text-center" colspan="8">Kainų lentelė</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th class="text-primary">Parų skaičius:</th>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">6</td>
+                                    <td class="text-center">7</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-primary">Nuomos kaina:</th>
+                                    <td class="text-center">12€</td>
+                                    <td class="text-center">18€</td>
+                                    <td class="text-center">24€</td>
+                                    <td class="text-center">30€</td>
+                                    <td class="text-center">36€</td>
+                                    <td class="text-center">42€</td>
+                                    <td class="text-center">42€</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <table class="table table-hover shadow rounded bg-white d-sm-none">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="align-middle rounded-top border-0 text-center" colspan="8">Kainų lentelė</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th class="text-center text-primary">Parų skaičius:</th>
+                                <th class="text-center text-primary">Nuomos kaina:</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">12€</td>  
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">18€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">24€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">30€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td class="text-center">36€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td class="text-center">42€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td class="text-center">42€</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-light py-4 py-md-5">
+                <div class="container">
+                    <div class="w-md-75 mx-auto">
+                        <h2 class="text-center text-primary mb-4">Acer X115H</h2>
+                        <p class="text-justify text-md-center">
+                            Kompaktiškas ir kokybiškas projektorius. Formuojamas vaizdas ryškus. Puikiai tinka prezentacijoms, namų kinui ir kitiems tikslams, norint už nedidelę kainą, gauti aukštos kokybės produktą.
+                        </p>
+                        <div class="row align-items-center mb-3">
+                            <div class="col-md-6">
+                                <img src="img/Devices/acer.jpg" alt="" class="img-fluid rounded-lg">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-center text-md-left">Savybės:</h5>
+                                <p class="text-center text-md-left">
+                                    Ryškumas: 3300 lm<br>
+                                    Kontrastas: 20,000:1<br>
+                                    Raiška: 800 x 600 (SVGA)
+                                </p>
+                                <h5 class="text-center text-md-left">Į komplektaciją įeina:</h5>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>Projektorius</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>Meniu pultelis</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>HDMI, VGA, maitinimo laidas</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check text-primary mr-3"></i>
+                                    <h6>Galime pridėti "C-type" adapterį</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-center mb-3">Nuomos kaina</h3>
+                        <div class="d-none d-sm-block">
+                            <table class="table table-hover shadow rounded bg-white">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th class="rounded-top border-0 text-center" colspan="8">Kainų lentelė</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th class="text-primary">Parų skaičius:</th>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">6</td>
+                                    <td class="text-center">7</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-primary">Nuomos kaina:</th>
+                                    <td class="text-center">10€</td>
+                                    <td class="text-center">15€</td>
+                                    <td class="text-center">20€</td>
+                                    <td class="text-center">25€</td>
+                                    <td class="text-center">30€</td>
+                                    <td class="text-center">35€</td>
+                                    <td class="text-center">35€</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <table class="table table-hover shadow rounded bg-white d-sm-none">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="align-middle rounded-top border-0 text-center" colspan="8">Kainų lentelė</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th class="text-center text-primary">Parų skaičius:</th>
+                                <th class="text-center text-primary">Nuomos kaina:</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">10€</td>  
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">15€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">20€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">25€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td class="text-center">30€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-4 py-md-5">
+                <div class="container">
+                    <h2 class="text-center text-primary mb-4">Įrangos pajungimas</h2>
+                    <div class="row mb-4">
+                        <div class="col-md-3 mb-4 mb-md-0">
+                            <h5 class="text-primary">1. Chromecast priedelio prijungimas prie TV</h5>
+                        </div>
+                        <div class="col-md-8 offset-md-1">
+                            <ol class="pl-3 pl-md-0">
+                                <li>Įjungti TV</li>
+                                <li>Įkišti chromecast HDMI jungtį į televizorių;</li>
+                                <li>Įkišti microUsb jungtį į chromecast;</li>
+                                <li>Televizoriuje turėtų pasirodyti vaizdas;</li>
+                                <li>Palaikyti ~10 sekundžių mygtuką esanti chromecast šone (tėra vienas mygtukas). Taip atliekamas gamyklinis perkrovimas, reikalingas naujam wifi prijungimui.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-3 mb-3 mb-md-0">
+                            <h5 class="text-primary">2. Chromecast pajungimas ir "pririšimas" prie wifi</h5>
+                        </div>
+                        <div class="col-md-8 offset-md-1">
+                            <ol class="pl-3 pl-md-0">
+                                <li>Parsisiųsti "Google home" programėlę į mobilų telefoną;</li>
+                                <li>Įsijungti programėlę ir prisijungti su savo google paskyra (gmail'u).</li>
+                                <li>Po prisijungimo programėlė turėtų ieškoti įrenginių ir rasti "chromecast". (Jeigu pati nepradėjo ieškoti, reikia tai atlikti pačiam - spausti "+" esantį kairiajame viršutiniame kampe ir pasirinkti "set up a device")</li>
+                                <li>Toliau vyksta chromecast poravimas. Spausti "next", "next"...</li>
+                                <li>Toliau turėtų paprašyti pasirinkti vietą, kur bus naudojamas įrenginys (galite pasirinkti bet ką);</li>
+                                <li>Pasirinkite wifi tinklą;</li>
+                                <li>Turėtų sėkmingai prisijungti, toliau esančių pasiųlymų galite atsisakyti.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3 mb-md-0">
+                            <h5 class="text-primary">3. Oculus VR akinių vaizdo dalinimasis</h5>
+                        </div>
+                        <div class="col-md-8 offset-md-1">
+                            <ol class="pl-3 pl-md-0">
+                                <li>Įjungiame Oculus VR akinius;</li>
+                                <li>Prijungiame wifi (Spaudžiame settings -> wifi)</li>
+                                <li>Prijungiame chromecast (spaudžiame sharing -> cast -> chromecast)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pb-4 pb-md-5">
+                <div class="container">
+                    <h2 class="text-center text-primary mb-4">Nuomos pratęsimas</h2>
+                    <p class="text-justify text-md-center w-md-75 mx-auto">
+                        Norėdami pratęsti nuomą, susisiekite su mumis telefonu. Jį rasite mūsų kontaktų skiltyje. Jei įranga nebus rezervuota kitam klientui, galėsite prasitęsti nuomą pagal standartinę kainą. Kainoraštį rasite šiek tiek aukščiau.
+                    </p>
+                </div>
+            </section>
+
             <!-- FOOTER -->
 
             <footer class="bg-black pt-4 pt-md-5">
@@ -102,7 +541,7 @@
                     <div class="row pb-4 pb-md-5">
                         <div class="col-md-4 mb-3 mb-md-0">
                             <h5 class="text-light">
-                                Apie mus
+                                Susipažink
                             </h5>
                             <p class="text-secondary pr-md-3 mb-0">
                                 Party Play!<br>
@@ -111,7 +550,7 @@
                         </div>
                         <div class="col-md-4 mb-3 mb-md-0">
                             <h5 class="text-light">
-                                Nuoma
+                                Išsinuomok
                             </h5>
                             <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
                             <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
@@ -120,7 +559,7 @@
                         </div>
                         <div class="col-md-4">
                             <h5 class="text-light">
-                                Kontaktai
+                                Susisiek
                             </h5>
                             <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
                                 Tel. nr.: +370 621 14494
@@ -128,7 +567,7 @@
                             <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
                                 El. paštas: info@partyplay.lt
                             </a>
-                            <a href="#" class="d-block link-hover-light">
+                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
                                 Adresas: Nemuno g. 26<br>
                             </a>
                             <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>

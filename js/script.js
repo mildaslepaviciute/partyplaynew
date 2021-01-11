@@ -12,6 +12,26 @@ butter.init({
     cancelOnTouch: true
 });
 
+// Init carousel
+
+$('.carousel').carousel()
+
+// Sticky navbar
+
+$(document).ready(function() {
+    $('.js--sticky-navbar-offset').waypoint(function(direction) {
+        if (direction == "down") {
+            $('#navbar-sticky').removeClass('d-md-none');
+            $('#navbar-sticky').addClass('fixed-top');
+        } else {
+            $('#navbar-sticky').removeClass('fixed-top');
+            $('#navbar-sticky').addClass('d-md-none');
+        }
+    }, {
+        offset: '60px;'
+    });
+});
+
 // GAMES FILTER
 
 $("#option1-toggle").click(function(){

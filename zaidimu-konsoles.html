@@ -39,9 +39,30 @@
 
     <body>
 
+        <!-- PRE-NAVBAR -->
+
+        <div class="bg-light d-none d-md-block">
+            <div class="container">
+                <div class="d-flex justify-content-between py-2">
+                    <div class="text-small">
+                        <a href="" class="text-primary mr-2">Kaunas</a>|
+                        <a href="klaipeda/" class="link-hover ml-2">Klaipėda</a>
+                    </div>
+                    <div class="d-flex align-items-center text-small">
+                        <i class="fas fa-mobile-alt text-primary mr-2"></i>
+                        <a href="tel:+37062114494" class="link-hover">+3706 211 4494</a>
+                    </div>
+                    <div class="d-flex align-items-center text-small">
+                        <i class="fab fa-facebook-f text-primary mr-2"></i>
+                        <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover">facebook.com/PartyPlayNuoma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- NAVBAR -->
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top shadow">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top shadow bg-white">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img src="img/Logo/logo.png" width="130" alt="">
@@ -50,41 +71,56 @@
                     <ion-icon name="menu-outline"></ion-icon>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <hr class="d-md-none my-2">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link text-uppercase">Pradžia</a>
                         </li>
-                        <li class="nav-item ml-lg-3">
+                        <li class="nav-item ml-md-3">
                             <a href="#" class="nav-link text-uppercase link-hover" data-target="#dropdown1" data-toggle="collapse">Nuoma<i class="fas fa-chevron-down fa-xs ml-2"></i></a>
                             <div id="dropdown1" class="collapse nav-dropdown">
-                                <div class="container py-3 py-lg-4">
+                                <div class="container py-3 py-md-4">
                                     <div class="row w-100">
-                                        <div class="col-lg-4">
-                                            <a href="virtuali-realybe.html" class="text-primary text-uppercase">Virtualios realybės įranga</a>
-                                            <a href="oculus-quest.html" class="d-block link-hover mt-3">Oculus Quest</a>
-                                            <a href="oculus-quest-2.html" class="d-block link-hover mt-2">Oculus Quest 2</a>
+                                        <div class="col-md-4">
+                                            <a href="virtuali-realybe.html" class="d-block text-primary text-uppercase mb-3">Virtualios realybės įranga</a>
+                                            <a href="oculus-quest.html" class="d-block link-hover mb-2">Oculus Quest</a>
+                                            <a href="oculus-quest-2.html" class="d-block link-hover">Oculus Quest 2</a>
                                         </div>
-                                        <div class="col-lg-4 pt-3 pt-lg-0">
-                                            <a href="zaidimu-konsoles.html" class="text-primary text-uppercase">Žaidimų konsolės</a>
-                                            <a href="#" class="d-block link-hover mt-3">XBOX 360 + Kinect</a>
-                                            <a href="#" class="d-block link-hover mt-2">XBOX One</a>
+                                        <div class="col-md-4 pt-3 pt-md-0">
+                                            <a href="zaidimu-konsoles.html" class="d-block text-primary text-uppercase mb-3">Žaidimų konsolės</a>
+                                            <a href="xbox-360.html" class="d-block link-hover mb-2">XBOX 360 + Kinect</a>
+                                            <a href="xbox-one.html" class="d-block link-hover">XBOX One</a>
                                         </div>
-                                        <div class="col-lg-4 pt-3 pt-lg-0">
-                                            <a href="projektoriai.html" class="text-primary text-uppercase">Projektoriai</a>
-                                            <a href="#" class="d-block link-hover mt-3">Geras</a>
-                                            <a href="#" class="d-block link-hover mt-2">Geresnis</a>
-                                            <a href="#" class="d-block link-hover mt-2">Geriausias</a>
+                                        <div class="col-md-4 pt-3 pt-md-0">
+                                            <a href="projektoriai.html" class="d-block text-primary text-uppercase mb-3">Projektoriai</a>
+                                            <a href="garso-iranga.html" class="d-block text-primary text-uppercase">Garso įranga</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item ml-lg-3">
-                            <a href="naudinga.html" class="nav-link text-uppercase">Naudinga</a>
+                        <li class="nav-item ml-md-3">
+                            <a href="#" class="nav-link text-uppercase link-hover" data-target="#dropdown2" data-toggle="collapse">Naudinga<i class="fas fa-chevron-down fa-xs ml-2"></i></a>
+                            <div id="dropdown2" class="collapse nav-dropdown">
+                                <div class="container py-3 py-md-4">
+                                    <div class="row w-100">
+                                        <div class="col-md-4">
+                                            <a href="naujienos.html" class="d-block text-primary text-uppercase mb-2">Naujienos</a>
+                                            <a href="duk.html" class="d-block text-primary text-uppercase mb-2">D. U. K.</a>
+                                            <a href="dovanu-kuponai.html" class="d-block text-primary text-uppercase">Dovanų kuponai</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item ml-lg-3">
+                        <li class="nav-item ml-md-3">
                             <a href="kontaktai.html" class="nav-link text-uppercase">Kontaktai</a>
                         </li>
+                        <hr class="d-md-none my-2">
+                        <div class="d-md-none text-small py-2">
+                            <a href="" class="text-primary mr-2">Kaunas</a>|
+                            <a href="klaipeda/" class="link-hover ml-2">Klaipėda</a>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -112,33 +148,33 @@
 
             <section class="py-4 py-md-5">
                 <div class="container">
-                    <h2 class="text-center text-primary">Kodėl verta?</h2>
-                    <p class="text-center w-md-50 mx-auto mt-3">
+                    <h2 class="text-center text-primary mb-3">Kodėl verta?</h2>
+                    <p class="text-center w-md-50 mx-auto">
                         Žaidimų konsolės puikiai tinka tiek šventėms, tiek paprastam vakarui. 
                         Platus žaidimų pasirinkimas nenuvils veiksmo, lenktynių ar šaudyklių mėgėjų, o sporto entuziastai galės tapti naujaisiais NBA ar FIFA čempionais.
                     </p>
                     <div class="row mt-4">
                         <div class="col-md-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-4">🎉</h4>
-                            <p class="text-center mt-3">
+                            <h4 class="text-center rounded-circle bg-light mx-auto p-4 mb-3">🎉</h4>
+                            <p class="text-center">
                                 Ši pramoga puikiai tinka šventėms, renginiams ar paprastiems vakarams paįvairinti.
                             </p>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-4">🤹</h4>
-                            <p class="text-center mt-3">
+                            <h4 class="text-center rounded-circle bg-light mx-auto p-4 mb-3">🤹</h4>
+                            <p class="text-center">
                                 Naujausia vr įranga nerikalauja sudėtingo pajungimo - imi ir žaidi!
                             </p>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-4">🤖</h4>
-                            <p class="text-center mt-3">
+                            <h4 class="text-center rounded-circle bg-light mx-auto p-4 mb-3">🤖</h4>
+                            <p class="text-center">
                                 Ateities technologija
                             </p>
                         </div>
                         <div class="col-md-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-4">🤸‍♀️</h4>
-                            <p class="text-center mt-3">
+                            <h4 class="text-center rounded-circle bg-light mx-auto p-4 mb-3">🤸‍♀️</h4>
+                            <p class="text-center">
                                 Unikali ir nepamirštama patirtis
                             </p>
                         </div>
@@ -146,7 +182,7 @@
                 </div>
             </section>
 
-            <section class="py-4 py-md-5">
+            <section id="iranga" class="py-4 py-md-5">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-6 pr-lg-4">
@@ -200,7 +236,7 @@
                     <div class="row pb-4 pb-md-5">
                         <div class="col-md-4 mb-3 mb-md-0">
                             <h5 class="text-light">
-                                Apie mus
+                                Susipažink
                             </h5>
                             <p class="text-secondary pr-md-3 mb-0">
                                 Party Play!<br>
@@ -209,7 +245,7 @@
                         </div>
                         <div class="col-md-4 mb-3 mb-md-0">
                             <h5 class="text-light">
-                                Nuoma
+                                Išsinuomok
                             </h5>
                             <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
                             <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
@@ -218,7 +254,7 @@
                         </div>
                         <div class="col-md-4">
                             <h5 class="text-light">
-                                Kontaktai
+                                Susisiek
                             </h5>
                             <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
                                 Tel. nr.: +370 621 14494
@@ -226,7 +262,7 @@
                             <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
                                 El. paštas: info@partyplay.lt
                             </a>
-                            <a href="#" class="d-block link-hover-light">
+                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
                                 Adresas: Nemuno g. 26<br>
                             </a>
                             <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
