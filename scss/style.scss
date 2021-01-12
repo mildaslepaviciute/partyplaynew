@@ -8,8 +8,6 @@ VARIABLES
 $color:  #000000;
 $greenish: #007F6F;
 $pink: #d24979;
-// $red: #de2012;
-// $darkRed: #911317;
 
 
 /* -----------------------------------
@@ -39,43 +37,6 @@ body {
     color: #444;
 }
 
-.pointer {
-    cursor: pointer;
-}
-
-a,
-a:hover {
-    text-decoration: none;
-}
-
-hr {
-    border-top: 1px solid rgba(160, 160, 160, 0.1)
-}
-
-.hr-small {
-    border: 0px;
-    border-top: 2px solid #000;
-    width: 100px;
-}
-
-button:focus {
-    outline: none;
-}
-
-.bg-white {
-    background-color: #fff;
-}
-  
-.bg-black {
-    background-color: #121212;
-}
-
-.bg-primary-transparent {
-    background-color: #0997909c;
-}
-  
-
-
 /* -----------------------------------
 
 HEADINGS
@@ -90,6 +51,7 @@ h5,
 h6 {
     font-family: 'Palanquin', sans-serif;
     letter-spacing: 1px;
+    color: #333;
 }
 
 h1,
@@ -99,6 +61,7 @@ h2 {
 
 h1 {
     text-transform: uppercase;
+    font-size: 2rem;
 }
 
 h2 {
@@ -128,11 +91,8 @@ p {
     font-size: 3.5rem;
 }
 
-.truncate {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+.display-4 {
+    font-size: 2.5rem;
 }
 
 .text-small {
@@ -141,6 +101,10 @@ p {
 
 .text-black {
     color: #000;
+}
+
+.text-grey {
+    color: #ccc;
 }
 
 small {
@@ -176,28 +140,6 @@ NAVBAR
 
 /* -----------------------------------
 
-HEADER
-
--------------------------------------*/
-
-#header-main {
-    background: url(../img/superhot-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-}
-
-
-/* -----------------------------------
-
-FOOTER
-
--------------------------------------*/
-
-
-/* -----------------------------------
-
 BUTTONS
 
 -------------------------------------*/
@@ -221,6 +163,13 @@ BUTTONS
 .btn-gradient {
     background: rgb(181,52,113);
     background: linear-gradient(45deg, rgba(181,52,113,1) 0%, rgba(151,82,165,1) 100%);
+    opacity: 1;
+    transition-duration: .2s;
+}
+
+.btn-gradient:hover {
+    opacity: .9;
+    transition-duration: 1s;
 }
 
 /* -----------------------------------
@@ -229,261 +178,14 @@ MODALS
 
 -------------------------------------*/
 
-.close {
-    font-weight: 300;
-    font-size: 2rem;
-}
-
-.modal-dialog {
-    max-width: 1200px !important;
-}
-
 .modal {
     padding-right: 10px !important;
     padding-left: 10px !important;
 }
 
-
-
-/* -----------------------------------
-
-FORMS
-
--------------------------------------*/
-
-
-/* -----------------------------------
-
-ANIMATIONS
-
--------------------------------------*/
-
-.js--wp-1,
-.js--wp-2 {
-    opacity: 0; 
+.modal-dialog {
+    max-width: 1200px !important;
 }
-
-.js--wp-1 .animated,
-.js--wp-2 .animated {
-    opacity: 1;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
-.js--wp-1 {
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
-}
-
-.js--wp-2 {
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-}
-
-
-
-
-
-
-
-
-
-
-/* -----------------------------------
-
-USEFUL
-
--------------------------------------*/
-
-// CROP IMAGE TO SQUARE AUTOMATICALLY
-
-.img-container {
-    position: relative;
-  
-    &::after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
-    }
-  
-    img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-  
-// MAKE DARKEN AFTER HOVER (USED AS POSITION-ABSOLUTE IN DIV)
-  
-.hover-dark {
-    background-color: transparent;
-}
-  
-.hover-dark:hover {
-    background-color: rgba(0, 0, 0, 0.123);
-}
-  
-// MAKE THE OFFSET OF AN ANCHOR HIGHER
-  
-.anchor {
-    padding-top: 100px;
-    margin-top: -100px;
-}
-
-.bg-gradient {
-    background: rgb(181,52,113);
-    background: linear-gradient(45deg, rgba(181,52,113,1) 0%, rgba(151,82,165,1) 100%);
-}
-
-.card-img-top {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.rounded-top {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.border-bottom-wide {
-    border-bottom: 2px solid $pink;
-}
-
-.shadow {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1) !important;
-}
-
-.shadow-white {
-    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.219), 0 3px 6px rgba(243, 231, 235, 0.315) !important;
-}
-
-.opacity-half {
-    opacity: .5;
-}
-
-.option-toggle {
-    color: #000;
-    border-bottom: 2px solid transparent;
-    margin-bottom: 0px;
-    transition-duration: 0.4s; 
-}
-  
-.option-toggle:hover {
-    color: $pink;
-    transition-duration: 0.4s;
-    border-bottom: 2px solid $pink;
-}
-  
-.option-toggle-active {
-    color: $pink;
-    border-bottom: 2px solid $pink;
-    transition-duration: 0.4s; 
-}
-
-.link-hover {
-    color: #444;
-}
-
-.link-hover-light {
-    color: #6c757d;
-}
-
-.link-hover:hover,
-.link-hover-light:hover {
-    color: $pink;
-    transition-duration: 0.4s;
-}
-
-.circle {
-    width: 80px;
-    height: 80px;
-    background: $pink;
-    background: linear-gradient(45deg, $pink 0%, rgb(199, 61, 157) 30%, rgba(151,82,165,1) 100%);
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    -ms-border-radius: 200px;
-    -o-border-radius: 200px;
-}
-
-.circle-xs {
-    width: 8px;
-    height: 8px;
-    background-color: #d3d3d3;
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    -ms-border-radius: 200px;
-    -o-border-radius: 200px;
-}
-
-.shine-bg {
-    background: url('../img/shine-bg-sm.png');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.bg-abstract {
-    background-image: url('../img/bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.mt-negative {
-    margin-top: -10px;
-}
-
-#iranga .card:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.16), 0 4px 8px rgba(0,0,0,0.2) !important;
-    transition-duration: .4s;
-}
-
-.gradient-red {
-    background: rgb(48,3,44);
-    background: linear-gradient(127deg, #aa4b6b 3%, #6b6b83 50%, #3b8d99 97%);
-}
-
-.bg-dark {
-    background:#31354e !important;
-}
-
-.bg-oculus-quest-2 {
-    background: url('/img/Devices/vr-oculus-quest-2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-}
-
-.bg-xbox {
-    background: url('/img/bg-console.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-}
-
-.bg-main-header {
-    background: url('/img/main-xs.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-}
-
-.bg-vr-header {
-    background: url('/img/header-vr-xs.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-}
-  
-
-/* -----  MODALS   ----- */
 
 .modal-content {
     border: 0px;
@@ -531,10 +233,224 @@ USEFUL
     color: #000;
 }
 
+/* -----------------------------------
 
+BORDERS, RADIUS, SHADOWS
 
+-------------------------------------*/
 
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
+.rounded-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1) !important;
+}
+
+hr {
+    border-top: 1px solid rgba(160, 160, 160, 0.1);
+}
+
+/* -----------------------------------
+
+BACKGROUNDS
+
+-------------------------------------*/
+
+.shine-bg {
+    background: url('../img/shine-bg-xs.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-main-header {
+    background: url('/img/main-xs.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.bg-vr-header {
+    background: url('/img/Backgrounds/header-vr-xs.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.bg-projector-header {
+    background: url('/img/Devices/projektorius.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+  
+.bg-black {
+    background-color: #121212;
+}
+
+/* -----------------------------------
+
+ACTIONS
+
+-------------------------------------*/
+
+.pointer {
+    cursor: pointer;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+#iranga .card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16), 0 4px 8px rgba(0,0,0,0.2) !important;
+    transition-duration: .4s;
+}
+
+.option-toggle {
+    color: #444;
+    border-bottom: 2px solid transparent;
+    margin-bottom: 0px;
+    transition-duration: 0.4s; 
+}
+  
+.option-toggle:hover {
+    color: $pink;
+    transition-duration: 0.4s;
+    border-bottom: 2px solid $pink;
+}
+  
+.option-toggle-active {
+    color: $pink;
+    border-bottom: 2px solid $pink;
+    transition-duration: 0.4s; 
+}
+
+.link-hover {
+    color: #444;
+}
+
+.link-hover-light {
+    color: #6c757d;
+}
+
+.link-hover:hover,
+.link-hover-light:hover {
+    color: $pink;
+    transition-duration: 0.4s;
+}
+
+.hover-border {
+    color: $pink;
+}
+
+.hover-border:hover {
+    color: #753f52;
+}
+
+/* -----------------------------------
+
+POSITIONING
+
+-------------------------------------*/
+
+.mt-negative {
+    margin-top: -10px;
+}
+
+.anchor {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+/* -----------------------------------
+
+CIRCLES
+
+-------------------------------------*/
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background: rgb(181,52,113);
+    background: linear-gradient(45deg, rgba(181,52,113,1) 0%, rgba(151,82,165,1) 100%);
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+
+.circle-xs {
+    width: 8px;
+    height: 8px;
+    background-color: #d3d3d3;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+
+/* -----------------------------------
+
+ANIMATIONS
+
+-------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6 {
+    opacity: 0; 
+}
+
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated,
+.js--wp-4 .animated,
+.js--wp-5 .animated,
+.js--wp-6 .animated {
+    opacity: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.js--wp-2 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.js--wp-3 {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
 
 /* -----------------------------------
 
@@ -549,11 +465,11 @@ QUERIES
     }
 
     .butter-bottom {
-        padding-bottom: 63px;
+        padding-bottom: 102px;
     }
 
     .bg-main-header {
-        background: url('/img/main-sm.jpg');
+        background: url('/img/Backgrounds/main-sm.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -561,11 +477,22 @@ QUERIES
     }
 
     .bg-vr-header {
-        background: url('/img/header-vr-sm.jpg');
+        background: url('/img/Backgrounds/header-vr-sm.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 90vh;
+    }
+
+    .shine-bg {
+        background: url('../img/Backgrounds/shine-bg-sm.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    h1 {
+        font-size: 2.5rem;
     }
 }
 
@@ -573,6 +500,10 @@ QUERIES
 @media (min-width: 768px) {
     .display-2 {
         font-size: 3.5rem;
+    }
+
+    .display-4 {
+        font-size: 3rem;
     }
 
     h2 {
@@ -588,7 +519,7 @@ QUERIES
     }
 
     .bg-main-header {
-        background: url('/img/main-md.jpg');
+        background: url('/img/Backgrounds/main-md.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -596,7 +527,7 @@ QUERIES
     }
 
     .bg-vr-header {
-        background: url('/img/header-vr-md.jpg');
+        background: url('/img/Backgrounds/header-vr-md.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -604,11 +535,12 @@ QUERIES
     }
 
     .shine-bg {
-        background: url('../img/shine-bg.png');
+        background: url('../img/Backgrounds/shine-bg.png');
         background-position: top;
         background-repeat: no-repeat;
         background-size: contain;
     }
+
 }
 
 // Large devices
@@ -640,7 +572,7 @@ QUERIES
     }
 
     .bg-main-header {
-        background: url('/img/main.jpg');
+        background: url('/img/Backgrounds/main.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -648,7 +580,7 @@ QUERIES
     }
 
     .bg-vr-header {
-        background: url('/img/header-vr-lg.jpg');
+        background: url('/img/Backgrounds/header-vr-lg.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -660,5 +592,9 @@ QUERIES
 @media (min-width: 1200px) {
     .display-2 {
         font-size: 5.5rem;
+    }
+
+    .display-4 {
+        font-size: 3.5rem;
     }
 }

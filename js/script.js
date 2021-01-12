@@ -94,7 +94,7 @@ $("#option7-toggle").click(function(){
     $("#option7").removeClass("d-none");
     $("#option7").addClass("d-flex");
     $(".option-toggle").removeClass("option-toggle-active");
-    $("#option6-toggle").addClass("option-toggle-active");
+    $("#option7-toggle").addClass("option-toggle-active");
 });
 
   
