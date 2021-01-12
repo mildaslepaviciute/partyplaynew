@@ -438,7 +438,16 @@ QUERIES
     background: url("../img/Backgrounds/shine-bg.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain; } }
+    background-size: contain; }
+
+  .border-md-0 {
+    border: 0px solid transparent !important; }
+
+  .border-md-top {
+    border-top: 1px solid transparent !important; }
+
+  .border-md-bottom-0 {
+    border-bottom: 0px solid transparent !important; } }
 @media (min-width: 992px) {
   .nav-dropdown {
     background-color: #ffffff;
