@@ -213,27 +213,27 @@ BACKGROUNDS
 
 -------------------------------------*/
 .shine-bg {
-  background: url("../img/shine-bg-xs.png");
+  background: url("../img/Backgrounds/shine-bg-xs.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain; }
 
 .bg-main-header {
-  background: url("/img/main-xs.jpg");
+  background: url("../img/Backgrounds/main-xs.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh; }
 
 .bg-vr-header {
-  background: url("/img/Backgrounds/header-vr-xs.jpg");
+  background: url("../img/Backgrounds/header-vr-xs.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh; }
 
 .bg-projector-header {
-  background: url("/img/Devices/projektorius.jpg");
+  background: url("../img/Devices/projektorius.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -383,14 +383,14 @@ QUERIES
     padding-bottom: 102px; }
 
   .bg-main-header {
-    background: url("/img/Backgrounds/main-sm.jpg");
+    background: url("../img/Backgrounds/main-sm.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh; }
 
   .bg-vr-header {
-    background: url("/img/Backgrounds/header-vr-sm.jpg");
+    background: url("../img/Backgrounds/header-vr-sm.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -421,14 +421,14 @@ QUERIES
     font-size: 1rem; }
 
   .bg-main-header {
-    background: url("/img/Backgrounds/main-md.jpg");
+    background: url("../img/Backgrounds/main-md.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh; }
 
   .bg-vr-header {
-    background: url("/img/Backgrounds/header-vr-md.jpg");
+    background: url("../img/Backgrounds/header-vr-md.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -462,14 +462,14 @@ QUERIES
     font-size: 1.25rem; }
 
   .bg-main-header {
-    background: url("/img/Backgrounds/main.jpg");
+    background: url("../img/Backgrounds/main.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh; }
 
   .bg-vr-header {
-    background: url("/img/Backgrounds/header-vr-lg.jpg");
+    background: url("../img/Backgrounds/header-vr-lg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
