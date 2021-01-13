@@ -291,12 +291,6 @@ button:focus {
   color: #d24979;
   transition-duration: 0.4s; }
 
-.hover-border {
-  color: #d24979; }
-
-.hover-border:hover {
-  color: #753f52; }
-
 /* -----------------------------------
 
 POSITIONING

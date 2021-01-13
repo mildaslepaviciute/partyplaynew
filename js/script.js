@@ -32,6 +32,17 @@ $(document).ready(function() {
     });
 });
 
+//         visiems nav-link nuimti. uždėti tam tikram collapse
+
+// $(document).ready(function(){
+//     $("#dropdown1-toggler").click(function(){
+//       $("#dropdown2").collapse('hide');
+//     });
+//     $("#dropdown2-toggler").click(function(){
+//         $("#dropdown1").collapse('hide');
+//       });
+//   });
+
 // GAMES FILTER
 
 $("#option1-toggle").click(function(){
