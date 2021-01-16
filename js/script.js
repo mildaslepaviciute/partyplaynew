@@ -1,6 +1,121 @@
+
+const gamesQuest = {
+    beatSaber: ['short', 'party', 'active', 'popular'],
+    acron: ['short', 'party', 'multiplayer'],
+    blaston: ['short', 'strategy', 'shoot', 'active', 'multiplayer'],
+    superhot: ['strategy', 'shoot', 'active', 'popular'],
+    richiesPlank: ['short', 'extreme'],
+    fruitNinja: ['short', 'party', 'active'],
+    freddy: ['horror', 'strategy', 'party'],
+    jobSimulator: ['popular'],
+    deathHorizon: ['horror', 'shoot', 'uncomfortable'],
+    dreadhalls: ['horror', 'adventure', 'uncomfortable'],
+    waltzWizzard: ['short', 'calm', 'creative', 'hands'],
+    rush: ['extreme', 'active', 'uncomfortable'],
+    thrillFight: ['party', 'short', 'active', 'popular'],
+    vaderImmortal1: ['adventure', 'popular'],
+    vaderImmortal2: ['adventure', 'popular'],
+    vaderImmortal3: ['adventure', 'popular'],
+    spacePirate: ['short', 'shoot', 'active', 'popular'],
+    epicRoller: ['extreme', 'short', 'still', 'uncomfortable'],
+    tiltBrush: ['calm', 'creative'],
+    anneFrank: ['educational', 'still', 'calm'],
+    bogo: ['calm'],
+    bait: ['calm'],
+    halfHalf: ['social', 'multiplayer'],
+    recRoom: ['social', 'multiplayer'],
+    youtube: ['still']
+}
+
+const gamesXboxOneS = {
+    fifa20: ['multiplayer', 'popular', 'party'],
+    needForSpeed: ['popular'],
+    nba19: ['multiplayer', 'popular', 'party'],
+    batman: [''],
+    battlefield5: ['shoot', 'popular'],
+    deathSquared: ['arcade', 'levels', 'strategy'],
+    feedingFrenzy: ['arcade', 'levels', 'multiplayer'],
+    fightNight: ['multiplayer', 'party'],
+    freddy: ['horror', 'party', 'popular'],
+    forzaHorizon: ['popular'],
+    goatSimulator: ['party', 'adventure'],
+    minecraftDungeons: ['adventure'],
+    minecraft: ['adventure', 'creative', 'popular'],
+    noMansSky: [''],
+    outerWilds: [''],
+    plantsVsZombies: ['arcade', 'levels', 'strategy'],
+    plantsVsZombiesWarfare: [''],
+    overcooked: ['arcade', 'strategy', 'multiplayer'],
+    unravelTwo: ['arcade', 'multiplayer'],
+    residentEvil: ['horror'],
+    rocketLeague: ['party', 'multiplayer'],
+    rush: [''],
+    sims4: ['calm', 'creative'],
+    superLuckysTale: ['adventure'],
+    superHot: ['levels', 'shoot', 'strategy'],
+    terraria: ['arcade'],
+    theGardensBetween: ['levels', 'adventure'],
+    theWalkingDead: ['horror'],
+    ufc3: ['popular', 'multiplayer', 'party'],
+    wilmotsWarehouse: ['arcade'],
+    worms: ['arcade', 'multiplayer'],
+    callOfDuty: ['shoot']
+}
+
+const gamesXbox360Slim = {
+    justDance17: ['short', 'party', 'active', 'multiplayer'],
+    justDance15: ['short', 'party', 'active', 'multiplayer'],
+    kinectAdventures: ['short', 'party', 'active', 'multiplayer'],
+    mortalCombat: ['short', 'party', 'fight', 'multiplayer'],
+    fifa18: ['multiplayer', 'popular', 'party'],
+    nba18: ['multiplayer', 'popular', 'party'],
+    gta5: ['fight', 'levels'],
+    tombRider: ['adventure'],
+    fruitNinja: ['short', 'party', 'active', 'multiplayer'],
+    justDance16: ['short', 'party', 'active', 'multiplayer'],
+    justDance4: ['short', 'party', 'active', 'multiplayer'],
+    kinectSports: ['short', 'party', 'active', 'multiplayer'],
+    left4dead: ['shoot', 'horror', 'multiplayer'],
+    limbo: ['arcade', 'levels', 'horror'],
+    justDance14: ['short', 'party', 'active', 'multiplayer'],
+    justDanceKids: ['short', 'party', 'active', 'multiplayer'],
+    rayman: ['arcade', 'levels'],
+    redDeadRedemption: [],
+    minecraft: ['adventure', 'creative', 'popular'],
+    minecraftStory: ['adventure'],
+    castleCrashers: ['arcade', 'fight'],
+    portal2: ['adventure'],
+    spongeBob: ['adventure', 'multiplayer'],
+    kinectimals: ['active'],
+    simpsons: ['adventure'],
+    sonic: ['arcade'],
+    dishonored: [],
+    forzaHorizon: [],
+    lego: [],
+    farCry4: [],
+    nba15: [],
+    fifa15: [],
+}
+
+// When page is ready 
+
+$(document).ready(function() {
+    addStickyNavbar()
+    const platform = $('body').attr('id')
+    loadGamesFeatures(platform)
+});
+
+
 // Get the current year for the copyright 
 
 $('#year').text(new Date().getFullYear());
+
+
+// Fix pre-navbar while scrolling
+
+$(window).scroll(function(event){
+
+})
 
 // BUTTER INIT
 
@@ -12,13 +127,15 @@ butter.init({
     cancelOnTouch: true
 });
 
+
 // Init carousel
 
 $('.carousel').carousel()
 
+
 // Sticky navbar
 
-$(document).ready(function() {
+function addStickyNavbar() {
     $('.js--sticky-navbar-offset').waypoint(function(direction) {
         if (direction == "down") {
             $('#navbar-sticky').removeClass('d-md-none');
@@ -30,82 +147,189 @@ $(document).ready(function() {
     }, {
         offset: '60px;'
     });
-});
+}
 
-//         visiems nav-link nuimti. uždėti tam tikram collapse
 
-// $(document).ready(function(){
-//     $("#dropdown1-toggler").click(function(){
-//       $("#dropdown2").collapse('hide');
-//     });
-//     $("#dropdown2-toggler").click(function(){
-//         $("#dropdown1").collapse('hide');
-//       });
-//   });
+// DropdowN 
+
+function outsideClickListener (event) {
+    const $target = $(event.target)
+    if ((!$target.closest('.nav-dropdown').length) && $('.navbar').is(':visible')) {
+        $('.nav-dropdown').collapse("hide")   
+        removeClickListener()
+    }
+}
+
+function removeClickListener() {
+    document.removeEventListener('click', outsideClickListener)
+}
+
+$('.navbar-collapse').on('shown.bs.collapse', function() {
+    document.addEventListener('click', outsideClickListener)
+})
+
 
 // GAMES FILTER
 
-$("#option1-toggle").click(function(){
-    $(".option-content").removeClass("d-flex");
-    $(".option-content").addClass("d-none");
-    $("#option1").removeClass("d-none");
-    $("#option1").addClass("d-flex");
-    $(".option-toggle").removeClass("option-toggle-active");
-    $("#option1-toggle").addClass("option-toggle-active");
+function filterGamesByCategory(category){
+    $('#all-games > div').each(function () {
+        $(this).removeClass("d-flex")
+        $(this).addClass("d-none")
+
+        if ($(this).hasClass(category) || category === 'all') {
+            $(this).addClass("d-flex")
+        }
+    })
+}
+
+$("#all-toggler").click(function(){
+    filterGamesByCategory('all')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#all-toggler").addClass("filter-toggler-active");
 });
 
-$("#option2-toggle").click(function(){
-    $(".option-content").removeClass("d-flex");
-    $(".option-content").addClass("d-none");
-    $("#option2").removeClass("d-none");
-    $("#option2").addClass("d-flex");
-    $(".option-toggle").removeClass("option-toggle-active");
-    $("#option2-toggle").addClass("option-toggle-active");
+$("#active-toggler").click(function(){
+    filterGamesByCategory('c-active')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#active-toggler").addClass("filter-toggler-active");
 });
 
-$("#option3-toggle").click(function(){
-    $(".option-content").removeClass("d-flex");
-    $(".option-content").addClass("d-none");
-    $("#option3").removeClass("d-none");
-    $("#option3").addClass("d-flex");
-    $(".option-toggle").removeClass("option-toggle-active");
-    $("#option3-toggle").addClass("option-toggle-active");
+$("#story-toggler").click(function(){
+    filterGamesByCategory('c-story')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#story-toggler").addClass("filter-toggler-active");
 });
 
-$("#option4-toggle").click(function(){
-    $(".option-content").removeClass("d-flex");
-    $(".option-content").addClass("d-none");
-    $("#option4").removeClass("d-none");
-    $("#option4").addClass("d-flex");
-    $(".option-toggle").removeClass("option-toggle-active");
-    $("#option4-toggle").addClass("option-toggle-active");
+$("#experience-toggler").click(function(){
+    filterGamesByCategory('c-experience')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#experience-toggler").addClass("filter-toggler-active");
 });
 
-$("#option5-toggle").click(function(){
-    $(".option-content").removeClass("d-flex");
-    $(".option-content").addClass("d-none");
-    $("#option5").removeClass("d-none");
-    $("#option5").addClass("d-flex");
-    $(".option-toggle").removeClass("option-toggle-active");
-    $("#option5-toggle").addClass("option-toggle-active");
+$("#kids-toggler").click(function(){
+    filterGamesByCategory('c-kids')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#kids-toggler").addClass("filter-toggler-active");
 });
 
-$("#option6-toggle").click(function(){
-    $(".option-content").removeClass("d-flex");
-    $(".option-content").addClass("d-none");
-    $("#option6").removeClass("d-none");
-    $("#option6").addClass("d-flex");
-    $(".option-toggle").removeClass("option-toggle-active");
-    $("#option6-toggle").addClass("option-toggle-active");
+$("#shoot-toggler").click(function(){
+    filterGamesByCategory('c-shoot')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#shoot-toggler").addClass("filter-toggler-active");
 });
 
-$("#option7-toggle").click(function(){
-    $(".option-content").removeClass("d-flex");
-    $(".option-content").addClass("d-none");
-    $("#option7").removeClass("d-none");
-    $("#option7").addClass("d-flex");
-    $(".option-toggle").removeClass("option-toggle-active");
-    $("#option7-toggle").addClass("option-toggle-active");
+$("#horror-toggler").click(function(){
+    filterGamesByCategory('c-horror')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#horror-toggler").addClass("filter-toggler-active");
 });
 
-  
+$("#sport-toggler").click(function(){
+    filterGamesByCategory('c-sport')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#sport-toggler").addClass("filter-toggler-active");
+});
+
+$("#kinect-toggler").click(function(){
+    filterGamesByCategory('c-kinect')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#kinect-toggler").addClass("filter-toggler-active");
+});
+
+$("#multiplayer-toggler").click(function(){
+    filterGamesByCategory('c-multiplayer')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#multiplayer-toggler").addClass("filter-toggler-active");
+});
+
+$("#racing-toggler").click(function(){
+    filterGamesByCategory('c-racing')
+    $(".filter-toggler").removeClass("filter-toggler-active");
+    $("#racing-toggler").addClass("filter-toggler-active");
+});
+
+function loadGamesFeatures(platform) {
+    $('#all-games > div').each(function () {
+        const id = $(this).attr('id')
+        $(this).find('.feature-container').each(function () {
+            $(this).html(getFeatureContainerInner(id, platform))
+        })
+    })
+}
+
+function getFeaturesByKey(key) {
+    switch (key) {
+        case 'popular':
+            return '<i class="far fa-heart text-primary mr-2"></i><small>Itin populiarus</small>'
+        case 'extreme':
+            return '<i class="far fa-surprise text-primary mr-2"></i><small>Ekstremalus</small>'
+        case 'short':
+            return '<i class="far fa-clock text-primary mr-2"></i><small>Trumpas</small>'
+        case 'party':
+            return '<i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>'
+        case 'active':
+            return '<i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>'
+        case 'multiplayer':
+            return '<i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>'
+        case 'shoot':
+            return '<i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudyklė</small>'
+        case 'strategy':
+            return '<i class="fas fa-puzzle-piece text-primary mr-2"></i></i><small>Strateginis</small>'
+        case 'horror':
+            return '<i class="fas fa-skull text-primary mr-2"></i><small>Siaubo</small>'
+        case 'adventure':
+            return '<i class="fas fa-hiking text-primary mr-2"></i><small>Nuotykiai</small>'
+        case 'uncomfortable':
+            return '<i class="fas fa-exclamation-triangle text-primary mr-2"></i><small>Gali svaigti galva</small>'
+        case 'creative':
+            return '<i class="fas fa-paint-brush text-primary mr-2"></i><small>Kūrybiškas</small>'
+        case 'educational':
+            return '<i class="fas fa-book-reader text-primary mr-2"></i><small>Edukacinis</small>'
+        case 'calm':
+            return '<i class="fas fa-mug-hot text-primary mr-2"></i><small>Ramus</small>'
+        case 'social':
+            return '<i class="far fa-comments text-primary mr-2"></i><small>Socialus</small>'
+        case 'still':
+            return '<i class="fas fa-male text-primary mr-2"></i><small>Nereikia judėti</small>'
+        case 'hands':
+            return '<i class="far fa-hand-paper text-primary mr-2"></i><small>Valdomas delnais</small>'
+        case 'arcade':
+            return '<i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>'
+        case 'levels':
+            return '<i class="fas fa-route text-primary mr-2"></i><small>Lygių vykdymas</small>'
+        case 'fight':
+            return '<i class="far fa-hand-rock text-primary mr-2"></i><small>Kovinis</small>'
+        default:
+            return ''
+    }
+   
+}
+
+function getPlatformGames(platform) {
+    switch (platform) {
+        case 'oculusQuest':
+            return gamesQuest
+        case 'oculusQuest2':
+            return gamesQuest
+        case 'xboxOneS':
+            return gamesXboxOneS
+        case 'xbox360Slim':
+            return gamesXbox360Slim
+        default:
+            return []
+    }
+}
+
+function getFeatureContainerInner(gameKey, platform) {
+    const games = getPlatformGames(platform)
+
+    let featureContainerInner = ''
+    games[gameKey].forEach(feature => {
+        featureContainerInner += '<div class="border rounded-lg px-2 py-1 mr-1 mb-1">' 
+            + getFeaturesByKey(feature)
+            + '</div>'
+    })
+        
+    return featureContainerInner
+}
+

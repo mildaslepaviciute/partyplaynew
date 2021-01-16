@@ -326,20 +326,20 @@ button:focus {
     transition-duration: .4s;
 }
 
-.option-toggle {
+.filter-toggler {
     color: #444;
     border-bottom: 2px solid transparent;
     margin-bottom: 0px;
     transition-duration: 0.4s; 
 }
   
-.option-toggle:hover {
+.filter-toggler:hover {
     color: $pink;
     transition-duration: 0.4s;
     border-bottom: 2px solid $pink;
 }
   
-.option-toggle-active {
+.filter-toggler-active {
     color: $pink;
     border-bottom: 2px solid $pink;
     transition-duration: 0.4s; 
@@ -372,6 +372,10 @@ POSITIONING
 .anchor {
     padding-top: 100px;
     margin-top: -100px;
+}
+
+.img-blog {
+    width: 100%;
 }
 
 /* -----------------------------------
@@ -490,6 +494,16 @@ QUERIES
 
 // Medium devices
 @media (min-width: 768px) {
+    .nav-dropdown {
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        top: 63px;
+        left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
+    }
+
     .display-2 {
         font-size: 3.5rem;
     }
@@ -506,7 +520,7 @@ QUERIES
         font-size: 1.75rem;
     }
 
-    .option-toggle {
+    .filter-toggler {
         font-size: 1rem;
     }
 
@@ -544,19 +558,18 @@ QUERIES
     .border-md-bottom-0 {
         border-bottom: 0px solid transparent !important;
     }
+
+    .img-blog {
+        float: left;
+        width: 400px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
 }
 
 // Large devices
 @media (min-width: 992px) {
-    .nav-dropdown {
-        background-color: #ffffff;
-        position: absolute;
-        width: 100%;
-        top: 63px;
-        left: 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
-    }
+
 
     .w-md-50 {
         width: 50%
@@ -570,7 +583,7 @@ QUERIES
         font-size: 5rem;
     }
 
-    .option-toggle {
+    .filter-toggle {
         font-size: 1.25rem;
     }
 

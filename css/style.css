@@ -264,18 +264,18 @@ button:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 4px 8px rgba(0, 0, 0, 0.2) !important;
   transition-duration: .4s; }
 
-.option-toggle {
+.filter-toggler {
   color: #444;
   border-bottom: 2px solid transparent;
   margin-bottom: 0px;
   transition-duration: 0.4s; }
 
-.option-toggle:hover {
+.filter-toggler:hover {
   color: #d24979;
   transition-duration: 0.4s;
   border-bottom: 2px solid #d24979; }
 
-.option-toggle-active {
+.filter-toggler-active {
   color: #d24979;
   border-bottom: 2px solid #d24979;
   transition-duration: 0.4s; }
@@ -302,6 +302,9 @@ POSITIONING
 .anchor {
   padding-top: 100px;
   margin-top: -100px; }
+
+.img-blog {
+  width: 100%; }
 
 /* -----------------------------------
 
@@ -399,6 +402,15 @@ QUERIES
   h1 {
     font-size: 2.5rem; } }
 @media (min-width: 768px) {
+  .nav-dropdown {
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 63px;
+    left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05); }
+
   .display-2 {
     font-size: 3.5rem; }
 
@@ -411,7 +423,7 @@ QUERIES
   h3 {
     font-size: 1.75rem; }
 
-  .option-toggle {
+  .filter-toggler {
     font-size: 1rem; }
 
   .bg-main-header {
@@ -441,17 +453,14 @@ QUERIES
     border-top: 1px solid transparent !important; }
 
   .border-md-bottom-0 {
-    border-bottom: 0px solid transparent !important; } }
-@media (min-width: 992px) {
-  .nav-dropdown {
-    background-color: #ffffff;
-    position: absolute;
-    width: 100%;
-    top: 63px;
-    left: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05); }
+    border-bottom: 0px solid transparent !important; }
 
+  .img-blog {
+    float: left;
+    width: 400px;
+    margin-right: 50px;
+    margin-bottom: 30px; } }
+@media (min-width: 992px) {
   .w-md-50 {
     width: 50%; }
 
@@ -461,7 +470,7 @@ QUERIES
   .display-2 {
     font-size: 5rem; }
 
-  .option-toggle {
+  .filter-toggle {
     font-size: 1.25rem; }
 
   .bg-main-header {
