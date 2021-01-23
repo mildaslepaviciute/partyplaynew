@@ -3,6 +3,9 @@
 VARIABLES
 
 -------------------------------------*/
+@font-face {
+  font-family: Sofia Pro;
+  src: url(../fonts/Sofia\ Pro\ ExtraLight\ Az.otf); }
 /* -----------------------------------
 
 MAIN INFO
@@ -15,15 +18,16 @@ MAIN INFO
 
 html {
   background-color: #fff;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Sofia Pro';
   color: #444;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 18px;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Sofia Pro';
+  font-weight: 200;
   color: #444; }
 
 /* -----------------------------------
@@ -64,8 +68,12 @@ h5 {
   text-transform: uppercase; }
 
 p {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Sofia Pro';
+  font-weight: 200;
   color: #444; }
+
+.text-large {
+  font-size: 5rem; }
 
 .display-2 {
   font-size: 3.5rem; }
@@ -94,7 +102,7 @@ NAVBAR
   width: 100px; }
 
 .nav-item a {
-  font-family: 'Palanquin', sans-serif;
+  font-family: 'Sofia Pro';
   font-size: 0.85rem;
   font-weight: 400;
   letter-spacing: 2px; }
@@ -245,6 +253,9 @@ BACKGROUNDS
 .bg-black {
   background-color: #121212; }
 
+.bg-dark {
+  background: #222 !important; }
+
 /* -----------------------------------
 
 ACTIONS
@@ -265,7 +276,7 @@ button:focus {
   transition-duration: .4s; }
 
 .filter-toggler {
-  color: #444;
+  color: #fff;
   border-bottom: 2px solid transparent;
   margin-bottom: 0px;
   transition-duration: 0.4s; }
@@ -306,31 +317,8 @@ POSITIONING
 .img-blog {
   width: 100%; }
 
-/* -----------------------------------
-
-CIRCLES
-
--------------------------------------*/
-.circle {
-  width: 80px;
-  height: 80px;
-  background: #b53471;
-  background: linear-gradient(45deg, #b53471 0%, #9752a5 100%);
-  border-radius: 200px;
-  -webkit-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -ms-border-radius: 200px;
-  -o-border-radius: 200px; }
-
-.circle-xs {
-  width: 8px;
-  height: 8px;
-  background-color: #d3d3d3;
-  border-radius: 200px;
-  -webkit-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -ms-border-radius: 200px;
-  -o-border-radius: 200px; }
+.mt-negative-lg {
+  margin-top: -35px; }
 
 /* -----------------------------------
 
@@ -406,7 +394,7 @@ QUERIES
     background-color: #ffffff;
     position: absolute;
     width: 100%;
-    top: 63px;
+    top: 62px;
     left: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05); }
@@ -441,7 +429,7 @@ QUERIES
     height: 90vh; }
 
   .shine-bg {
-    background: url("../img/Backgrounds/shine-bg.png");
+    background: url("../img/Backgrounds/shine-bg-lg.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain; }

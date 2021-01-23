@@ -59,7 +59,8 @@ const gamesXboxOneS = {
     ufc3: ['popular', 'multiplayer', 'party'],
     wilmotsWarehouse: ['arcade'],
     worms: ['arcade', 'multiplayer'],
-    callOfDuty: ['shoot']
+    callOfDuty: ['shoot'],
+    fortnite: ['']
 }
 
 const gamesXbox360Slim = {
@@ -260,45 +261,45 @@ function loadGamesFeatures(platform) {
 function getFeaturesByKey(key) {
     switch (key) {
         case 'popular':
-            return '<i class="far fa-heart text-primary mr-2"></i><small>Itin populiarus</small>'
+            return '<i class="far fa-heart text-primary mr-2"></i><small class="text-white">Itin populiarus</small>'
         case 'extreme':
-            return '<i class="far fa-surprise text-primary mr-2"></i><small>Ekstremalus</small>'
+            return '<i class="far fa-surprise text-primary mr-2"></i><small class="text-white">Ekstremalus</small>'
         case 'short':
-            return '<i class="far fa-clock text-primary mr-2"></i><small>Trumpas</small>'
+            return '<i class="far fa-clock text-primary mr-2"></i><small class="text-white">Trumpas</small>'
         case 'party':
-            return '<i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>'
+            return '<i class="fas fa-birthday-cake text-primary mr-2"></i><small class="text-white">Vakarėliams</small>'
         case 'active':
-            return '<i class="fas fa-running text-primary mr-2"></i><small>Judrus</small>'
+            return '<i class="fas fa-running text-primary mr-2"></i><small class="text-white">Judrus</small>'
         case 'multiplayer':
-            return '<i class="fas fa-users text-primary mr-2"></i><small>Gali žaisti keli žmonės</small>'
+            return '<i class="fas fa-users text-primary mr-2"></i><small class="text-white">Gali žaisti keli žmonės</small>'
         case 'shoot':
-            return '<i class="fas fa-bullseye text-primary mr-2"></i><small>Šaudyklė</small>'
+            return '<i class="fas fa-bullseye text-primary mr-2"></i><small class="text-white">Šaudyklė</small>'
         case 'strategy':
-            return '<i class="fas fa-puzzle-piece text-primary mr-2"></i></i><small>Strateginis</small>'
+            return '<i class="fas fa-puzzle-piece text-primary mr-2"></i></i><small class="text-white">Strateginis</small>'
         case 'horror':
-            return '<i class="fas fa-skull text-primary mr-2"></i><small>Siaubo</small>'
+            return '<i class="fas fa-skull text-primary mr-2"></i><small class="text-white">Siaubo</small>'
         case 'adventure':
-            return '<i class="fas fa-hiking text-primary mr-2"></i><small>Nuotykiai</small>'
+            return '<i class="fas fa-hiking text-primary mr-2"></i><small class="text-white">Nuotykiai</small>'
         case 'uncomfortable':
-            return '<i class="fas fa-exclamation-triangle text-primary mr-2"></i><small>Gali svaigti galva</small>'
+            return '<i class="fas fa-exclamation-triangle text-primary mr-2"></i><small class="text-white">Gali svaigti galva</small>'
         case 'creative':
-            return '<i class="fas fa-paint-brush text-primary mr-2"></i><small>Kūrybiškas</small>'
+            return '<i class="fas fa-paint-brush text-primary mr-2"></i><small class="text-white">Kūrybiškas</small>'
         case 'educational':
-            return '<i class="fas fa-book-reader text-primary mr-2"></i><small>Edukacinis</small>'
+            return '<i class="fas fa-book-reader text-primary mr-2"></i><small class="text-white">Edukacinis</small>'
         case 'calm':
-            return '<i class="fas fa-mug-hot text-primary mr-2"></i><small>Ramus</small>'
+            return '<i class="fas fa-mug-hot text-primary mr-2"></i><small class="text-white">Ramus</small>'
         case 'social':
-            return '<i class="far fa-comments text-primary mr-2"></i><small>Socialus</small>'
+            return '<i class="far fa-comments text-primary mr-2"></i><small class="text-white">Socialus</small>'
         case 'still':
-            return '<i class="fas fa-male text-primary mr-2"></i><small>Nereikia judėti</small>'
+            return '<i class="fas fa-male text-primary mr-2"></i><small class="text-white">Nereikia judėti</small>'
         case 'hands':
-            return '<i class="far fa-hand-paper text-primary mr-2"></i><small>Valdomas delnais</small>'
+            return '<i class="far fa-hand-paper text-primary mr-2"></i><small class="text-white">Valdomas delnais</small>'
         case 'arcade':
-            return '<i class="fas fa-shoe-prints text-primary mr-2"></i><small>Arkadinis</small>'
+            return '<i class="fas fa-shoe-prints text-primary mr-2"></i><small class="text-white">Arkadinis</small>'
         case 'levels':
-            return '<i class="fas fa-route text-primary mr-2"></i><small>Lygių vykdymas</small>'
+            return '<i class="fas fa-route text-primary mr-2"></i><small class="text-white">Lygių vykdymas</small>'
         case 'fight':
-            return '<i class="far fa-hand-rock text-primary mr-2"></i><small>Kovinis</small>'
+            return '<i class="far fa-hand-rock text-primary mr-2"></i><small class="text-white">Kovinis</small>'
         default:
             return ''
     }
@@ -307,6 +308,8 @@ function getFeaturesByKey(key) {
 
 function getPlatformGames(platform) {
     switch (platform) {
+        case 'virtualReality':
+            return gamesQuest
         case 'oculusQuest':
             return gamesQuest
         case 'oculusQuest2':
@@ -325,7 +328,7 @@ function getFeatureContainerInner(gameKey, platform) {
 
     let featureContainerInner = ''
     games[gameKey].forEach(feature => {
-        featureContainerInner += '<div class="border rounded-lg px-2 py-1 mr-1 mb-1">' 
+        featureContainerInner += '<div class="border border-dark rounded-lg px-2 py-1 mr-1 mb-1">' 
             + getFeaturesByKey(feature)
             + '</div>'
     })
