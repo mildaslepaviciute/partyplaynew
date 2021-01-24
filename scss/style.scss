@@ -9,9 +9,15 @@ $color:  #000000;
 $greenish: #007F6F;
 $pink: #d24979;
 
+
 @font-face {
-    font-family: Sofia Pro;
+    font-family: 'Sofia Pro ExtraLight';
     src: url(../fonts/Sofia\ Pro\ ExtraLight\ Az.otf);
+}
+
+@font-face {
+    font-family: 'Sofia Pro Light';
+    src: url(../fonts/Sofia\ Pro\ Light\ Az.otf);
 }
 
 
@@ -29,7 +35,7 @@ MAIN INFO
 
 html {
     background-color: #fff;
-    font-family: 'Sofia Pro';
+    font-family: 'Sofia Pro ExtraLight';
     color: #444;
     font-weight: 200;
     font-size: 18px;
@@ -38,7 +44,7 @@ html {
 }
 
 body {
-    font-family: 'Sofia Pro';
+    font-family: 'Sofia Pro ExtraLight';
     font-weight: 200;
     color: #444;
 }
@@ -89,8 +95,7 @@ h5 {
 }
 
 p {
-    font-family: 'Sofia Pro';
-    font-weight: 200;
+    font-family: 'Sofia Pro ExtraLight';
     color: #444;
 }
 
@@ -133,9 +138,8 @@ NAVBAR
 }
 
 .nav-item a {
-    font-family: 'Sofia Pro';
+    font-family: 'Sofia Pro Light';
     font-size: 0.85rem;
-    font-weight: 400;
     letter-spacing: 2px;
 }
 
@@ -315,6 +319,10 @@ BACKGROUNDS
 
 .bg-dark {
     background: #222 !important;
+}
+
+.bg-light-darker {
+    background: #f5f4f4;
 }
 
 /* -----------------------------------
