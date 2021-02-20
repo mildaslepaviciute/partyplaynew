@@ -2,13 +2,13 @@
 const gamesQuest = {
     beatSaber: ['short', 'party', 'active', 'popular'],
     acron: ['short', 'party', 'multiplayer'],
-    blaston: ['short', 'strategy', 'shoot', 'active', 'multiplayer'],
-    superhot: ['strategy', 'shoot', 'active', 'popular'],
+    blaston: ['short', 'shoot', 'active', 'multiplayer'],
+    superhot: ['strategy', 'shoot', 'levels', 'popular'],
     richiesPlank: ['short', 'extreme'],
     fruitNinja: ['short', 'party', 'active'],
-    freddy: ['horror', 'strategy', 'party'],
-    jobSimulator: ['popular'],
-    deathHorizon: ['horror', 'shoot', 'uncomfortable'],
+    freddy: ['horror', 'strategy', 'party', 'levels'],
+    jobSimulator: ['popular', 'creative', 'levels'],
+    deathHorizon: ['horror', 'shoot', 'levels', 'uncomfortable'],
     dreadhalls: ['horror', 'adventure', 'uncomfortable'],
     waltzWizzard: ['short', 'calm', 'creative', 'hands'],
     rush: ['extreme', 'active', 'uncomfortable'],
@@ -29,7 +29,7 @@ const gamesQuest = {
 
 const gamesXboxOneS = {
     fifa20: ['multiplayer', 'popular', 'party'],
-    needForSpeed: ['popular'], //lenktynės
+    needForSpeed: ['popular'],
     nba19: ['multiplayer', 'popular', 'party'],
     //batman: [''],
     battlefield5: ['shoot', 'popular'],
@@ -41,26 +41,26 @@ const gamesXboxOneS = {
     goatSimulator: ['party', 'adventure'],
     minecraftDungeons: ['adventure'],
     minecraft: ['adventure', 'creative', 'popular'],
-    noMansSky: [''],
-    outerWilds: [''],
+    noMansSky: ['popular', 'shoot', 'adventure'],
+    outerWilds: ['adventure'],
     plantsVsZombies: ['arcade', 'levels', 'strategy'],
-    plantsVsZombiesWarfare: [''],
+    plantsVsZombiesWarfare: ['shoot'],
     overcooked: ['arcade', 'strategy', 'multiplayer'],
     unravelTwo: ['arcade', 'multiplayer'],
     residentEvil: ['horror'],
     rocketLeague: ['party', 'multiplayer'],
-    rush: [''],
+    rush: ['multiplayer', 'adventure'],
     sims4: ['calm', 'creative'],
-    superLuckysTale: ['adventure'],
+    superLuckysTale: ['adventure', 'levels'],
     superHot: ['levels', 'shoot', 'strategy'],
-    terraria: ['arcade'],
+    terraria: ['arcade', 'adventure'],
     theGardensBetween: ['levels', 'adventure'],
     theWalkingDead: ['horror'],
     ufc3: ['popular', 'multiplayer', 'party'],
-    wilmotsWarehouse: ['arcade'],
+    wilmotsWarehouse: ['arcade', 'strategy'],
     worms: ['arcade', 'multiplayer'],
     callOfDuty: ['shoot'],
-    fortnite: ['']
+    //fortnite: ['']
 }
 
 const gamesXbox360Slim = {
@@ -118,16 +118,6 @@ $(window).scroll(function(event){
 
 })
 
-// BUTTER INIT
-
-butter.init({
-    wrapperId: 'butter'
-});
-
-butter.init({
-    cancelOnTouch: true
-});
-
 
 // Init carousel
 
@@ -150,8 +140,22 @@ function addStickyNavbar() {
     });
 }
 
+// Burger menu
 
-// DropdowN 
+$("#main-menu-toggler").click(function(){
+    const isMenuOpened = $("#main-menu-close").hasClass("d-none")
+
+    if (isMenuOpened) {
+        $("#main-menu-open").addClass("d-none");
+        $("#main-menu-close").removeClass("d-none");
+    } else {
+        $("#main-menu-close").addClass("d-none");
+        $("#main-menu-open").removeClass("d-none");
+    }
+});
+
+
+// Dropdown
 
 function outsideClickListener (event) {
     const $target = $(event.target)
@@ -174,12 +178,18 @@ $('.navbar-collapse').on('shown.bs.collapse', function() {
 
 function filterGamesByCategory(category){
     $('#all-games > div').each(function () {
-        $(this).removeClass("d-flex")
-        $(this).addClass("d-none")
-
-        if ($(this).hasClass(category) || category === 'all') {
-            $(this).addClass("d-flex")
-        }
+        const game = $(this)
+        game.removeClass("d-flex")
+        game.addClass("invisible")
+        setTimeout(function() {
+            game.removeClass("invisible")
+            if (game.hasClass(category) || category === 'all') {
+                game.addClass("d-flex")
+                game.removeClass("d-none")
+            } else {
+                game.addClass("d-none")
+            }
+        }, 300)
     })
 }
 

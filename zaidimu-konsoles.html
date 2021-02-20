@@ -66,8 +66,9 @@
                 <a href="index.html" class="navbar-brand">
                     <img src="img/Logo/logo.png" width="130" alt="">
                 </a>
-                <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
-                    <ion-icon name="menu-outline"></ion-icon>
+                <button id="main-menu-toggler" class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                    <img src="img/icons/menu-open.png" id="main-menu-open" alt="meniu-ikona" width="30" class="mr-auto">
+                    <img src="img/icons/menu-close.png" id="main-menu-close" alt="meniu-ikona" width="23" class="mr-auto d-none">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <hr class="d-md-none my-2">
@@ -125,222 +126,356 @@
             </div>
         </nav>
 
-        <div id="butter" class="butter-bottom">
+        <!-- SECTIONS -->
 
-            <!-- SECTIONS -->
-
-            <header class="bg-vr-header">
-                <div class="h-100 d-flex flex-column align-items-center justify-content-center px-2">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <h1 class="text-center text-white mt-2 js--wp-1">Žaidimų<br>konsolės</h1>
-                                <h5 class="text-center text-white mb-3 pb-md-2 js--wp-2">Jūsų pramogoms</h5>
-                                <div class="d-flex">
-                                    <a href="#kaip-issinuomoti" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto js--wp-3">Išsinuomoti!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <section class="shine-bg py-4 py-md-5">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-3">Kodėl verta?</h2>
-                    <p class="text-center w-md-50 mx-auto mb-4">
-                        Svarstote, ar verta nuomotis žaidimų konsolę? Štai keletas priežasčių, kodėl mūsų atsakymas būtų „TAIP“:
-                    </p>
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">💸</h4>
-                            <h5 class="text-center mb-3">Sutaupykite</h5>
-                            <p class="text-center">
-                                Išbandykite įrangą prieš pirkdami. Taip įsitikinsite, kad įranga jums tikrai reikalinga ir išvengsite nereikalingų išlaidų.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🌱</h4>
-                            <h5 class="text-center mb-3">Būkite tvarūs</h5>
-                            <p class="text-center">
-                                Įrangos nuoma yra draugiškesnis aplinkai sprendimas. Įranga naudojama iš rankų į rankas, todėl sumažinamas išteklių naudojimas.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🤸‍♀️</h4>
-                            <h5 class="text-center mb-3">Pajudėkite</h5>
-                            <p class="text-center">
-                                Siūlome nesėdėti vietoje ir pajudėti su mūsų nuomojamais šokio, judesio, sporto žaidimais.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🎉</h4>
-                            <h5 class="text-center mb-3">Švęskite</h5>
-                            <p class="text-center">
-                                Trūksta idėjų, kaip paįvairinti savo šventę? Turime Jums pasiūlymą - surenkite žaidimų vakarą!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="pb-4 pb-md-5">
-                <div class="container">
-                    <div class="row flex-md-row-reverse align-items-center">
-                        <div class="col-md-6 pl-lg-4 mb-3 mb-md-0">
-                            <img src="img/Devices/xboxonee.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-6 pr-lg-4">
-                            <h2 class="text-primary text-center text-md-left mb-3">XBOX One</h2>
-                            <p class="text-justify text-md-left">
-                                Ši naujos kartos, aukštos kokybės konsolė yra itin mėgiama žaidimų entuziastų. Konsolės paskyroje užsakytos "Xbox Game Pass" ir "EA Play" prenumeratos, suteikiančios prieigą prie daugiau nei šimto populiariausių žaidimų, tarp kurių yra ir NBA 2K19, FIFA 20, Mortal Kombat X, Forza Horizon 4, GTA V.
-                            </p>
-                            <div class="d-flex flex-wrap feature-container">
-                                <div class="px-2 py-1 mr-1 mb-1">
-                                    <i class="fas fa-user-tie text-primary mr-2"></i><small>Labiausiai tinka suaugusiems</small>
-                                </div>
-                                <div class="px-2 py-1 mr-1 mb-1">
-                                    <i class="fas fa-child text-primary mr-2"></i><small>Tinka ir vaikams</small>
-                                </div>
-                                <div class="px-2 py-1 mr-1 mb-1">
-                                    <i class="fas fa-gamepad text-primary mr-2"></i><small>Naujausi žaidimai</small>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-2">
-                                <a href="xbox-one.html" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto ml-md-0">Domina!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="pb-4 pb-md-5">
+        <header class="bg-vr-header">
+            <div class="h-100 d-flex flex-column align-items-center justify-content-center px-2">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-md-6 pr-lg-4 mb-3 mb-md-0">
-                            <img src="img/Devices/xboxx.jpg" alt="" class="img-fluid px-3 px-md-4">
-                        </div>
-                        <div class="col-md-6 pl-lg-4">
-                            <h2 class="text-primary text-center text-md-left mb-3">XBOX 360 + Kinect</h2>
-                            <p class="text-justify text-md-left">
-                                Šis XBOX modelis labiausiai tinka šventėms, vaikų gimtadieniams ar tiesiog linksmiems vakarams. Konsolė klientų pamėgta dėl šokių ir kitų judesio žaidimų, su kuriais smagus laikas garantuotas! Yra ir pulteliais valdomų žaidimų: šaudyklių, sporto žaidimų, lenktynių ir kitų. Keletas žaidimų yra skirtų būtent vaikams.
-                            </p>
-                            <div class="d-flex flex-wrap feature-container">
-                                <div class="px-2 py-1 mr-1 mb-1">
-                                    <i class="fas fa-child text-primary mr-2"></i><small>Labiausiai tinka vaikams</small>
-                                </div>
-                                <div class="px-2 py-1 mr-1 mb-1">
-                                    <i class="fas fa-running text-primary mr-2"></i><small>Judesio žaidimai</small>
-                                </div>
-                                <div class="px-2 py-1 mr-1 mb-1">
-                                    <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-2">
-                                <a href="xbox-360.html" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto ml-md-0">Domina!</a>
+                        <div class="col">
+                            <h1 class="text-center text-white mt-2 js--wp-1">Žaidimų<br>konsolės</h1>
+                            <h5 class="text-center text-white mb-3 pb-md-2 js--wp-2">Jūsų pramogoms</h5>
+                            <div class="d-flex">
+                                <a href="#kaip-issinuomoti" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto js--wp-3">Išsinuomoti!</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </header>
 
-            <section class="pb-4 pb-md-5">
-                <div id="kaip-issinuomoti" class="anchor container">
-                    <h2 class="text-center text-primary mb-4">Kaip išsinuomoti?</h2>
-                    <div class="row">
-                        <div class="col-md-4 d-flex">
-                            <h2 class="text-primary text-large mt-negative-lg mr-3">1</h2>
-                            <div class="d-flex flex-column">
-                                <h5 class="text-left">Susisiekite su mumis</h5>
-                                <p class="text-left">Išsirinkę norimą išsinuomoti įrangą, paskambinkite mums numeriu <span><a href="tel:+37062114494">+370 621 14 494</a></span>. Jei įranga Jūsų norimu laiku nebus užimta, ją rezervuosime.</p>
+        <section class="shine-bg py-4 py-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-3">Kodėl verta?</h2>
+                <p class="text-center w-md-50 mx-auto mb-4">
+                    Svarstote, ar verta nuomotis žaidimų konsolę? Štai keletas priežasčių, kodėl mūsų atsakymas būtų „TAIP“:
+                </p>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 d-flex flex-column">
+                        <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">💸</h4>
+                        <h5 class="text-center mb-3">Sutaupykite</h5>
+                        <p class="text-center">
+                            Išbandykite įrangą prieš pirkdami. Taip įsitikinsite, kad įranga jums tikrai reikalinga ir išvengsite nereikalingų išlaidų.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex flex-column">
+                        <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🌱</h4>
+                        <h5 class="text-center mb-3">Būkite tvarūs</h5>
+                        <p class="text-center">
+                            Įrangos nuoma yra draugiškesnis aplinkai sprendimas. Įranga naudojama iš rankų į rankas, todėl sumažinamas išteklių naudojimas.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex flex-column">
+                        <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🤸‍♀️</h4>
+                        <h5 class="text-center mb-3">Pajudėkite</h5>
+                        <p class="text-center">
+                            Siūlome nesėdėti vietoje ir pajudėti su mūsų nuomojamais šokio, judesio, sporto žaidimais.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex flex-column">
+                        <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🎉</h4>
+                        <h5 class="text-center mb-3">Švęskite</h5>
+                        <p class="text-center">
+                            Trūksta idėjų, kaip paįvairinti savo šventę? Turime Jums pasiūlymą - surenkite žaidimų vakarą!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-4 pb-md-5">
+            <div class="container">
+                <div class="row flex-md-row-reverse align-items-center">
+                    <div class="col-md-6 pl-lg-4 mb-3 mb-md-0">
+                        <img src="img/Devices/xboxonee.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 pr-lg-4">
+                        <h2 class="text-primary text-center text-md-left mb-3">XBOX One</h2>
+                        <p class="text-justify text-md-left">
+                            Ši naujos kartos, aukštos kokybės konsolė yra itin mėgiama žaidimų entuziastų. Konsolės paskyroje užsakytos "Xbox Game Pass" ir "EA Play" prenumeratos, suteikiančios prieigą prie daugiau nei šimto populiariausių žaidimų, tarp kurių yra ir NBA 2K19, FIFA 20, Mortal Kombat X, Forza Horizon 4, GTA V.
+                        </p>
+                        <div class="d-flex flex-wrap feature-container">
+                            <div class="px-2 py-1 mr-1 mb-1">
+                                <i class="fas fa-user-tie text-primary mr-2"></i><small>Labiausiai tinka suaugusiems</small>
+                            </div>
+                            <div class="px-2 py-1 mr-1 mb-1">
+                                <i class="fas fa-child text-primary mr-2"></i><small>Tinka ir vaikams</small>
+                            </div>
+                            <div class="px-2 py-1 mr-1 mb-1">
+                                <i class="fas fa-gamepad text-primary mr-2"></i><small>Naujausi žaidimai</small>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex">
-                            <h2 class="text-primary text-large mt-negative-lg mr-3">2</h2>
-                            <div class="d-flex flex-column">
-                                <h5 class="text-left">Atvykite atsiimti</h5>
-                                <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Nemuno g. 26, Kaunas</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex">
-                            <h2 class="text-primary text-large mt-negative-lg mr-3">3</h2>
-                            <div class="d-flex flex-column">
-                                <h5 class="text-left">Mėgaukitės!</h5>
-                                <p class="text-left">Mėgaukites naujais įspūdžiais! Informacijos apie išsinuomotą daiktą rasite šioje svetainėje. Jei kils daugiau klausimų - būtinai susisiekite su mumis.</p>
-                            </div>
+                        <div class="d-flex mt-2">
+                            <a href="xbox-one.html" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto ml-md-0">Sužinoti daugiau</a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="bg-light d-none d-md-block py-4">
-                <div class="container">
-                    <div class="d-flex justify-content-center">
-                        <img src="img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/viewsonic-black.png" alt="" height="25">
+        <section class="pb-4 pb-md-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 pr-lg-4 mb-3 mb-md-0">
+                        <img src="img/Devices/xboxx.jpg" alt="" class="img-fluid px-3 px-md-4">
+                    </div>
+                    <div class="col-md-6 pl-lg-4">
+                        <h2 class="text-primary text-center text-md-left mb-3">XBOX 360 + Kinect</h2>
+                        <p class="text-justify text-md-left">
+                            Šis XBOX modelis labiausiai tinka šventėms, vaikų gimtadieniams ar tiesiog linksmiems vakarams. Konsolė klientų pamėgta dėl šokių ir kitų judesio žaidimų, su kuriais smagus laikas garantuotas! Yra ir pulteliais valdomų žaidimų: šaudyklių, sporto žaidimų, lenktynių ir kitų. Keletas žaidimų yra skirtų būtent vaikams.
+                        </p>
+                        <div class="d-flex flex-wrap feature-container">
+                            <div class="px-2 py-1 mr-1 mb-1">
+                                <i class="fas fa-child text-primary mr-2"></i><small>Labiausiai tinka vaikams</small>
+                            </div>
+                            <div class="px-2 py-1 mr-1 mb-1">
+                                <i class="fas fa-running text-primary mr-2"></i><small>Judesio žaidimai</small>
+                            </div>
+                            <div class="px-2 py-1 mr-1 mb-1">
+                                <i class="fas fa-birthday-cake text-primary mr-2"></i><small>Vakarėliams</small>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-2">
+                            <a href="xbox-360.html" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto ml-md-0">Sužinoti daugiau</a>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- FOOTER -->
+        <section class="bg-light py-4 py-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">Kainos</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <h3 class="text-center text-md-left">XBOX One</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-none d-sm-block">
+                            <table class="table">
+                                <tr>
+                                    <th class="text-primary border-0">Parų skaičius:</th>
+                                    <td class="text-center border-0">1</td>
+                                    <td class="text-center border-0">2</td>
+                                    <td class="text-center border-0">3</td>
+                                    <td class="text-center border-0">4</td>
+                                    <td class="text-center border-0">5</td>
+                                    <td class="text-center border-0">6</td>
+                                    <td class="text-center border-0">7</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-primary">Nuomos kaina:</th>
+                                    <td class="text-center">10€</td>
+                                    <td class="text-center">15€</td>
+                                    <td class="text-center">20€</td>
+                                    <td class="text-center">25€</td>
+                                    <td class="text-center">30€</td>
+                                    <td class="text-center">35€</td>
+                                    <td class="text-center">35€</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <table class="table d-sm-none">
+                            <tr>
+                                <th class="text-center text-primary border-0">Parų skaičius:</th>
+                                <th class="text-center text-primary border-0">Nuomos kaina:</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">10€</td>  
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">15€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">20€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">25€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td class="text-center">30€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-4">
+                    <div class="col-md-4">
+                        <h3 class="text-center text-md-left">XBOX 360 + Kinect</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-none d-sm-block">
+                            <table class="table">
+                                <tr>
+                                    <th class="text-primary border-0">Parų skaičius:</th>
+                                    <td class="text-center border-0">1</td>
+                                    <td class="text-center border-0">2</td>
+                                    <td class="text-center border-0">3</td>
+                                    <td class="text-center border-0">4</td>
+                                    <td class="text-center border-0">5</td>
+                                    <td class="text-center border-0">6</td>
+                                    <td class="text-center border-0">7</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-primary">Nuomos kaina:</th>
+                                    <td class="text-center">10€</td>
+                                    <td class="text-center">15€</td>
+                                    <td class="text-center">20€</td>
+                                    <td class="text-center">25€</td>
+                                    <td class="text-center">30€</td>
+                                    <td class="text-center">35€</td>
+                                    <td class="text-center">35€</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <table class="table d-sm-none">
+                            <tr>
+                                <th class="text-center text-primary border-0">Parų skaičius:</th>
+                                <th class="text-center text-primary border-0">Nuomos kaina:</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">10€</td>  
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">15€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">20€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">25€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td class="text-center">30€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <footer class="bg-black pt-4 pt-md-5">
-                <div class="container">
-                    <h2 class="text-center text-light mb-4">Susisiekime</h2>
-                    <div class="row pb-4 pb-md-5">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-light">
-                                Susipažink
-                            </h5>
-                            <p class="text-secondary pr-md-3 mb-0">
-                                Party Play!<br>
-                                Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
-                            </p>
+        <section class="py-4 pb-md-5">
+            <div id="kaip-issinuomoti" class="anchor container">
+                <h2 class="text-center text-primary mb-4">Kaip išsinuomoti?</h2>
+                <div class="row">
+                    <div class="col-md-4 d-flex">
+                        <h2 class="text-primary text-large mt-negative-lg mr-3">1</h2>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-left">Susisiekite su mumis</h5>
+                            <p class="text-left">Išsirinkę norimą išsinuomoti įrangą, paskambinkite mums numeriu <span><a href="tel:+37062114494">+370 621 14 494</a></span>. Jei įranga Jūsų norimu laiku nebus užimta, ją rezervuosime.</p>
                         </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-light">
-                                Išsinuomok
-                            </h5>
-                            <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
-                            <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
-                            <a href="projektoriai.html" class="d-block link-hover-light mb-1">📽️ Projektoriai</a>
-                            <a href="garso-iranga.html" class="d-block link-hover-light">🎵 Garso įranga</a>
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <h2 class="text-primary text-large mt-negative-lg mr-3">2</h2>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-left">Atvykite atsiimti</h5>
+                            <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Nemuno g. 26, Kaunas</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
                         </div>
-                        <div class="col-md-4">
-                            <h5 class="text-light">
-                                Susisiek
-                            </h5>
-                            <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
-                                Tel. nr.: +370 621 14 494
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <h2 class="text-primary text-large mt-negative-lg mr-3">3</h2>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-left">Mėgaukitės!</h5>
+                            <p class="text-left">Mėgaukites naujais įspūdžiais! Informacijos apie išsinuomotą daiktą rasite šioje svetainėje. Jei kils daugiau klausimų - būtinai susisiekite su mumis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light d-none d-md-block py-4">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <img src="img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/viewsonic-black.png" alt="" height="25">
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="bg-black pt-4 pt-md-5">
+            <div class="container">
+                <h2 class="text-center text-light mb-4">Susisiekime</h2>
+                <div class="row pb-4 pb-md-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-light">
+                            Susipažink
+                        </h5>
+                        <p class="text-secondary pr-md-3 mb-0">
+                            Party Play!<br>
+                            Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-light">
+                            Išsinuomok
+                        </h5>
+                        <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
+                        <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
+                        <a href="projektoriai.html" class="d-block link-hover-light mb-1">📽️ Projektoriai</a>
+                        <a href="garso-iranga.html" class="d-block link-hover-light">🎵 Garso įranga</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">
+                            Susisiek
+                        </h5>
+                        <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
+                            Tel. nr.: +370 621 14 494
+                        </a>
+                        <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
+                            El. paštas: info@partyplay.lt
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
+                            Adresas: Nemuno g. 26, Kaunas<br>
+                        </a>
+                        <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
+                        <div class="d-block mt-2">
+                            <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover-light mr-2">
+                                <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
-                                El. paštas: info@partyplay.lt
+                            <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover-light">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
-                                Adresas: Nemuno g. 26, Kaunas<br>
-                            </a>
-                            <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
-                            <div class="d-block mt-2">
-                                <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover-light mr-2">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover-light">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
-                    <hr class="my-0">
-                    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-black py-4">
-                        <p class="text-secondary mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
-                        <p class="text-secondary mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover-light">Ficus Media 🌱</a></p>
-                    </div>
                 </div>
-            </footer>
-
-        </div>
+                <hr class="my-0">
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-black py-4">
+                    <p class="text-secondary mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
+                    <p class="text-secondary mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover-light">Ficus Media 🌱</a></p>
+                </div>
+            </div>
+        </footer>
 
         <!-- MODALS -->
 
@@ -365,7 +500,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/butter.js"></script>
         <script src="js/animate.js"></script>
         <script src="js/script.js"></script>
 

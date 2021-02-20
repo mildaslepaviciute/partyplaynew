@@ -66,8 +66,9 @@
                 <a href="index.html" class="navbar-brand">
                     <img src="img/Logo/logo.png" width="130" alt="">
                 </a>
-                <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
-                    <ion-icon name="menu-outline"></ion-icon>
+                <button id="main-menu-toggler" class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                    <img src="img/icons/menu-open.png" id="main-menu-open" alt="meniu-ikona" width="30" class="mr-auto">
+                    <img src="img/icons/menu-close.png" id="main-menu-close" alt="meniu-ikona" width="23" class="mr-auto d-none">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <hr class="d-md-none my-2">
@@ -125,222 +126,218 @@
             </div>
         </nav>
 
-        <div id="butter" class="butter-bottom">
+        <!-- SECTIONS -->
 
-            <!-- SECTIONS -->
-
-            <section class="py-4 py-md-5">
-                <div class="container h-100">
-                    <div class="row align-items-center h-100">
-                        <div class="col-md-6">
-                            <h1 class="display-4 text-center text-md-left js--wp-1">Garso kolonėlė Ibiza Sound PORT8</h1>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/Devices/ibiza.jpg" alt="" class="img-fluid rounded-lg js--wp-2">
-                        </div>
+        <section class="py-4 py-md-5">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-md-6">
+                        <h1 class="display-4 text-center text-md-left js--wp-1">Garso kolonėlė Ibiza Sound PORT8</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/Devices/ibiza.jpg" alt="" class="img-fluid rounded-lg js--wp-2">
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="py-4 py-md-5 bg-light">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-4">Apie įrangą</h2>
-                    <p class="text-justify text-md-center w-md-75 mx-auto">
-                        Garso įranga pravers rengiant renginius, gimtadienius ir kitas šventes, filmų ar žaidimų vakarus bei tesiog norint pripildyti namus muzikos garsais. Garso kolonėlėje yra AUX ir Bluetooth jungtys, galima prijungti gitarą, mikrofoną. Baterija pakraunama, taigi kolonėlę galima naudoti be laido.
-                    </p>
-                </div>
-            </section>
+        <section class="py-4 py-md-5 bg-light">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">Apie įrangą</h2>
+                <p class="text-justify text-md-center w-md-75 mx-auto">
+                    Garso įranga pravers rengiant renginius, gimtadienius ir kitas šventes, filmų ar žaidimų vakarus bei tesiog norint pripildyti namus muzikos garsais. Garso kolonėlėje yra AUX ir Bluetooth jungtys, galima prijungti gitarą, mikrofoną. Baterija pakraunama, taigi kolonėlę galima naudoti be laido.
+                </p>
+            </div>
+        </section>
 
-            <section class="pb-4 pb-md-5 bg-light">
-                <div class="container">
-                    <h3 class="text-center mb-3">Nuomos kaina</h3>
-                    <div class="d-none d-sm-block">
-                        <table class="table w-md-75 mx-auto">
-                            <tr>
-                                <th class="text-primary border-0">Parų skaičius:</th>
-                                <td class="text-center border-0">1</td>
-                                <td class="text-center border-0">2</td>
-                                <td class="text-center border-0">3</td>
-                                <td class="text-center border-0">4</td>
-                                <td class="text-center border-0">5</td>
-                                <td class="text-center border-0">6</td>
-                                <td class="text-center border-0">7</td>
-                            </tr>
-                            <tr>
-                                <th class="text-primary">Nuomos kaina:</th>
-                                <td class="text-center">10€</td>
-                                <td class="text-center">15€</td>
-                                <td class="text-center">20€</td>
-                                <td class="text-center">25€</td>
-                                <td class="text-center">30€</td>
-                                <td class="text-center">35€</td>
-                                <td class="text-center">35€</td>
-                            </tr>
-                        </table>
-                    </div>
-                    
-                    <table class="table d-sm-none">
+        <section class="pb-4 pb-md-5 bg-light">
+            <div class="container">
+                <h3 class="text-center mb-3">Nuomos kaina</h3>
+                <div class="d-none d-sm-block">
+                    <table class="table w-md-75 mx-auto">
                         <tr>
-                            <th class="text-center text-primary border-0">Parų skaičius:</th>
-                            <th class="text-center text-primary border-0">Nuomos kaina:</th>
+                            <th class="text-primary border-0">Parų skaičius:</th>
+                            <td class="text-center border-0">1</td>
+                            <td class="text-center border-0">2</td>
+                            <td class="text-center border-0">3</td>
+                            <td class="text-center border-0">4</td>
+                            <td class="text-center border-0">5</td>
+                            <td class="text-center border-0">6</td>
+                            <td class="text-center border-0">7</td>
                         </tr>
                         <tr>
-                            <td class="text-center">1</td>
-                            <td class="text-center">10€</td>  
-                        </tr>
-                        <tr>
-                            <td class="text-center">2</td>
+                            <th class="text-primary">Nuomos kaina:</th>
+                            <td class="text-center">10€</td>
                             <td class="text-center">15€</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">3</td>
                             <td class="text-center">20€</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">4</td>
                             <td class="text-center">25€</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">5</td>
                             <td class="text-center">30€</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">6</td>
                             <td class="text-center">35€</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">7</td>
                             <td class="text-center">35€</td>
                         </tr>
                     </table>
                 </div>
-            </section>
+                
+                <table class="table d-sm-none">
+                    <tr>
+                        <th class="text-center text-primary border-0">Parų skaičius:</th>
+                        <th class="text-center text-primary border-0">Nuomos kaina:</th>
+                    </tr>
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">10€</td>  
+                    </tr>
+                    <tr>
+                        <td class="text-center">2</td>
+                        <td class="text-center">15€</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">3</td>
+                        <td class="text-center">20€</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">4</td>
+                        <td class="text-center">25€</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">5</td>
+                        <td class="text-center">30€</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">6</td>
+                        <td class="text-center">35€</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">7</td>
+                        <td class="text-center">35€</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
 
-            <section class="py-4 py-md-5">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-4">Įrangos pajungimas</h2>
-                    <div class="row mb-4">
-                        <div class="col-md-3 mb-4 mb-md-0">
-                            <h5 class="text-primary">1. Chromecast priedelio prijungimas prie TV</h5>
-                        </div>
-                        <div class="col-md-8 offset-md-1">
-                            <ol class="pl-3 pl-md-0">
-                                <li>Įjungti TV</li>
-                                <li>Įkišti chromecast HDMI jungtį į televizorių;</li>
-                                <li>Įkišti microUsb jungtį į chromecast;</li>
-                                <li>Televizoriuje turėtų pasirodyti vaizdas;</li>
-                                <li>Palaikyti ~10 sekundžių mygtuką esanti chromecast šone (tėra vienas mygtukas). Taip atliekamas gamyklinis perkrovimas, reikalingas naujam wifi prijungimui.</li>
-                            </ol>
-                        </div>
+        <section class="py-4 py-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">Įrangos pajungimas</h2>
+                <div class="row mb-4">
+                    <div class="col-md-3 mb-4 mb-md-0">
+                        <h5 class="text-primary">1. Chromecast priedelio prijungimas prie TV</h5>
                     </div>
-                    <div class="row mb-4">
-                        <div class="col-md-3 mb-3 mb-md-0">
-                            <h5 class="text-primary">2. Chromecast pajungimas ir "pririšimas" prie wifi</h5>
-                        </div>
-                        <div class="col-md-8 offset-md-1">
-                            <ol class="pl-3 pl-md-0">
-                                <li>Parsisiųsti "Google home" programėlę į mobilų telefoną;</li>
-                                <li>Įsijungti programėlę ir prisijungti su savo google paskyra (gmail'u).</li>
-                                <li>Po prisijungimo programėlė turėtų ieškoti įrenginių ir rasti "chromecast". (Jeigu pati nepradėjo ieškoti, reikia tai atlikti pačiam - spausti "+" esantį kairiajame viršutiniame kampe ir pasirinkti "set up a device")</li>
-                                <li>Toliau vyksta chromecast poravimas. Spausti "next", "next"...</li>
-                                <li>Toliau turėtų paprašyti pasirinkti vietą, kur bus naudojamas įrenginys (galite pasirinkti bet ką);</li>
-                                <li>Pasirinkite wifi tinklą;</li>
-                                <li>Turėtų sėkmingai prisijungti, toliau esančių pasiųlymų galite atsisakyti.</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 mb-3 mb-md-0">
-                            <h5 class="text-primary">3. Oculus VR akinių vaizdo dalinimasis</h5>
-                        </div>
-                        <div class="col-md-8 offset-md-1">
-                            <ol class="pl-3 pl-md-0">
-                                <li>Įjungiame Oculus VR akinius;</li>
-                                <li>Prijungiame wifi (Spaudžiame settings -> wifi)</li>
-                                <li>Prijungiame chromecast (spaudžiame sharing -> cast -> chromecast)</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="pb-4 pb-md-5">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-4">Nuomos pratęsimas</h2>
-                    <p class="text-justify text-md-center w-md-75 mx-auto">
-                        Norėdami pratęsti nuomą, susisiekite su mumis telefonu. Jį rasite mūsų kontaktų skiltyje. Jei įranga nebus rezervuota kitam klientui, galėsite prasitęsti nuomą pagal standartinę kainą. Kainoraštį rasite šiek tiek aukščiau.
-                    </p>
-                </div>
-            </section>
-
-            <section class="bg-light d-none d-md-block py-4">
-                <div class="container">
-                    <div class="d-flex justify-content-center">
-                        <img src="img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/viewsonic-black.png" alt="" height="25">
+                    <div class="col-md-8 offset-md-1">
+                        <ol class="pl-3 pl-md-0">
+                            <li>Įjungti TV</li>
+                            <li>Įkišti chromecast HDMI jungtį į televizorių;</li>
+                            <li>Įkišti microUsb jungtį į chromecast;</li>
+                            <li>Televizoriuje turėtų pasirodyti vaizdas;</li>
+                            <li>Palaikyti ~10 sekundžių mygtuką esanti chromecast šone (tėra vienas mygtukas). Taip atliekamas gamyklinis perkrovimas, reikalingas naujam wifi prijungimui.</li>
+                        </ol>
                     </div>
                 </div>
-            </section>
+                <div class="row mb-4">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h5 class="text-primary">2. Chromecast pajungimas ir "pririšimas" prie wifi</h5>
+                    </div>
+                    <div class="col-md-8 offset-md-1">
+                        <ol class="pl-3 pl-md-0">
+                            <li>Parsisiųsti "Google home" programėlę į mobilų telefoną;</li>
+                            <li>Įsijungti programėlę ir prisijungti su savo google paskyra (gmail'u).</li>
+                            <li>Po prisijungimo programėlė turėtų ieškoti įrenginių ir rasti "chromecast". (Jeigu pati nepradėjo ieškoti, reikia tai atlikti pačiam - spausti "+" esantį kairiajame viršutiniame kampe ir pasirinkti "set up a device")</li>
+                            <li>Toliau vyksta chromecast poravimas. Spausti "next", "next"...</li>
+                            <li>Toliau turėtų paprašyti pasirinkti vietą, kur bus naudojamas įrenginys (galite pasirinkti bet ką);</li>
+                            <li>Pasirinkite wifi tinklą;</li>
+                            <li>Turėtų sėkmingai prisijungti, toliau esančių pasiųlymų galite atsisakyti.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h5 class="text-primary">3. Oculus VR akinių vaizdo dalinimasis</h5>
+                    </div>
+                    <div class="col-md-8 offset-md-1">
+                        <ol class="pl-3 pl-md-0">
+                            <li>Įjungiame Oculus VR akinius;</li>
+                            <li>Prijungiame wifi (Spaudžiame settings -> wifi)</li>
+                            <li>Prijungiame chromecast (spaudžiame sharing -> cast -> chromecast)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!-- FOOTER -->
+        <section class="pb-4 pb-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">Nuomos pratęsimas</h2>
+                <p class="text-justify text-md-center w-md-75 mx-auto">
+                    Norėdami pratęsti nuomą, susisiekite su mumis telefonu. Jį rasite mūsų kontaktų skiltyje. Jei įranga nebus rezervuota kitam klientui, galėsite prasitęsti nuomą pagal standartinę kainą. Kainoraštį rasite šiek tiek aukščiau.
+                </p>
+            </div>
+        </section>
 
-            <footer class="bg-black pt-4 pt-md-5">
-                <div class="container">
-                    <h2 class="text-center text-light mb-4">Susisiekime</h2>
-                    <div class="row pb-4 pb-md-5">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-light">
-                                Susipažink
-                            </h5>
-                            <p class="text-secondary pr-md-3 mb-0">
-                                Party Play!<br>
-                                Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
-                            </p>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-light">
-                                Išsinuomok
-                            </h5>
-                            <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
-                            <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
-                            <a href="projektoriai.html" class="d-block link-hover-light mb-1">📽️ Projektoriai</a>
-                            <a href="garso-iranga.html" class="d-block link-hover-light">🎵 Garso įranga</a>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="text-light">
-                                Susisiek
-                            </h5>
-                            <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
-                                Tel. nr.: +370 621 14 494
+        <section class="bg-light d-none d-md-block py-4">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <img src="img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/viewsonic-black.png" alt="" height="25">
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="bg-black pt-4 pt-md-5">
+            <div class="container">
+                <h2 class="text-center text-light mb-4">Susisiekime</h2>
+                <div class="row pb-4 pb-md-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-light">
+                            Susipažink
+                        </h5>
+                        <p class="text-secondary pr-md-3 mb-0">
+                            Party Play!<br>
+                            Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-light">
+                            Išsinuomok
+                        </h5>
+                        <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
+                        <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
+                        <a href="projektoriai.html" class="d-block link-hover-light mb-1">📽️ Projektoriai</a>
+                        <a href="garso-iranga.html" class="d-block link-hover-light">🎵 Garso įranga</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">
+                            Susisiek
+                        </h5>
+                        <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
+                            Tel. nr.: +370 621 14 494
+                        </a>
+                        <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
+                            El. paštas: info@partyplay.lt
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
+                            Adresas: Nemuno g. 26, Kaunas<br>
+                        </a>
+                        <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
+                        <div class="d-block mt-2">
+                            <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover-light mr-2">
+                                <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
-                                El. paštas: info@partyplay.lt
+                            <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover-light">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
-                                Adresas: Nemuno g. 26, Kaunas<br>
-                            </a>
-                            <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
-                            <div class="d-block mt-2">
-                                <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover-light mr-2">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover-light">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
-                    <hr class="my-0">
-                    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-black py-4">
-                        <p class="text-secondary mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
-                        <p class="text-secondary mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover-light">Ficus Media 🌱</a></p>
-                    </div>
                 </div>
-            </footer>
-
-        </div>
+                <hr class="my-0">
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-black py-4">
+                    <p class="text-secondary mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
+                    <p class="text-secondary mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover-light">Ficus Media 🌱</a></p>
+                </div>
+            </div>
+        </footer>
 
         <!-- MODALS -->
 
@@ -365,7 +362,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/butter.js"></script>
         <script src="js/animate.js"></script>
         <script src="js/script.js"></script>
 

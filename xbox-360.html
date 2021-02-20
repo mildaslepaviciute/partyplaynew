@@ -66,8 +66,9 @@
                 <a href="index.html" class="navbar-brand">
                     <img src="img/Logo/logo.png" width="130" alt="">
                 </a>
-                <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
-                    <ion-icon name="menu-outline"></ion-icon>
+                <button id="main-menu-toggler" class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                    <img src="img/icons/menu-open.png" id="main-menu-open" alt="meniu-ikona" width="30" class="mr-auto">
+                    <img src="img/icons/menu-close.png" id="main-menu-close" alt="meniu-ikona" width="23" class="mr-auto d-none">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <hr class="d-md-none my-2">
@@ -125,202 +126,202 @@
             </div>
         </nav>
 
-        <div id="butter" class="butter-bottom">
+        <!-- SECTIONS -->
 
-            <!-- SECTIONS -->
-
-            <section class="py-4 py-md-5">
-                <div class="container h-100">
-                    <div class="row align-items-center h-100">
-                        <div class="col-md-6 mb-3 mb-md-0">
-                            <h1 class="display-2 text-center text-md-left js--wp-1">XBOX 360<br>Slim E<br>+ Kinect</h1>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="img/Devices/xboxx.jpg" alt="" class="img-fluid rounded-lg js--wp-2">
-                        </div>
+        <section class="py-4 py-md-5">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h1 class="display-2 text-center text-md-left js--wp-1">XBOX 360<br>Slim E<br>+ Kinect</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/Devices/xboxx.jpg" alt="" class="img-fluid rounded-lg js--wp-2">
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="py-4 py-md-5 bg-light">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-4 mb-md-5">Ką reikėtų žinoti prieš nuomojantis?</h2>
+        <section class="py-4 py-md-5 bg-light">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4 mb-md-5">Ką reikėtų žinoti prieš nuomojantis?</h2>
 
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
-                            <h3 class="text-center text-md-left">Apie įrangą</h3>
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
+                        <h3 class="text-center text-md-left">Apie įrangą</h3>
+                    </div>
+                    <div class="col-md-7">
+                        <p class="text-justify text-md-left">
+                            Šis XBOX modelis labiausiai tinka šventėms, vaikų gimtadieniams ar tiesiog linksmiems vakarams. Konsolė klientų pamėgta dėl šokių ir kitų judesio žaidimų, su kuriais smagus laikas garantuotas! Yra ir pulteliais valdomų žaidimų: šaudyklių, sporto žaidimų, lenktynių ir kitų. Keletas žaidimų yra skirtų būtent vaikams.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-4 mb-md-5">
+                    <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
+                        <h3 class="text-center text-md-left">Į komplektaciją įeina</h3>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="d-flex align-items-center mb-1">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            XBOX 360 Slim E konsolė
                         </div>
-                        <div class="col-md-7">
-                            <p class="text-justify text-md-left">
-                                Šis XBOX modelis labiausiai tinka šventėms, vaikų gimtadieniams ar tiesiog linksmiems vakarams. Konsolė klientų pamėgta dėl šokių ir kitų judesio žaidimų, su kuriais smagus laikas garantuotas! Yra ir pulteliais valdomų žaidimų: šaudyklių, sporto žaidimų, lenktynių ir kitų. Keletas žaidimų yra skirtų būtent vaikams.
+                        <div class="d-flex align-items-center mb-1">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            Kinect judesio kamera
+                        </div>
+                        <div class="d-flex align-items-center mb-1">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            Du belaidžiai pulteliai
+                        </div>
+                        <div class="d-flex align-items-center mb-1">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            Visi reikalingi laidai
+                        </div>
+                        <div class="d-flex align-items-center mb-1">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <p class="d-flex flex-wrap mb-0">
+                                Apie 30 žaidimų
+                                <span class="ml-2">
+                                    <a href="#zaidimu-sarasas"><small>(peržiūrėti sąrašą)</small></a>
+                                </span>
                             </p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row justify-content-center mb-4 mb-md-5">
-                        <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
-                            <h3 class="text-center text-md-left">Į komplektaciją įeina</h3>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="d-flex align-items-center mb-1">
-                                <i class="fas fa-check text-primary mr-3"></i>
-                                XBOX 360 Slim E konsolė
-                            </div>
-                            <div class="d-flex align-items-center mb-1">
-                                <i class="fas fa-check text-primary mr-3"></i>
-                                Kinect judesio kamera
-                            </div>
-                            <div class="d-flex align-items-center mb-1">
-                                <i class="fas fa-check text-primary mr-3"></i>
-                                Du belaidžiai pulteliai
-                            </div>
-                            <div class="d-flex align-items-center mb-1">
-                                <i class="fas fa-check text-primary mr-3"></i>
-                                Visi reikalingi laidai
-                            </div>
-                            <div class="d-flex align-items-center mb-1">
-                                <i class="fas fa-check text-primary mr-3"></i>
-                                <p class="d-flex flex-wrap mb-0">
-                                    Apie 30 žaidimų
-                                    <span class="ml-2">
-                                        <a href="#zaidimu-sarasas"><small>(peržiūrėti sąrašą)</small></a>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
+                        <h3 class="text-center text-md-left">Nuomos kaina</h3>
                     </div>
-
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
-                            <h3 class="text-center text-md-left">Nuomos kaina</h3>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="d-none d-sm-block">
-                                <table class="table">
-                                    <tr>
-                                        <th class="text-primary border-0">Parų skaičius:</th>
-                                        <td class="text-center border-0">1</td>
-                                        <td class="text-center border-0">2</td>
-                                        <td class="text-center border-0">3</td>
-                                        <td class="text-center border-0">4</td>
-                                        <td class="text-center border-0">5</td>
-                                        <td class="text-center border-0">6</td>
-                                        <td class="text-center border-0">7</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="text-primary">Nuomos kaina:</th>
-                                        <td class="text-center">10€</td>
-                                        <td class="text-center">15€</td>
-                                        <td class="text-center">20€</td>
-                                        <td class="text-center">25€</td>
-                                        <td class="text-center">30€</td>
-                                        <td class="text-center">35€</td>
-                                        <td class="text-center">35€</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            
-                            <table class="table d-sm-none">
+                    <div class="col-md-7">
+                        <div class="d-none d-sm-block">
+                            <table class="table">
                                 <tr>
-                                    <th class="text-center text-primary border-0">Parų skaičius:</th>
-                                    <th class="text-center text-primary border-0">Nuomos kaina:</th>
+                                    <th class="text-primary border-0">Parų skaičius:</th>
+                                    <td class="text-center border-0">1</td>
+                                    <td class="text-center border-0">2</td>
+                                    <td class="text-center border-0">3</td>
+                                    <td class="text-center border-0">4</td>
+                                    <td class="text-center border-0">5</td>
+                                    <td class="text-center border-0">6</td>
+                                    <td class="text-center border-0">7</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">10€</td>  
-                                </tr>
-                                <tr>
-                                    <td class="text-center">2</td>
+                                    <th class="text-primary">Nuomos kaina:</th>
+                                    <td class="text-center">10€</td>
                                     <td class="text-center">15€</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">3</td>
                                     <td class="text-center">20€</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">4</td>
                                     <td class="text-center">25€</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">5</td>
                                     <td class="text-center">30€</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">6</td>
                                     <td class="text-center">35€</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">7</td>
                                     <td class="text-center">35€</td>
                                 </tr>
                             </table>
                         </div>
+                        
+                        <table class="table d-sm-none">
+                            <tr>
+                                <th class="text-center text-primary border-0">Parų skaičius:</th>
+                                <th class="text-center text-primary border-0">Nuomos kaina:</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">10€</td>  
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">15€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">20€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">25€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td class="text-center">30€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td class="text-center">35€</td>
+                            </tr>
+                        </table>
                     </div>
-
                 </div>
-            </section>
 
-            <section class="bg-light-darker py-4 py-md-5">
-                <div id="kaip-issinuomoti" class="anchor container">
-                    <h2 class="text-center text-primary mb-4 mb-md-5">Kaip išsinuomoti?</h2>
-                    <div class="row">
-                        <div class="col-md-4 d-flex">
-                            <h2 class="text-primary text-large mt-negative-lg mr-3">1</h2>
-                            <div class="d-flex flex-column">
-                                <h5 class="text-left">Susisiekite su mumis</h5>
-                                <p class="text-left">Išsirinkę norimą išsinuomoti įrangą, paskambinkite mums numeriu <span><a href="tel:+37062114494">+370 621 14 494</a></span>. Jei įranga Jūsų norimu laiku nebus užimta, ją rezervuosime.</p>
-                            </div>
+            </div>
+        </section>
+
+        <section class="bg-light-darker py-4 py-md-5">
+            <div id="kaip-issinuomoti" class="anchor container">
+                <h2 class="text-center text-primary mb-4 mb-md-5">Kaip išsinuomoti?</h2>
+                <div class="row">
+                    <div class="col-md-4 d-flex">
+                        <h2 class="text-primary text-large mt-negative-lg mr-3">1</h2>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-left">Susisiekite su mumis</h5>
+                            <p class="text-left">Išsirinkę norimą išsinuomoti įrangą, paskambinkite mums numeriu <span><a href="tel:+37062114494">+370 621 14 494</a></span>. Jei įranga Jūsų norimu laiku nebus užimta, ją rezervuosime.</p>
                         </div>
-                        <div class="col-md-4 d-flex">
-                            <h2 class="text-primary text-large mt-negative-lg mr-3">2</h2>
-                            <div class="d-flex flex-column">
-                                <h5 class="text-left">Atvykite atsiimti</h5>
-                                <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Nemuno g. 26, Kaunas</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
-                            </div>
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <h2 class="text-primary text-large mt-negative-lg mr-3">2</h2>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-left">Atvykite atsiimti</h5>
+                            <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Nemuno g. 26, Kaunas</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
                         </div>
-                        <div class="col-md-4 d-flex">
-                            <h2 class="text-primary text-large mt-negative-lg mr-3">3</h2>
-                            <div class="d-flex flex-column">
-                                <h5 class="text-left">Mėgaukitės!</h5>
-                                <p class="text-left">Mėgaukites naujais įspūdžiais! Informacijos apie išsinuomotą daiktą rasite šioje svetainėje. Jei kils daugiau klausimų - būtinai susisiekite su mumis.</p>
-                            </div>
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <h2 class="text-primary text-large mt-negative-lg mr-3">3</h2>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-left">Mėgaukitės!</h5>
+                            <p class="text-left">Mėgaukites naujais įspūdžiais! Informacijos apie išsinuomotą daiktą rasite šioje svetainėje. Jei kils daugiau klausimų - būtinai susisiekite su mumis.</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="py-4 py-md-5">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-4 mb-md-5">Įranga jau jūsų namuose?</h2>
-                    
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
-                            <h3 class="text-center text-md-left">Įrangos pajungimas</h3>
+        <section class="py-4 py-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4 mb-md-5">Įranga jau jūsų namuose?</h2>
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
+                        <h3 class="text-center text-md-left">Naudojimas</h3>
+                    </div>
+                    <div class="col-md-7">
+                        <h5 class="pointer mb-3" data-toggle="collapse" data-target="#pulteliu-naudojimas">Pulteliai <i class="fas fa-chevron-down fa-xs ml-2"></i></h5>
+                        <div id="pulteliu-naudojimas" class="collapse mb-3 bg-light p-3 rounded-lg">
+                            <ol class="pl-3 mb-3">
+                                <li>Pultelio įjungimo mygtuką rasite pultelio viršuje ( <span><i class="fab fa-xbox"></i></span> ). Norint pultelį įjungti, palaikykite paspaudę įjungimo mygtuką. Pulteliui įsijungus mygtukas turėtų šviesti</li>
+                                <li>Norėdami naršyti konsolės meniu, naudokite kairiąją svietelę.</li>
+                                <li>Norėdami atidaryti, spauskite žalią (A) mygtuką.</li>
+                                <li>Norėdami grįžti atgal, spauskite raudoną (B) mygtuką</li>
+                                <li>Pultelių naudojimas žaidimuose yra skirtingas. Kuriuos mygtukus spausti žaidžiant bus nurodyta pačiame žaidime</li>
+                            </ol>
                         </div>
-                        <div class="col-md-7">
-                            <h5 class="text-primary mb-3">1. Konsolės įjungimas</h5>
-                            <ol class="pl-3 pl-md-0">
+                        <h5 class="pointer mb-3" data-toggle="collapse" data-target="#konsoles-pajungimas">Konsolės pajungimas <i class="fas fa-chevron-down fa-xs ml-2"></i></h5>
+                        <div id="konsoles-pajungimas" class="collapse mb-3 bg-light p-3 rounded-lg">
+                            <h6 class="text-primary text-uppercase mb-3">1. Konsolės įjungimas</h6>
+                            <ol class="pl-3 mb-3">
                                 <li>Prijunkite maitinimo laidą prie konsolės</li>
                                 <li>HDMI laidu prijunkite konsolę prie vaizdo transliavimo prietaiso (televizoriaus, monitoriaus, projektoriaus ar kt.)</li>
                                 <li>Paspauskite konsolės priekyje esantį įjungimo mygtuką ( <span><i class="fab fa-xbox"></i></span> ). Mygtukas turėtų pradėti šviesti</li>
                                 <li>Ekrane turėtumėte išvysti konsolės pradinį langą</li>
-                                <li>Pultelius įjunkite palaikydami jų viršuje esančius įjungimo mygtukus (taip pat juodi apskritimai su baltais kryželiais). Pulteliui įsijungus mygtukas turėtų šviesti.</li>
                             </ol>
-                            <h5 class="text-primary mb-3">2. Pultelių valdymas</h5>
-                            <ol class="pl-3 mb-4">
-                                <li>Prijunkite maitinimo laidą prie konsolės</li>
-                                <li>HDMI laidu prijunkite konsolę prie vaizdo transliavimo prietaiso (televizoriaus, monitoriaus, projektoriaus ar kt.)</li>
-                                <li>Paspauskite konsolės priekyje esantį įjungimo mygtuką ( <span><i class="fab fa-xbox"></i></span> ). Mygtukas turėtų pradėti šviesti</li>
-                                <li>Ekrane turėtumėte išvysti konsolės pradinį langą</li>
-                                <li>Pultelius įjunkite palaikydami jų viršuje esančius įjungimo mygtukus (taip pat juodi apskritimai su baltais kryželiais). Pulteliui įsijungus mygtukas turėtų šviesti.</li>
-                            </ol>
-                            <h5 class="text-primary mb-3">3. Žaidimų įjungimas</h5>
-                            <ol class="pl-3 mb-4">
+                            <h6 class="text-primary text-uppercase mb-3">2. Žaidimų įjungimas</h6>
+                            <ol class="pl-3 mb-3">
                                 <li>Norėdami įjungti žaidimą, spustelėkite pultelio įjungimo mygtuką ( <span><i class="fab fa-xbox"></i></span> ), kairiniame meniu pasirinkite „My games & apps“ ir „See all“</li>
                                 <li>Atsidariusiame lange rasite visus įrašytus žaidimus. Pasirinkite norimą žaidimą ir spauskite žalią (A) mygtuką</li>
                                 <li>Pilną prenumeruojamų žaidimų sąrašą rasite kairiniame meniu pasirinkę „Full library“ ir „Xbox Game Pass“. Iš sąrašo galėsite atsisiųsti bet kokius norimus prenumeruojamus žaidimus. Prieš siunčiant žaidimus būtinai apie tai praneškite mums</li>
                             </ol>
-                            <h5 class="text-primary mb-3">4. Baigus naudotis</h5>
+                            <h6 class="text-primary text-uppercase mb-3">3. Baigus naudotis</h6>
                             <ol class="pl-3 mb-4">
                                 <li>Baigę žaidsti palaikykite paspaudę pultelio įjungimo mygtuką ( <span><i class="fab fa-xbox"></i></span> ) ir paspauskite „Turn off console“</li>
                                 <li>Ištraukite visus laidus ir leiskite konsolei atvėsti</li>
@@ -328,504 +329,505 @@
                             </ol>
                         </div>
                     </div>
-
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
-                            <h3 class="text-center text-md-left">Nuomos pratęsimas</h3>
-                        </div>
-                        <div class="col-md-7">
-                            <p class="text-justify text-md-left">
-                                Norėdami pratęsti nuomą, susisiekite su mumis telefonu. Jį rasite mūsų kontaktų skiltyje. Jei įranga nebus rezervuota kitam klientui, galėsite prasitęsti nuomą pagal standartinę kainą. Kainoraštį rasite šiek tiek aukščiau.
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
-            </section>
-
-            <section class="bg-black py-4 py-md-5">
-                <div id="zaidimu-sarasas" class="anchor container">
-                    <h2 class="text-center text-white mb-4 mb-md-5">Žaidimai, kuriuos rekomenduojame išbandyti 🎮</h2>
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-8 col-md px-1">
-                            <h5 id="all-toggler" class="filter-toggler filter-toggler-active text-center text-uppercase pointer py-2 py-md-3">Visi</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="kinect-toggler" class="filter-toggler text-center text-uppercase pointer py-2 py-md-3">Judesio</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="sport-toggler" class="filter-toggler text-center text-uppercase pointer py-2 py-md-3">Sporto</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="kids-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Vaikams</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="story-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Siužetiniai</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="multiplayer-toggler" class="filter-toggler text-center pointer py-2 py-md-3">> 1 žaidėjui</h5>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 pr-md-4 mb-3 mb-md-0">
+                        <h3 class="text-center text-md-left">Nuomos pratęsimas</h3>
                     </div>
-
-                    <div>
-                        <div id="all-games" class="row justify-content-center align-items-stretch">
-                            <div id="justDance17" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kinect c-kids c-multiplayer">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/justdance2017.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Just Dance 2017</h5>
-                                        <p class="text-white">
-                                            Pasirink savo mėgstamiausią dainą iš 2017 metų katalogo, atkartok šokių judesius, rink taškus ir laimėk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="justDance15" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kinect c-kids c-multiplayer">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/just-dance-2015-header.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Just Dance 2015</h5>
-                                        <p class="text-white">
-                                            Pasirink savo mėgstamiausią dainą iš 2015 metų katalogo, atkartok šokių judesius, rink taškus ir laimėk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="kinectAdventures" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kinect c-kids c-multiplayer">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/kinect_adventures001.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Kinect Adventures</h5>
-                                        <p class="text-white">
-                                            Įveik kliūčių ruožą šokinėdamas, traukdamasis kairėn arba dešinėn bei atsitūpdamas. Atsargiai, neįpulk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="mortalCombat" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-multiplayer">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/mortal-combat.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Mortal Kombat</h5>
-                                        <p class="text-white">
-                                            Kovinis žaidimas pulteliais dviems asmenims. Išsirink savo mėgstamiausią personažą ir stok į kovą!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="fifa18" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-sport c-multiplayer">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/fifa18.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Fifa 18</h5>
-                                        <p class="text-white">
-                                            Fifa 2018 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="nba18" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-sport c-multiplayer">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/nba18.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">NBA 18</h5>
-                                        <p class="text-white">
-                                            NBA 2018 krepšinio žaidimas. Pelnyk lemtingą tašką ir tapk čempionu!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="gta5" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/gta5.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">GTA V</h5>
-                                        <p class="text-white">
-                                            Tai naujausia Grand Theft Auto dalis. Įvykdyk visas misijas ir laimėk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="tombRider" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/tombrider.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">The Rise of Tomb Rider</h5>
-                                        <p class="text-white">
-                                            Siužetinis nuotykių, kliūčių įveikimo žaidimas.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="fruitNinja" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/fruitninja.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Fruit Ninja</h5>
-                                        <p class="text-white">
-                                            Judrus ir linksmas žaidimas, kuriam prireiks greitos reakcijos ir tikslumo.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="justDance16" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/justdance2016.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Just Dance 2016</h5>
-                                        <p class="text-white">
-                                            Pasirink savo mėgstamiausią dainą iš 2016 metų katalogo, atkartok šokių judesius, rink taškus ir laimėk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="justDance4" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/justdance4.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Just Dance 4</h5>
-                                        <p class="text-white">
-                                            Pasirink savo mėgstamiausią dainą iš katalogo, atkartok šokių judesius, rink taškus ir laimėk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="kinectSports" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect c-sport">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/kinect-sports.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Kinect Sports</h5>
-                                        <p class="text-white">
-                                            Tai smagus įvairių sporto šakų žaidimas. Žaidime varžosi dvi komandos, taigi vienu metu gali žaisti daug žmonių!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="left4dead" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-horror c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/left4dead.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Left 4 Dead 2</h5>
-                                        <p class="text-white">
-                                            Pasaulį ištikus zombių apokalipsei, tu ir tavo komanda bandote išlikti gyvi. Ar pavyks apsiginti ir laimėti šį mūšį?
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="limbo" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/limbo.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Limbo</h5>
-                                        <p class="text-white">
-                                            Tai arkadinis žaidimas su siaubo elementais. Saugokis milžiniškų vorų ir stenkis išsigelbėti!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="justDance14" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/justdance2014.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Just Dance 2014</h5>
-                                        <p class="text-white">
-                                            Pasirink savo mėgstamiausią dainą iš 2014 metų katalogo, atkartok šokių judesius, rink taškus ir laimėk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="justDanceKids" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/justdance-kids.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Just Dance Kids 2014</h5>
-                                        <p class="text-white">
-                                            Šis šokių žaidimas sukurtas būtent vaikams. Atkartok šokių judesius, rink taškus ir laimėk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="rayman" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/rayman.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Rayman</h5>
-                                        <p class="text-white">
-                                            Tai linksmas arkadinis žaidimas. Išgelbėk savo įkalintus draugus eidamas per kliūčių ruožą!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="redDeadRedemption" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/red-dead-redemption.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Red Dead Redemption</h5>
-                                        <p class="text-white">
-                                            Nusikelk į vesterno laikus. Užsitaisyk revolverį, pakinkyk žirgą ir leiskis į nuotykius
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="minecraft" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/minecraft.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Minecraft</h5>
-                                        <p class="text-white">
-                                            
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="minecraftStory" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/minecraft_story.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Minecraft Story Mode</h5>
-                                        <p class="text-white">
-                                            
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="castleCrashers" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/castle-crashers.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Castle Crashers</h5>
-                                        <p class="text-white">
-                                            
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="portal2" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/portal2.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Portal 2</h5>
-                                        <p class="text-white">
-                                            Siužetinis ir strateginis nuotykių žaidimas.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="spongeBob" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/sponge-bob.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Sponge Bob</h5>
-                                        <p class="text-white">
-                                            Smagus nuotykių, kliūčių įveikimo žaidimas vienam arba dviems, sukurtas pagal populiarų „Kempiniuko Plačiakelnio“ serialą.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="kinectimals" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-kinect">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/kinectimals.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Kinectimals</h5>
-                                        <p class="text-white">
-                                            Augink savo pasirinktą laukinę katę. Duok jai vardą, paglostyk, žaisk su ja.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="simpsons" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/simpsons.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">The Simpsons Game</h5>
-                                        <p class="text-white">
-                                            Smagus nuotykių, kliūčių įveikimo žaidimas, sukurtas pagal populiarų „Simpsonų“ serialą.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="sonic" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/sonic.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Sonic Generations</h5>
-                                        <p class="text-white">
-                                            Arkadinis, klasikinis 2D žaidimas. Rink žiedus ir saugokis spyglių!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="dishonored" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/dishonored.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Dishonored</h5>
-                                        <p class="text-white">
-                                            
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="forzaHorizon" class="col-md-5 col-xl-4 mb-3 mb-md-4">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/forza-horizon.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Forza Horizon 2</h5>
-                                        <p class="text-white">
-                                            Vienas populiariausių lenktynių žaidimų
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="lego" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/lego.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Lego</h5>
-                                        <p class="text-white">
-                                            
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="farCry4" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/far-cry.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Far Cry 4</h5>
-                                        <p class="text-white">
-                                            
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="nba15" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-sport c-multiplayer">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/nba15.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">NBA 15</h5>
-                                        <p class="text-white">
-                                            NBA 2015 krepšinio žaidimas. Pelnyk lemtingą tašką ir tapk čempionu!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="fifa15" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-sport c-multiplayer">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="img/Xbox360-games/fifa15.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Fifa 15</h5>
-                                        <p class="text-white">
-                                            Fifa 2015 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-7">
+                        <p class="text-justify text-md-left">
+                            Norėdami pratęsti nuomą, susisiekite su mumis telefonu. Jį rasite mūsų kontaktų skiltyje. Jei įranga nebus rezervuota kitam klientui, galėsite prasitęsti nuomą pagal standartinę kainą. Kainoraštį rasite šiek tiek aukščiau.
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="bg-light d-none d-md-block py-4">
-                <div class="container">
-                    <div class="d-flex justify-content-center">
-                        <img src="img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/viewsonic-black.png" alt="" height="25">
+        <section class="bg-black py-4 py-md-5">
+            <div class="title-container position-relative mb-4 mb-md-5">
+                <div class="title">
+                    <h2 class="text-light">Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai</h2>
+                </div>
+            </div>
+            <div id="zaidimu-sarasas" class="anchor container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-8 col-md px-1">
+                        <h5 id="all-toggler" class="filter-toggler filter-toggler-active text-center text-uppercase pointer py-2 py-md-3">Visi</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="kinect-toggler" class="filter-toggler text-center text-uppercase pointer py-2 py-md-3">Judesio</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="sport-toggler" class="filter-toggler text-center text-uppercase pointer py-2 py-md-3">Sporto</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="kids-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Vaikams</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="story-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Siužetiniai</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="multiplayer-toggler" class="filter-toggler text-center pointer py-2 py-md-3">> 1 žaidėjui</h5>
                     </div>
                 </div>
-            </section>
 
-            <!-- FOOTER -->
+                <div>
+                    <div id="all-games" class="row justify-content-center align-items-stretch">
+                        <div id="justDance17" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kinect c-kids c-multiplayer">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/justdance2017.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Just Dance 2017</h5>
+                                    <p class="text-white">
+                                        Pasirink savo mėgstamiausią dainą iš 2017 metų katalogo, atkartok šokių judesius, rink taškus ir laimėk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="justDance15" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kinect c-kids c-multiplayer">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/just-dance-2015-header.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Just Dance 2015</h5>
+                                    <p class="text-white">
+                                        Pasirink savo mėgstamiausią dainą iš 2015 metų katalogo, atkartok šokių judesius, rink taškus ir laimėk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="kinectAdventures" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kinect c-kids c-multiplayer">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/kinect_adventures001.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Kinect Adventures</h5>
+                                    <p class="text-white">
+                                        Įveik kliūčių ruožą šokinėdamas, traukdamasis kairėn arba dešinėn bei atsitūpdamas. Atsargiai, neįpulk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mortalCombat" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-multiplayer">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/mortal-combat.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Mortal Kombat</h5>
+                                    <p class="text-white">
+                                        Kovinis žaidimas pulteliais dviems asmenims. Išsirink savo mėgstamiausią personažą ir stok į kovą!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fifa18" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-sport c-multiplayer">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/fifa18.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Fifa 18</h5>
+                                    <p class="text-white">
+                                        Fifa 2018 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nba18" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-sport c-multiplayer">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/nba18.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">NBA 18</h5>
+                                    <p class="text-white">
+                                        NBA 2018 krepšinio žaidimas. Pelnyk lemtingą tašką ir tapk čempionu!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gta5" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/gta5.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">GTA V</h5>
+                                    <p class="text-white">
+                                        Tai naujausia Grand Theft Auto dalis. Įvykdyk visas misijas ir laimėk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tombRider" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/tombrider.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">The Rise of Tomb Rider</h5>
+                                    <p class="text-white">
+                                        Siužetinis nuotykių, kliūčių įveikimo žaidimas.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fruitNinja" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/fruitninja.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Fruit Ninja</h5>
+                                    <p class="text-white">
+                                        Judrus ir linksmas žaidimas, kuriam prireiks greitos reakcijos ir tikslumo.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="justDance16" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/justdance2016.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Just Dance 2016</h5>
+                                    <p class="text-white">
+                                        Pasirink savo mėgstamiausią dainą iš 2016 metų katalogo, atkartok šokių judesius, rink taškus ir laimėk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="justDance4" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/justdance4.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Just Dance 4</h5>
+                                    <p class="text-white">
+                                        Pasirink savo mėgstamiausią dainą iš katalogo, atkartok šokių judesius, rink taškus ir laimėk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="kinectSports" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect c-sport">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/kinect-sports.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Kinect Sports</h5>
+                                    <p class="text-white">
+                                        Tai smagus įvairių sporto šakų žaidimas. Žaidime varžosi dvi komandos, taigi vienu metu gali žaisti daug žmonių!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="left4dead" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-horror c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/left4dead.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Left 4 Dead 2</h5>
+                                    <p class="text-white">
+                                        Pasaulį ištikus zombių apokalipsei, tu ir tavo komanda bandote išlikti gyvi. Ar pavyks apsiginti ir laimėti šį mūšį?
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="limbo" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/limbo.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Limbo</h5>
+                                    <p class="text-white">
+                                        Tai arkadinis žaidimas su siaubo elementais. Saugokis milžiniškų vorų ir stenkis išsigelbėti!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="justDance14" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/justdance2014.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Just Dance 2014</h5>
+                                    <p class="text-white">
+                                        Pasirink savo mėgstamiausią dainą iš 2014 metų katalogo, atkartok šokių judesius, rink taškus ir laimėk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="justDanceKids" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer c-kinect">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/justdance-kids.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Just Dance Kids 2014</h5>
+                                    <p class="text-white">
+                                        Šis šokių žaidimas sukurtas būtent vaikams. Atkartok šokių judesius, rink taškus ir laimėk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rayman" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/rayman.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Rayman</h5>
+                                    <p class="text-white">
+                                        Tai linksmas arkadinis žaidimas. Išgelbėk savo įkalintus draugus eidamas per kliūčių ruožą!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="redDeadRedemption" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/red-dead-redemption.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Red Dead Redemption</h5>
+                                    <p class="text-white">
+                                        Nusikelk į vesterno laikus. Užsitaisyk revolverį, pakinkyk žirgą ir leiskis į nuotykius
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="minecraft" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/minecraft.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Minecraft</h5>
+                                    <p class="text-white">
+                                        
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="minecraftStory" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/minecraft_story.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Minecraft Story Mode</h5>
+                                    <p class="text-white">
+                                        
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="castleCrashers" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/castle-crashers.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Castle Crashers</h5>
+                                    <p class="text-white">
+                                        
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="portal2" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/portal2.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Portal 2</h5>
+                                    <p class="text-white">
+                                        Siužetinis ir strateginis nuotykių žaidimas.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="spongeBob" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-multiplayer">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/sponge-bob.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Sponge Bob</h5>
+                                    <p class="text-white">
+                                        Smagus nuotykių, kliūčių įveikimo žaidimas vienam arba dviems, sukurtas pagal populiarų „Kempiniuko Plačiakelnio“ serialą.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="kinectimals" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids c-kinect">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/kinectimals.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Kinectimals</h5>
+                                    <p class="text-white">
+                                        Augink savo pasirinktą laukinę katę. Duok jai vardą, paglostyk, žaisk su ja.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="simpsons" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/simpsons.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">The Simpsons Game</h5>
+                                    <p class="text-white">
+                                        Smagus nuotykių, kliūčių įveikimo žaidimas, sukurtas pagal populiarų „Simpsonų“ serialą.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sonic" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/sonic.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Sonic Generations</h5>
+                                    <p class="text-white">
+                                        Arkadinis, klasikinis 2D žaidimas. Rink žiedus ir saugokis spyglių!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dishonored" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/dishonored.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Dishonored</h5>
+                                    <p class="text-white">
+                                        
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="forzaHorizon" class="col-md-5 col-xl-4 mb-3 mb-md-4">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/forza-horizon.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Forza Horizon 2</h5>
+                                    <p class="text-white">
+                                        Vienas populiariausių lenktynių žaidimų
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="lego" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/lego.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Lego</h5>
+                                    <p class="text-white">
+                                        
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="farCry4" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/far-cry.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Far Cry 4</h5>
+                                    <p class="text-white">
+                                        
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nba15" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-sport c-multiplayer">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/nba15.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">NBA 15</h5>
+                                    <p class="text-white">
+                                        NBA 2015 krepšinio žaidimas. Pelnyk lemtingą tašką ir tapk čempionu!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fifa15" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-sport c-multiplayer">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="img/Xbox360-games/fifa15.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Fifa 15</h5>
+                                    <p class="text-white">
+                                        Fifa 2015 futbolo žaidimas. Įspirk lemtingą įvartį ir tapk čempionu!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <footer class="pt-4 pt-md-5">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-4">Susisiekime</h2>
-                    <div class="row pb-4 pb-md-5">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-primary">
-                                Susipažink
-                            </h5>
-                            <p class="pr-md-3 mb-0">
-                                Party Play!<br>
-                                Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
-                            </p>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-primary">
-                                Išsinuomok
-                            </h5>
-                            <a href="virtuali-realybe.html" class="d-block link-hover mb-1">👓 Virtualios realybės akiniai</a>
-                            <a href="zaidimu-konsoles.html" class="d-block link-hover mb-1">🎮 Žaidimų konsolės</a>
-                            <a href="projektoriai.html" class="d-block link-hover mb-1">📽️ Projektoriai</a>
-                            <a href="garso-iranga.html" class="d-block link-hover">🎵 Garso įranga</a>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="text-primary">
-                                Susisiek
-                            </h5>
-                            <a href="tel:+37062114494" class="d-block link-hover mb-1">
-                                Tel. nr.: +370 621 14 494
+        <section class="bg-light d-none d-md-block py-4">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <img src="img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/viewsonic-black.png" alt="" height="25">
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="pt-4 pt-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">Susisiekime</h2>
+                <div class="row pb-4 pb-md-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-primary">
+                            Susipažink
+                        </h5>
+                        <p class="pr-md-3 mb-0">
+                            Party Play!<br>
+                            Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-primary">
+                            Išsinuomok
+                        </h5>
+                        <a href="virtuali-realybe.html" class="d-block link-hover mb-1">👓 Virtualios realybės akiniai</a>
+                        <a href="zaidimu-konsoles.html" class="d-block link-hover mb-1">🎮 Žaidimų konsolės</a>
+                        <a href="projektoriai.html" class="d-block link-hover mb-1">📽️ Projektoriai</a>
+                        <a href="garso-iranga.html" class="d-block link-hover">🎵 Garso įranga</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-primary">
+                            Susisiek
+                        </h5>
+                        <a href="tel:+37062114494" class="d-block link-hover mb-1">
+                            Tel. nr.: +370 621 14 494
+                        </a>
+                        <a href="mailto:info@partyplay.lt" class="d-block link-hover mb-1">
+                            El. paštas: info@partyplay.lt
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover">
+                            Adresas: Nemuno g. 26, Kaunas<br>
+                        </a>
+                        <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
+                        <div class="d-block mt-2">
+                            <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover mr-2">
+                                <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="mailto:info@partyplay.lt" class="d-block link-hover mb-1">
-                                El. paštas: info@partyplay.lt
+                            <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover">
-                                Adresas: Nemuno g. 26, Kaunas<br>
-                            </a>
-                            <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
-                            <div class="d-block mt-2">
-                                <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover mr-2">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
-                    <hr class="my-0">
                 </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-light py-4">
-                    <p class="mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
-                    <p class="mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover">Ficus Media 🌱</a></p>
-                </div>
-            </footer>
-
-        </div>
+                <hr class="my-0">
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-light py-4">
+                <p class="mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
+                <p class="mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover">Ficus Media 🌱</a></p>
+            </div>
+        </footer>
 
         <!-- MODALS -->
 
@@ -850,7 +852,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/butter.js"></script>
         <script src="js/animate.js"></script>
         <script src="js/script.js"></script>
 

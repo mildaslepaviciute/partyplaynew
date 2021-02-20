@@ -66,8 +66,9 @@
                 <a href="index.html" class="navbar-brand">
                     <img src="img/Logo/logo.png" width="130" alt="">
                 </a>
-                <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
-                    <ion-icon name="menu-outline"></ion-icon>
+                <button id="main-menu-toggler" class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                    <img src="img/icons/menu-open.png" id="main-menu-open" alt="meniu-ikona" width="30" class="mr-auto">
+                    <img src="img/icons/menu-close.png" id="main-menu-close" alt="meniu-ikona" width="23" class="mr-auto d-none">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <hr class="d-md-none my-2">
@@ -125,104 +126,100 @@
             </div>
         </nav>
 
-        <div id="butter" class="butter-bottom">
+        <!-- SECTIONS -->
 
-            <!-- SECTIONS -->
+        <section class="py-4 py-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-3">Siūlome įsigyti dovanų kuponus!</h2>
+                <p class="text-center w-md-50 mx-auto mb-4">
+                    Įsigykite kuponus betkuriai mūsų siūlomai įrangai jūsų norimam laikotarpiui! Kainas rasite mūsų daiktų kataloge. Norėdami užsisakyti kuponą, <span><a href="kontaktai.html">susisiekite su mumis</a></span>.
+                </p>
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <a href="img/Gifts/1.png" target="_blank">
+                            <img src="img/Gifts/1.png" alt="" class="img-fluid rounded-lg">
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <a href="img/Gifts/2.png" target="_blank">
+                            <img src="img/Gifts/2.png" alt="" class="img-fluid rounded-lg">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="img/Gifts/3.png" target="_blank">
+                            <img src="img/Gifts/3.png" alt="" class="img-fluid rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <section class="py-4 py-md-5">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-3">Siūlome įsigyti dovanų kuponus!</h2>
-                    <p class="text-center w-md-50 mx-auto mb-4">
-                        Įsigykite kuponus betkuriai mūsų siūlomai įrangai jūsų norimam laikotarpiui! Kainas rasite mūsų daiktų kataloge. Norėdami užsisakyti kuponą, <span><a href="kontaktai.html">susisiekite su mumis</a></span>.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <a href="img/Gifts/1.png" target="_blank">
-                                <img src="img/Gifts/1.png" alt="" class="img-fluid rounded-lg">
+        <section class="bg-light d-none d-md-block py-4">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <img src="img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="img/Brands/viewsonic-black.png" alt="" height="25">
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="bg-black pt-4 pt-md-5">
+            <div class="container">
+                <h2 class="text-center text-light mb-4">Susisiekime</h2>
+                <div class="row pb-4 pb-md-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-light">
+                            Susipažink
+                        </h5>
+                        <p class="text-secondary pr-md-3 mb-0">
+                            Party Play!<br>
+                            Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-light">
+                            Išsinuomok
+                        </h5>
+                        <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
+                        <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
+                        <a href="projektoriai.html" class="d-block link-hover-light mb-1">📽️ Projektoriai</a>
+                        <a href="garso-iranga.html" class="d-block link-hover-light">🎵 Garso įranga</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">
+                            Susisiek
+                        </h5>
+                        <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
+                            Tel. nr.: +370 621 14 494
+                        </a>
+                        <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
+                            El. paštas: info@partyplay.lt
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
+                            Adresas: Nemuno g. 26, Kaunas<br>
+                        </a>
+                        <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
+                        <div class="d-block mt-2">
+                            <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover-light mr-2">
+                                <i class="fab fa-facebook-f"></i>
                             </a>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <a href="img/Gifts/2.png" target="_blank">
-                                <img src="img/Gifts/2.png" alt="" class="img-fluid rounded-lg">
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="img/Gifts/3.png" target="_blank">
-                                <img src="img/Gifts/3.png" alt="" class="img-fluid rounded-lg">
+                            <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover-light">
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="bg-light d-none d-md-block py-4">
-                <div class="container">
-                    <div class="d-flex justify-content-center">
-                        <img src="img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="img/Brands/viewsonic-black.png" alt="" height="25">
-                    </div>
+                <hr class="my-0">
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-black py-4">
+                    <p class="text-secondary mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
+                    <p class="text-secondary mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover-light">Ficus Media 🌱</a></p>
                 </div>
-            </section>
-
-            <!-- FOOTER -->
-
-            <footer class="bg-black pt-4 pt-md-5">
-                <div class="container">
-                    <h2 class="text-center text-light mb-4">Susisiekime</h2>
-                    <div class="row pb-4 pb-md-5">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-light">
-                                Susipažink
-                            </h5>
-                            <p class="text-secondary pr-md-3 mb-0">
-                                Party Play!<br>
-                                Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
-                            </p>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-light">
-                                Išsinuomok
-                            </h5>
-                            <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
-                            <a href="zaidimu-konsoles.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
-                            <a href="projektoriai.html" class="d-block link-hover-light mb-1">📽️ Projektoriai</a>
-                            <a href="garso-iranga.html" class="d-block link-hover-light">🎵 Garso įranga</a>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="text-light">
-                                Susisiek
-                            </h5>
-                            <a href="tel:+37062114494" class="d-block link-hover-light mb-1">
-                                Tel. nr.: +370 621 14 494
-                            </a>
-                            <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
-                                El. paštas: info@partyplay.lt
-                            </a>
-                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
-                                Adresas: Nemuno g. 26, Kaunas<br>
-                            </a>
-                            <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
-                            <div class="d-block mt-2">
-                                <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover-light mr-2">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover-light">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="my-0">
-                    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-black py-4">
-                        <p class="text-secondary mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
-                        <p class="text-secondary mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover-light">Ficus Media 🌱</a></p>
-                    </div>
-                </div>
-            </footer>
-
-        </div>
+            </div>
+        </footer>
 
         <!-- MODALS -->
 
@@ -247,7 +244,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/butter.js"></script>
         <script src="js/animate.js"></script>
         <script src="js/script.js"></script>
 

@@ -66,8 +66,9 @@
                 <a href="index.html" class="navbar-brand">
                     <img src="../img/Logo/logo.png" width="130" alt="">
                 </a>
-                <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
-                    <ion-icon name="menu-outline"></ion-icon>
+                <button id="main-menu-toggler" class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                    <img src="../img/icons/menu-open.png" id="main-menu-open" alt="meniu-ikona" width="30" class="mr-auto">
+                    <img src="../img/icons/menu-close.png" id="main-menu-close" alt="meniu-ikona" width="23" class="mr-auto d-none">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <hr class="d-md-none my-2">
@@ -120,534 +121,672 @@
             </div>
         </nav>
 
-        <div id="butter" class="butter-bottom">
+        <!-- HEADER -->
 
-            <!-- HEADER -->
-
-            <header class="bg-vr-header">
-                <div class="h-100 d-flex flex-column align-items-center justify-content-center px-2">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <h1 class="text-center text-white mt-2 js--wp-1">Virtuali<br>realybė</h1>
-                                <h3 class="text-center text-white mb-3 pb-md-2 js--wp-2">Jūsų namuose</h3>
-                                <div class="d-flex">
-                                    <a href="#kaip-issinuomoti" class="btn btn-lg btn-gradient rounded-pill text-white mx-auto js--wp-3">Išsinuomoti!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <!-- SECTIONS -->
-
-            <section class="shine-bg py-4 py-md-5">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-3">Kodėl verta?</h2>
-                    <p class="text-center w-md-50 mx-auto mb-4">
-                        Svarstote, ar verta nuomotis virtualios realybės akinius? Štai keletas priežasčių, kodėl mūsų atsakymas būtų „TAIP“:
-                    </p>
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">💸</h4>
-                            <h5 class="text-center mb-3">Sutaupykite</h5>
-                            <p class="text-center">
-                                Išbandykite įrangą prieš pirkdami. Taip įsitikinsite, kad įranga jums tikrai reikalinga ir išvengsite nereikalingų išlaidų.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🌱</h4>
-                            <h5 class="text-center mb-3">Būkite tvarūs</h5>
-                            <p class="text-center">
-                                Įrangos nuoma yra draugiškesnis aplinkai sprendimas. Įranga naudojama iš rankų į rankas, todėl sumažinamas išteklių naudojimas.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🤸‍♀️</h4>
-                            <h5 class="text-center mb-3">Pajudėkite</h5>
-                            <p class="text-center">
-                                Virtuali realybė leidžia aktyviai dalyvauti aplinkoje, joje judėti ar net sportuoti. Naujausia įranga yra itin komaktiška ir nevaržo jūsų judesių.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 d-flex flex-column">
-                            <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🎉</h4>
-                            <h5 class="text-center mb-3">Švęskite</h5>
-                            <p class="text-center">
-                                Trūksta idėjų, kaip paįvairinti savo šventę, renginį, ar tiesiog paprastą vakarą? Turime Jums pasiūlymą - išbandykite virtualią relybę!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="iranga" class="pb-4 pb-md-5">
-                <div class="container">
-                    <div class="row flex-md-row-reverse align-items-center">
-                        <div class="col-md-6 pl-lg-4 mb-3 mb-md-0">
-                            <img src="../img/Devices/questt2.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-6 pr-lg-4">
-                            <h2 class="text-primary text-center text-md-left mb-3">Oculus Quest 2</h2>
-                            <p class="text-justify text-md-left">
-                                Šie virtualios realybės akiniai - geresni, greitesni ir patogesni nei pirmoji Quest versija. Žaidimai ir kamera integruoti akinių viduje, nereikalingi jokie papildomi laidai ar priedėliai. Įranga lengva, nereikialauja papildomų rūpesčių sujungiant jungtis, patogi nešioti ir judėti erdvėje. Nuotaikingi, įtraukiantys nuotykių, veiksmo, siaubo ir kiti žaidimai puikiai tiks norint smagiai praleisti laiką, šventėms ir kitiems renginiams.
-                            </p>
-                            <div class="d-flex">
-                                <a href="oculus-quest-2.html" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto ml-md-0">Domina!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="pb-4 pb-md-5">
+        <header class="bg-vr-header">
+            <div class="h-100 d-flex flex-column align-items-center justify-content-center px-2">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-md-6 pr-lg-4 mb-3 mb-md-0">
-                            <img src="../img/Devices/questt.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-6 pl-lg-4">
-                            <h2 class="text-primary text-center text-md-left mb-3">Oculus Quest</h2>
-                            <p class="text-justify text-md-left">
-                                Patogumas pirmiausia! VR revoliuciją sukėlęs pirmasis Oculus modelis yra itin kompaktiškas ir paprastas naudoti. Žaidimai ir kamera integruoti akinių viduje, nereikalingi jokie papildomi laidai ar priedėliai. Įranga lengva, nereikialauja papildomų rūpesčių sujungiant jungtis, patogi nešioti ir judėti erdvėje. Įranga puikiai tinka šventėms ir kitiems renginiams. Nuotaikingi, įtraukiantys nuotykių, veiksmo, siaubo ir kiti žaidimai puikiai tiks norint smagiai praleisti laiką.
-                            </p>
+                        <div class="col">
+                            <h1 class="text-center text-white mt-2 js--wp-1">Virtuali<br>realybė</h1>
+                            <h3 class="text-center text-white mb-3 pb-md-2 js--wp-2">Jūsų namuose</h3>
                             <div class="d-flex">
-                                <a href="oculus-quest.html" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto ml-md-0">Domina!</a>
+                                <a href="#kaip-issinuomoti" class="btn btn-lg btn-gradient rounded-pill text-white mx-auto js--wp-3">Išsinuomoti!</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </header>
 
-            <section class="bg-light py-4 py-md-5">
-                <div id="kaip-issinuomoti" class="anchor container">
-                    <h2 class="text-center text-primary mb-4">Kaip išsinuomoti?</h2>
-                    <div class="row">
-                        <div class="col-md-4 d-flex">
-                            <h2 class="text-primary text-large mt-negative-lg mr-3">1</h2>
-                            <div class="d-flex flex-column">
-                                <h5 class="text-left">Susisiekite su mumis</h5>
-                                <p class="text-left">Išsirinkę norimą išsinuomoti įrangą, paskambinkite mums numeriu <span><a href="tel:+370638802184">+370 638 80 218</a></span>. Jei įranga Jūsų norimu laiku nebus užimta, ją rezervuosime.</p>
+        <!-- SECTIONS -->
+
+        <section class="shine-bg py-4 py-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-3">Kodėl verta?</h2>
+                <p class="text-center w-md-50 mx-auto mb-4">
+                    Svarstote, ar verta nuomotis virtualios realybės akinius? Štai keletas priežasčių, kodėl mūsų atsakymas būtų „TAIP“:
+                </p>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 d-flex flex-column">
+                        <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">💸</h4>
+                        <h5 class="text-center mb-3">Sutaupykite</h5>
+                        <p class="text-center">
+                            Išbandykite įrangą prieš pirkdami. Taip įsitikinsite, kad įranga jums tikrai reikalinga ir išvengsite nereikalingų išlaidų.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex flex-column">
+                        <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🌱</h4>
+                        <h5 class="text-center mb-3">Būkite tvarūs</h5>
+                        <p class="text-center">
+                            Įrangos nuoma yra draugiškesnis aplinkai sprendimas. Įranga naudojama iš rankų į rankas, todėl sumažinamas išteklių naudojimas.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex flex-column">
+                        <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🤸‍♀️</h4>
+                        <h5 class="text-center mb-3">Pajudėkite</h5>
+                        <p class="text-center">
+                            Virtuali realybė leidžia aktyviai dalyvauti aplinkoje, joje judėti ar net sportuoti. Naujausia įranga yra itin komaktiška ir nevaržo jūsų judesių.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex flex-column">
+                        <h4 class="text-center rounded-circle bg-light mx-auto p-3 p-md-4 mb-3">🎉</h4>
+                        <h5 class="text-center mb-3">Švęskite</h5>
+                        <p class="text-center">
+                            Trūksta idėjų, kaip paįvairinti savo šventę, renginį, ar tiesiog paprastą vakarą? Turime Jums pasiūlymą - išbandykite virtualią relybę!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="iranga" class="pb-4 pb-md-5">
+            <div class="container">
+                <div class="row flex-md-row-reverse align-items-center">
+                    <div class="col-md-6 pl-lg-4 mb-3 mb-md-0">
+                        <img src="../img/Devices/questt2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 pr-lg-4">
+                        <h2 class="text-primary text-center text-md-left mb-3">Oculus Quest 2</h2>
+                        <p class="text-justify text-md-left">
+                            Šie virtualios realybės akiniai - geresni, greitesni ir patogesni nei pirmoji Quest versija. Žaidimai ir kamera integruoti akinių viduje, nereikalingi jokie papildomi laidai ar priedėliai. Įranga lengva, nereikialauja papildomų rūpesčių sujungiant jungtis, patogi nešioti ir judėti erdvėje. Nuotaikingi, įtraukiantys nuotykių, veiksmo, siaubo ir kiti žaidimai puikiai tiks norint smagiai praleisti laiką, šventėms ir kitiems renginiams.
+                        </p>
+                        <div class="d-flex">
+                            <a href="oculus-quest-2.html" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto ml-md-0">Sužinoti daugiau</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-4 pb-md-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 pr-lg-4 mb-3 mb-md-0">
+                        <img src="../img/Devices/questt.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 pl-lg-4">
+                        <h2 class="text-primary text-center text-md-left mb-3">Oculus Quest</h2>
+                        <p class="text-justify text-md-left">
+                            Patogumas pirmiausia! VR revoliuciją sukėlęs pirmasis Oculus modelis yra itin kompaktiškas ir paprastas naudoti. Žaidimai ir kamera integruoti akinių viduje, nereikalingi jokie papildomi laidai ar priedėliai. Įranga lengva, nereikialauja papildomų rūpesčių sujungiant jungtis, patogi nešioti ir judėti erdvėje. Įranga puikiai tinka šventėms ir kitiems renginiams. Nuotaikingi, įtraukiantys nuotykių, veiksmo, siaubo ir kiti žaidimai puikiai tiks norint smagiai praleisti laiką.
+                        </p>
+                        <div class="d-flex">
+                            <a href="oculus-quest.html" class="btn btn-lg btn-gradient rounded-pill text-white shadow mx-auto ml-md-0">Sužinoti daugiau</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light py-4 py-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">Kainos</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <h3 class="text-center text-md-left">Oculus Quest</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-none d-sm-block">
+                            <table class="table">
+                                <tr>
+                                    <th class="text-primary border-0">Parų skaičius:</th>
+                                    <td class="text-center border-0">1</td>
+                                    <td class="text-center border-0">2</td>
+                                    <td class="text-center border-0">3</td>
+                                    <td class="text-center border-0">4</td>
+                                    <td class="text-center border-0">5</td>
+                                    <td class="text-center border-0">6</td>
+                                    <td class="text-center border-0">7</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-primary">Nuomos kaina:</th>
+                                    <td class="text-center">25€</td>
+                                    <td class="text-center">40€</td>
+                                    <td class="text-center">55€</td>
+                                    <td class="text-center">70€</td>
+                                    <td class="text-center">80€</td>
+                                    <td class="text-center">90€</td>
+                                    <td class="text-center">100€</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <table class="table d-sm-none">
+                            <tr>
+                                <th class="text-center text-primary border-0">Parų skaičius:</th>
+                                <th class="text-center text-primary border-0">Nuomos kaina:</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">25€</td>  
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">40€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">55€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">70€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td class="text-center">80€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td class="text-center">90€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td class="text-center">100€</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-4">
+                    <div class="col-md-4">
+                        <h3 class="text-center text-md-left">Oculus Quest 2</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-none d-sm-block">
+                            <table class="table">
+                                <tr>
+                                    <th class="text-primary border-0">Parų skaičius:</th>
+                                    <td class="text-center border-0">1</td>
+                                    <td class="text-center border-0">2</td>
+                                    <td class="text-center border-0">3</td>
+                                    <td class="text-center border-0">4</td>
+                                    <td class="text-center border-0">5</td>
+                                    <td class="text-center border-0">6</td>
+                                    <td class="text-center border-0">7</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-primary">Nuomos kaina:</th>
+                                    <td class="text-center">30€</td>
+                                    <td class="text-center">50€</td>
+                                    <td class="text-center">70€</td>
+                                    <td class="text-center">90€</td>
+                                    <td class="text-center">110€</td>
+                                    <td class="text-center">120€</td>
+                                    <td class="text-center">130€</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <table class="table d-sm-none">
+                            <tr>
+                                <th class="text-center text-primary border-0">Parų skaičius:</th>
+                                <th class="text-center text-primary border-0">Nuomos kaina:</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">30€</td>  
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">50€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">70€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">90€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td class="text-center">110€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td class="text-center">120€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td class="text-center">130€</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-4 py-md-5">
+            <div id="kaip-issinuomoti" class="anchor container">
+                <h2 class="text-center text-primary mb-4">Kaip išsinuomoti?</h2>
+                <div class="row">
+                    <div class="col-md-4 d-flex">
+                        <h2 class="text-primary text-large mt-negative-lg mr-3">1</h2>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-left">Susisiekite su mumis</h5>
+                            <p class="text-left">Išsirinkę norimą išsinuomoti įrangą, paskambinkite mums numeriu <span><a href="tel:+370638802184">+370 638 80 218</a></span>. Jei įranga Jūsų norimu laiku nebus užimta, ją rezervuosime.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <h2 class="text-primary text-large mt-negative-lg mr-3">2</h2>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-left">Atvykite atsiimti</h5>
+                            <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Nemuno g. 26, Kaunas</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-start">
+                        <h2 class="text-primary text-large mt-negative-lg mr-3">3</h2>
+                        <div class="d-flex flex-column">
+                            <h5 class="text-left">Mėgaukitės!</h5>
+                            <p class="text-left">Mėgaukites naujais įspūdžiais! Informacijos apie išsinuomotą daiktą rasite šioje svetainėje. Jei kils daugiau klausimų - būtinai susisiekite su mumis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black py-4 py-md-5">
+            <div class="title-container position-relative mb-4 mb-md-5">
+                <div class="title">
+                    <h2 class="text-light">Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai 🎮 Žaidimai</h2>
+                </div>
+            </div>
+            <div id="zaidimu-sarasas" class="anchor container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-8 col-md px-1">
+                        <h5 id="all-toggler" class="filter-toggler filter-toggler-active text-center text-uppercase pointer py-2 py-md-3">Visi</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="active-toggler" class="filter-toggler text-center text-uppercase pointer py-2 py-md-3">Aktyvūs</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="story-toggler" class="filter-toggler text-center text-uppercase pointer py-2 py-md-3">Siužetiniai</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="experience-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Patirtys</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="kids-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Vaikams</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="shoot-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Šaudyklės</h5>
+                    </div>
+                    <div class="col-8 col-md px-1">
+                        <h5 id="horror-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Siaubo</h5>
+                    </div>
+                </div>
+                <div>
+                    <div id="all-games" class="row justify-content-center align-items-stretch">
+                        <div id="beatSaber" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/beatsaber.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Beat Saber</h5>
+                                    <p class="text-white">
+                                        Tai vienas iš populiariausių virtualios realybės žaidimų. Turėsite judėti greitai ir tiksliai, kad surinktumėte kuo daugiau taškų. Išbandykite savo reakciją muzikos ritmu!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex">
-                            <h2 class="text-primary text-large mt-negative-lg mr-3">2</h2>
-                            <div class="d-flex flex-column">
-                                <h5 class="text-left">Atvykite atsiimti</h5>
-                                <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Nemuno g. 26, Kaunas</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
+                        <div id="acron" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/acron.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Acron</h5>
+                                    <p class="text-white">
+                                        Šis liksmas nuotykių žaidimas tinka didesnei žmonių komapnijai. Žaidimas unikalus tuo, kad jį gali žaisti keli asmenys tuo pačiu metu - vienas su virtualios realybės akiniais, o kiti - per mobiliuosius telefonus.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex align-items-start">
-                            <h2 class="text-primary text-large mt-negative-lg mr-3">3</h2>
-                            <div class="d-flex flex-column">
-                                <h5 class="text-left">Mėgaukitės!</h5>
-                                <p class="text-left">Mėgaukites naujais įspūdžiais! Informacijos apie išsinuomotą daiktą rasite šioje svetainėje. Jei kils daugiau klausimų - būtinai susisiekite su mumis.</p>
+                        <div id="blaston" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active c-kids c-shoot">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/blaston.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Blaston</h5>
+                                    <p class="text-white">
+                                        Mėgsti dvikovas? Kraujas verda tik tada kai varžaisi su  tikrais žmonėmis? Tuomet laikas patikrinti savo reakciją, greitį bei sumanumą Blaston arenoje. Dar geriau - į dvikovą kviesk draugą!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="superhot" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-shoot">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/superhot.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Super Hot</h5>
+                                    <p class="text-white">
+                                        Tai loginis šaudymo žaidimas matricos pasaulyje. Šiame žaidime laiko tėkmė priklauso nuo žaidžiančiojo judesių spartumo. Taigi kiekvienas judesys yra svarbus! Gerai apgalvok savo strategiją ir - pirmyn!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="richiesPlank" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-experience">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/richiesplankexperience.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Richie's Plank Experience</h5>
+                                    <p class="text-white">
+                                        Ar išdrįsi pažvelgti žemyn nuo dangoraižio viršaus? O ar išdrįsi užlipti ant šitokiame aukštyje pastatyto liepto? Nugalėk savo baimę!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fruitNinja" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/fruitninja.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Fruit Ninja</h5>
+                                    <p class="text-white">
+                                        Judrus, nuotaikingas ir Trumpas žaidimas Fruit Ninja abejingų nepaliks nei vaikų, nei suaugusių. Žaidimas pareikalaus greitos reakcijos ir tikslumo. Atsargiai - saugokis bombų!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="freddy" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-horror">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/fivenightsatfreddys.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Five Nights at Freddy's</h5>
+                                    <p class="text-white">
+                                        Jeigu animacinių personažų Freddy, Bonnie ir Chica vardai tau nėra girdėti, nesijaudink, nuo šiol juos atsiminsi ilgam. Žinoma, jeigu tik liksi gyvas.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="jobSimulator" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/jobsimulator.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Job Simulator</h5>
+                                    <p class="text-white">
+                                        Žaidimas patiks tiems, kuriems nepakanka vien stebėti žaidimo aplinką, ir norisi viską, kas yra aplink paimti, atidaryti, sudaužyti. Gamink maistą, remontuok mašiną, dirbk kasoje, nusiausk ofisą. Visa laisvė tau!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="deathHorizon" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story c-shoot c-horror">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/deathhorizont.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Death Horizon</h5>
+                                    <p class="text-white">
+                                        Zombių šaudynės - neabėjotinai yra siaubo fantastikos žaidimų klasika. Apsiginkluok nuo galvos iki kojų ir leiskis į zombių medžioklę.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dreadhalls" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story c-horror">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/dreadhalls.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Dreadhalls</h5>
+                                    <p class="text-white">
+                                        Tu esi įkalintas bauginančiame požemyje. Vieninteliai turimi ginklai - žibintas ir tavo drąsa. Nugalėk baimę, išgyvenk ir rask išėjimą.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="waltzWizzard" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-experience c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/waltzofthewizard.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Waltz of Wizard</h5>
+                                    <p class="text-white">
+                                        Laikas padėti pultelius į šalį. Nuo šiol magijos kupiną virtualios realybės pasaulį galite tyrinėti plikomis rankomis. Pajauskite, ką reiškia būti tikru burtininku.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rush" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/rush.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Rush</h5>
+                                    <p class="text-white">
+                                        Nerk į adrenalino kupiną pasaulį. Leiskis kalnų šlaitais nepaprastu greičiu. Venk atsikišusių uolų ir pirmas pasiek finišą.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="thrillFight" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/thrillofthefight.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Thrill of the Fight</h5>
+                                    <p class="text-white">
+                                        Ši tikroviška bokso simuliacija privers jus pasijausti kaip tikrame kovos ringe. Smūgiuok greitai ir taikliai, jei nori ištverti iki raundo pabaigos! Įspėjame, bus karšta!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="vaderImmortal1" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/vaderimmortal1.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Vader Immortal I</h5>
+                                    <p class="text-white">
+                                        Seniai seniai tolimoje galaktikoje... Ženk į Darto Veiderio tvirtovę, susidurk su priešais parodydamas jiems, kaip gerai valdai šviesos kardą. Pirma dalis
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="vaderImmortal2" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/vaderimmortal2.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Vader Immortal II</h5>
+                                    <p class="text-white">
+                                        Seniai seniai tolimoje galaktikoje... Ženk į Darto Veiderio tvirtovę, susidurk su priešais parodydamas jiems, kaip gerai valdai šviesos kardą. Antra dalis
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="vaderImmortal3" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/vaderimmortal3.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Vader Immortal III</h5>
+                                    <p class="text-white">
+                                        Seniai seniai tolimoje galaktikoje... Ženk į Darto Veiderio tvirtovę, susidurk su priešais parodydamas jiems, kaip gerai valdai šviesos kardą. Trečia dalis
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="spacePirate" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active c-shoot">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/spacepirate.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Space Pirate</h5>
+                                    <p class="text-white">
+                                        Apsaugok savo skraidantį laivą nuo kosminių piratų! Kad išneštum sveiką kailį, tau prireiks greitos reakcijos, taiklumo ir vikrumo. Tvirtai laikyk skydą ir pirmyn!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="epicRoller" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-experience c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/epicrollercoasters.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Epic Roller Coasters</h5>
+                                    <p class="text-white">
+                                        Prisisek saugos diržus, nes greičio, aukščio ir stačių pakalnių linkmuosiuose kalneliuose niekada nebus per mažai! Ar pasiruošęs pasivažinėti?
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tiltBrush" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/tiltbrush.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Tilt Brush</h5>
+                                    <p class="text-white">
+                                        Išlaisvink savo kūrybines idėjas su 3D piešimu. Nupiešk namą ir į jį įeik, kėdę - ir ant jos atsisėsk, žmogų - ir jį apkabink. Kurk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="anneFrank" class="col-md-5 col-xl-4 mb-3 mb-md-4">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/annefrankhouse.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Anne Frank House</h5>
+                                    <p class="text-white">
+                                        Tai dokumentinis žaidimas. Turo po Anos Frank namus metu bus supažindinama su jos gyvenimu, jos šeima, tragišku likimu. Išnaudok virtualią patirtį prasmingai!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bogo" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/bogo.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">BoGo</h5>
+                                    <p class="text-white">
+                                        Stebėk, kaip auga tavo BoGo gyvūnėlis. Nepamiršk duoti jam skanėstų, žaisk su juo, paglostyk bei nuprausk. Mylėk jį ir jis mylės tave!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bait" class="col-md-5 col-xl-4 mb-3 mb-md-4">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/bait.png" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Bait</h5>
+                                    <p class="text-white">
+                                        Nesvarbu, ar esi užkietėjęs žvejys, ar nė karto nebandei žvejoti - šis žaidimas kaip tik tau! Čiupk meškerę ir pirmyn! 
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="halfHalf" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/halfhalf.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Half Half</h5>
+                                    <p class="text-white">
+                                        Kartais norisi kažko paprasto ir mielo. Prisijunkite prie kitų gyvų žaidėjų ir kartu plaukite vandenyne, skriskite tarp debesų ar tiesiog žaiskite tetrį.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="recRoom" class="col-md-5 col-xl-4 mb-3 mb-md-4">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/recroom.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="text-primary">Rec Room</h5>
+                                    <p class="text-white">
+                                        Žaisk sporto žaidimus ir bendrauk su kitais žaidėjais online! Šis žaidimas - puikus pasirinkimas, kai norisi atsipalaiduoti ir pajuokauti su kitais.
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="youtube" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-experience">
+                            <div class="card shadow rounded-lg border-0 bg-dark h-100">
+                                <img src="../img/VR-games/youtube-360.jpg" alt="" class="card-img-top border-bottom">
+                                <div class="card-body">
+                                    <h5 class="text-primary">youtube VR</h5>
+                                    <p class="text-white">
+                                        Mėgaukis tikroviškais 360° įrašais, kuriuose dalyvausi ir pats! Žvalgykis, grožėkis ir patirk!
+                                    </p>
+                                    <div class="d-flex flex-wrap feature-container"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="bg-black py-4 py-md-5">
-                <div id="zaidimu-sarasas" class="anchor container">
-                    <h2 class="text-center text-white mb-4 mb-md-5">Žaidimai, kuriuos rekomenduojame išbandyti 🎮</h2>
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-8 col-md px-1">
-                            <h5 id="all-toggler" class="filter-toggler filter-toggler-active text-center text-uppercase pointer py-2 py-md-3">Visi</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="active-toggler" class="filter-toggler text-center text-uppercase pointer py-2 py-md-3">Aktyvūs</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="story-toggler" class="filter-toggler text-center text-uppercase pointer py-2 py-md-3">Siužetiniai</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="experience-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Patirtys</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="kids-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Vaikams</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="shoot-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Šaudyklės</h5>
-                        </div>
-                        <div class="col-8 col-md px-1">
-                            <h5 id="horror-toggler" class="filter-toggler text-center pointer py-2 py-md-3">Siaubo</h5>
-                        </div>
-                    </div>
-                    <div>
-                        <div id="all-games" class="row justify-content-center align-items-stretch">
-                            <div id="beatSaber" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/beatsaber.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Beat Saber</h5>
-                                        <p class="text-white">
-                                            Tai vienas iš populiariausių virtualios realybės žaidimų. Turėsite judėti greitai ir tiksliai, kad surinktumėte kuo daugiau taškų. Išbandykite savo reakciją muzikos ritmu!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="acron" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/acron.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Acron</h5>
-                                        <p class="text-white">
-                                            Šis liksmas nuotykių žaidimas tinka didesnei žmonių komapnijai. Žaidimas unikalus tuo, kad jį gali žaisti keli asmenys tuo pačiu metu - vienas su virtualios realybės akiniais, o kiti - per mobiliuosius telefonus.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="blaston" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active c-kids c-shoot">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/blaston.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Blaston</h5>
-                                        <p class="text-white">
-                                            Mėgsti dvikovas? Kraujas verda tik tada kai varžaisi su  tikrais žmonėmis? Tuomet laikas patikrinti savo reakciją, greitį bei sumanumą Blaston arenoje. Dar geriau - į dvikovą kviesk draugą!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="superhot" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-shoot">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/superhot.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Super Hot</h5>
-                                        <p class="text-white">
-                                            Tai loginis šaudymo žaidimas matricos pasaulyje. Šiame žaidime laiko tėkmė priklauso nuo žaidžiančiojo judesių spartumo. Taigi kiekvienas judesys yra svarbus! Gerai apgalvok savo strategiją ir - pirmyn!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="richiesPlank" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-experience">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/richiesplankexperience.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Richie's Plank Experience</h5>
-                                        <p class="text-white">
-                                            Ar išdrįsi pažvelgti žemyn nuo dangoraižio viršaus? O ar išdrįsi užlipti ant šitokiame aukštyje pastatyto liepto? Nugalėk savo baimę!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="fruitNinja" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/fruitninja.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Fruit Ninja</h5>
-                                        <p class="text-white">
-                                            Judrus, nuotaikingas ir Trumpas žaidimas Fruit Ninja abejingų nepaliks nei vaikų, nei suaugusių. Žaidimas pareikalaus greitos reakcijos ir tikslumo. Atsargiai - saugokis bombų!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="freddy" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-horror">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/fivenightsatfreddys.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Five Nights at Freddy's</h5>
-                                        <p class="text-white">
-                                            Jeigu animacinių personažų Freddy, Bonnie ir Chica vardai tau nėra girdėti, nesijaudink, nuo šiol juos atsiminsi ilgam. Žinoma, jeigu tik liksi gyvas.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="jobSimulator" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/jobsimulator.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Job Simulator</h5>
-                                        <p class="text-white">
-                                            Žaidimas patiks tiems, kuriems nepakanka vien stebėti žaidimo aplinką, ir norisi viską, kas yra aplink paimti, atidaryti, sudaužyti. Gamink maistą, remontuok mašiną, dirbk kasoje, nusiausk ofisą. Visa laisvė tau!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="deathHorizon" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story c-shoot c-horror">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/deathhorizont.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Death Horizon</h5>
-                                        <p class="text-white">
-                                            Zombių šaudynės - neabėjotinai yra siaubo fantastikos žaidimų klasika. Apsiginkluok nuo galvos iki kojų ir leiskis į zombių medžioklę.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="dreadhalls" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story c-horror">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/dreadhalls.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Dreadhalls</h5>
-                                        <p class="text-white">
-                                            Tu esi įkalintas bauginančiame požemyje. Vieninteliai turimi ginklai - žibintas ir tavo drąsa. Nugalėk baimę, išgyvenk ir rask išėjimą.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="waltzWizzard" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-experience c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/waltzofthewizard.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Waltz of Wizard</h5>
-                                        <p class="text-white">
-                                            Laikas padėti pultelius į šalį. Nuo šiol magijos kupiną virtualios realybės pasaulį galite tyrinėti plikomis rankomis. Pajauskite, ką reiškia būti tikru burtininku.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="rush" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/rush.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Rush</h5>
-                                        <p class="text-white">
-                                            Nerk į adrenalino kupiną pasaulį. Leiskis kalnų šlaitais nepaprastu greičiu. Venk atsikišusių uolų ir pirmas pasiek finišą.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="thrillFight" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/thrillofthefight.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Thrill of the Fight</h5>
-                                        <p class="text-white">
-                                            Ši tikroviška bokso simuliacija privers jus pasijausti kaip tikrame kovos ringe. Smūgiuok greitai ir taikliai, jei nori ištverti iki raundo pabaigos! Įspėjame, bus karšta!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="vaderImmortal1" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/vaderimmortal1.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal I</h5>
-                                        <p class="text-white">
-                                            Seniai seniai tolimoje galaktikoje... Ženk į Darto Veiderio tvirtovę, susidurk su priešais parodydamas jiems, kaip gerai valdai šviesos kardą. Pirma dalis
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="vaderImmortal2" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/vaderimmortal2.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal II</h5>
-                                        <p class="text-white">
-                                            Seniai seniai tolimoje galaktikoje... Ženk į Darto Veiderio tvirtovę, susidurk su priešais parodydamas jiems, kaip gerai valdai šviesos kardą. Antra dalis
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="vaderImmortal3" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-story">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/vaderimmortal3.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Vader Immortal III</h5>
-                                        <p class="text-white">
-                                            Seniai seniai tolimoje galaktikoje... Ženk į Darto Veiderio tvirtovę, susidurk su priešais parodydamas jiems, kaip gerai valdai šviesos kardą. Trečia dalis
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="spacePirate" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-active c-shoot">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/spacepirate.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Space Pirate</h5>
-                                        <p class="text-white">
-                                            Apsaugok savo skraidantį laivą nuo kosminių piratų! Kad išneštum sveiką kailį, tau prireiks greitos reakcijos, taiklumo ir vikrumo. Tvirtai laikyk skydą ir pirmyn!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="epicRoller" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-experience c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/epicrollercoasters.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Epic Roller Coasters</h5>
-                                        <p class="text-white">
-                                            Prisisek saugos diržus, nes greičio, aukščio ir stačių pakalnių linkmuosiuose kalneliuose niekada nebus per mažai! Ar pasiruošęs pasivažinėti?
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="tiltBrush" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/tiltbrush.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Tilt Brush</h5>
-                                        <p class="text-white">
-                                            Išlaisvink savo kūrybines idėjas su 3D piešimu. Nupiešk namą ir į jį įeik, kėdę - ir ant jos atsisėsk, žmogų - ir jį apkabink. Kurk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="anneFrank" class="col-md-5 col-xl-4 mb-3 mb-md-4">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/annefrankhouse.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Anne Frank House</h5>
-                                        <p class="text-white">
-                                            Tai dokumentinis žaidimas. Turo po Anos Frank namus metu bus supažindinama su jos gyvenimu, jos šeima, tragišku likimu. Išnaudok virtualią patirtį prasmingai!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="bogo" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/bogo.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">BoGo</h5>
-                                        <p class="text-white">
-                                            Stebėk, kaip auga tavo BoGo gyvūnėlis. Nepamiršk duoti jam skanėstų, žaisk su juo, paglostyk bei nuprausk. Mylėk jį ir jis mylės tave!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="bait" class="col-md-5 col-xl-4 mb-3 mb-md-4">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/bait.png" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Bait</h5>
-                                        <p class="text-white">
-                                            Nesvarbu, ar esi užkietėjęs žvejys, ar nė karto nebandei žvejoti - šis žaidimas kaip tik tau! Čiupk meškerę ir pirmyn! 
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="halfHalf" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-kids">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/halfhalf.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Half Half</h5>
-                                        <p class="text-white">
-                                            Kartais norisi kažko paprasto ir mielo. Prisijunkite prie kitų gyvų žaidėjų ir kartu plaukite vandenyne, skriskite tarp debesų ar tiesiog žaiskite tetrį.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="recRoom" class="col-md-5 col-xl-4 mb-3 mb-md-4">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/recroom.jpg" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">Rec Room</h5>
-                                        <p class="text-white">
-                                            Žaisk sporto žaidimus ir bendrauk su kitais žaidėjais online! Šis žaidimas - puikus pasirinkimas, kai norisi atsipalaiduoti ir pajuokauti su kitais.
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="youtube" class="col-md-5 col-xl-4 mb-3 mb-md-4 c-experience">
-                                <div class="card shadow rounded-lg border-0 bg-dark h-100">
-                                    <img src="../img/VR-games/youtube-360.jpg" alt="" class="card-img-top border-bottom">
-                                    <div class="card-body">
-                                        <h5 class="text-primary">YouYube VR</h5>
-                                        <p class="text-white">
-                                            Mėgaukis tikroviškais 360° įrašais, kuriuose dalyvausi ir pats! Žvalgykis, grožėkis ir patirk!
-                                        </p>
-                                        <div class="d-flex flex-wrap feature-container"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section class="bg-light d-none d-md-block py-4">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <img src="../img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="../img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="../img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="../img/Brands/viewsonic-black.png" alt="" height="25">
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="bg-light d-none d-md-block py-4">
-                <div class="container">
-                    <div class="d-flex justify-content-center">
-                        <img src="../img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="../img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="../img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="../img/Brands/viewsonic-black.png" alt="" height="25">
+        <!-- FOOTER -->
+
+        <footer class="pt-4 pt-md-5">
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">Susisiekime</h2>
+                <div class="row pb-4 pb-md-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-primary">
+                            Susipažink
+                        </h5>
+                        <p class="pr-md-3 mb-0">
+                            Party Play!<br>
+                            Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
+                        </p>
                     </div>
-                </div>
-            </section>
-
-            <!-- FOOTER -->
-
-            <footer class="pt-4 pt-md-5">
-                <div class="container">
-                    <h2 class="text-center text-primary mb-4">Susisiekime</h2>
-                    <div class="row pb-4 pb-md-5">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-primary">
-                                Susipažink
-                            </h5>
-                            <p class="pr-md-3 mb-0">
-                                Party Play!<br>
-                                Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
-                            </p>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-primary">
-                                Išsinuomok
-                            </h5>
-                            <a href="virtuali-realybe.html" class="d-block link-hover mb-1">👓 Virtualios realybės akiniai</a>
-                            <a href="xbox-one.html" class="d-block link-hover mb-1">🎮 Žaidimų konsolės</a>
-                            <a href="projektoriai.html" class="d-block link-hover mb-1">📽️ Projektoriai</a>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="text-primary">
-                                Susisiek
-                            </h5>
-                            <a href="tel:+37063880218" class="d-block link-hover mb-1">
-                                Tel. nr.: +370 638 80 218
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-primary">
+                            Išsinuomok
+                        </h5>
+                        <a href="virtuali-realybe.html" class="d-block link-hover mb-1">👓 Virtualios realybės akiniai</a>
+                        <a href="xbox-one.html" class="d-block link-hover mb-1">🎮 Žaidimų konsolės</a>
+                        <a href="projektoriai.html" class="d-block link-hover mb-1">📽️ Projektoriai</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-primary">
+                            Susisiek
+                        </h5>
+                        <a href="tel:+37063880218" class="d-block link-hover mb-1">
+                            Tel. nr.: +370 638 80 218
+                        </a>
+                        <a href="mailto:info@partyplay.lt" class="d-block link-hover mb-1">
+                            El. paštas: info@partyplay.lt
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover">
+                            Adresas: Panevėžio g. 13, Klaipėda<br>
+                        </a>
+                        <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
+                        <div class="d-block mt-2">
+                            <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover mr-2">
+                                <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="mailto:info@partyplay.lt" class="d-block link-hover mb-1">
-                                El. paštas: info@partyplay.lt
+                            <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover">
-                                Adresas: Panevėžio g. 13, Klaipėda<br>
-                            </a>
-                            <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
-                            <div class="d-block mt-2">
-                                <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover mr-2">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
-                    <hr class="my-0">
                 </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-light py-4">
-                    <p class="mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
-                    <p class="mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover">Ficus Media 🌱</a></p>
-                </div>
-            </footer>
-
-        </div>
+                <hr class="my-0">
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-light py-4">
+                <p class="mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
+                <p class="mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover">Ficus Media 🌱</a></p>
+            </div>
+        </footer>
 
         <!-- MODALS -->
 
@@ -672,7 +811,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
         <script src="../js/jquery.waypoints.min.js"></script>
-        <script src="../js/butter.js"></script>
         <script src="../js/animate.js"></script>
         <script src="../js/script.js"></script>
 

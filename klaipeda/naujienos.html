@@ -66,8 +66,9 @@
                 <a href="index.html" class="navbar-brand">
                     <img src="../img/Logo/logo.png" width="130" alt="">
                 </a>
-                <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
-                    <ion-icon name="menu-outline"></ion-icon>
+                <button id="main-menu-toggler" class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                    <img src="../img/icons/menu-open.png" id="main-menu-open" alt="meniu-ikona" width="30" class="mr-auto">
+                    <img src="../img/icons/menu-close.png" id="main-menu-close" alt="meniu-ikona" width="23" class="mr-auto d-none">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <hr class="d-md-none my-2">
@@ -120,138 +121,134 @@
             </div>
         </nav>
 
-        <div id="butter" class="butter-bottom">
+        <!-- SECTIONS -->
 
-            <!-- SECTIONS -->
-
-            <section class="py-4 py-lg-5">
-                <div class="container">
-                    <div class="mb-4 mb-md-5">
-                        <img src="../img/Blog/motion.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
-                        <small class="text-grey">ĮDOMU · 2021 01 10</small>
-                        <h4 class="text-primary">Virtuali realybė ir galvos svaigimas</h4>
-                        <p class="text-justify">
-                            Nors virtuali realybė nuo pat jos atsiradimo ženkliai patobulėjo, daugybė žmonių vis dar iki dabar skundžiasi simptomais, panašiais į jūrligę – pykinimas, galvos svaigimas, dezorientacija. Viena iš žinomiausių teorijų, paaiškinančių šiuos simptomus, yra jutiminio konflikto teorija, kurioje yra teigiama, jog tokius simptomus sukelia regos ir vestibiuliarinių pojūčių neatitikimai. Pavyzdžiui, vartotojas virtualioje aplinkoje vaikšto, jo akys siunčia smegenims signalus apie judėjimą, bet realybėje žmogaus kūnas iš tiesų nejuda.<br>
-                            Jeigu virtuali realybė kelia diskomfortą:<br>
-                        </p>
-                        <ol class="text-justify ml-3">
-                            <li><h6 class="d-inline">ATSISĖSKITE. </h6>Sėdėjimas padės išlaikyti jūsų laikyseną ir stabilumą, todėl sumažės dezorientacijos rizika</li>
-                            <li><h6 class="d-inline">SUREGULIUOKITE ĮRANGĄ. </h6>Įsitikinkite, kad įranga laikosi tvirtai, o matomas vaizdas aiškus ir sufokusuotas. Jei nešiojate akinius, naudokitės įranga kartu su akiniais.</li>
-                            <li><h6 class="d-inline">NEŽAISKITE TAM TIKRŲ ŽAIDIMŲ. </h6>Jei naudojantis įranga jums svaigsta galva, rekomenduojame nežaisti žaidimų, kuriuose greičiai keičiasi aplinka arba imituojamas vaikščiojimas. Rinkitės žaidimus kuriose aplinka juda aplink jus, o ne jūs joje.</li>
-                        </ol>
-                        <p class="text-justify">
-                            Plačiau apie virtualios realybės akinių nuomą skaitykite <a href="virtuali-realybe.html">čia.</a>
-                        </p>
-                    </div>
-                    <div class="mb-4 mb-md-5">
-                        <img src="../img/Blog/rent-or-buy.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
-                        <small class="text-grey">ĮDOMU · 2021 01 10</small>
-                        <h4 class="text-primary">Pirkti ar nuomotis?</h4>
-                        <p class="text-justify">
-                            Užsiimame daiktų nuoma jau keletą metų. Iš savo klientų pastebėjome, kad dažna nuomojimosi priežastis yra noras prieš perkant įrangą ją išbandyti. O kas, jei nepatiks?<br>
-                            Taigi būsime atviri - po nuomos klientai ne visada nusprendžia įrangą įsigyti patys. Vieni išsinuomoję konsoles arba virtualios realybės akinius tiesiog „atsižaidžia“, ir supranta, kad jiems šios įrangos tiesiog nereikia. Kiti gali patirti didesnių ar mažesnių nemalonumų, pavyzdžiui, galvos svaigimas naudojant virtualią realybę.<br>
-                            Todėl mūsų atsakymas į klausimą: „pirkti ar nuomotis“ būtų toks - pirkite, jei tikrai žinote, kad įrangos jums reikia. Tačiau jei nesate tikri, arba įrangą planuojate naudoti labai retai, patariame ją nuomotis. Šitaip ne tik sutaupysite pinigų, bet ir prisidėsite prie tvaresnio vartojimo.
-                        </p>
-                    </div>
-                    <div class="mb-4 mb-md-5">
-                        <img src="../img/Blog/party.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
-                        <small class="text-grey">ĮDOMU · 2021 01 10</small>
-                        <h4 class="text-primary">Idėjos vakarėliui</h4>
-                        <p class="text-justify">
-                            Trūksta idėjų, kaip paįvairinti savo šventę? Turime Jums keletą pasiūlymų:
-                        </p>
-                        <ol class="text-justify ml-3">
-                            <li><h6 class="d-inline">FILMŲ VAKARAS. </h6>Planuojate jaukų pasibuvimą su draugais ar šeima? Siūlome surengti filmų vakarą! O kad filmo žiūrėjimas nebūtų eilinis spoksojimas į kompiuterio ar televizoriaus ekraną - siūlome išsinuomoti projektorių! Šiltuoju paros metu filmą galima žiūrėti ir lauke. Filmų vakarams visada rekomenduojame nuomotis Full HD raiškos projektorius, kad vaizdas būtų kuo kokybiškesnis, o filmo patirtis - kuo ryškesnė. Paruoškite šviesią sieną arba ekraną, išsivirkite karštos kakavos ir mėgaukitės! Plačiau apie projektorių nuomą skaitykite <a href="projektoriai.html">čia.</a></li>
-                            <li><h6 class="d-inline">ŽAIDIMŲ VAKARAS. </h6>Surenkite sau ir savo artimiesiems smagų žaidimų vakarą. Vakarėliams rekomenduojame išbandyti šokių, sporto, nuotykių ir kitus judesio žaidimus, kuriuos vienu metu gali žaisti net iki 4 žmonių. Taip pat siūlome 1 x 1 žaidimus pulteliais - varžykitės krepšinio aikštelėje, bokso ringe, lenkynių trasoje ir daug kitur! Jei norisi dar geresnių emocijų, patariame kartu išsinuomoti ir projektorių žaidimo vaizdui transliuoti.  Plačiau apie žaidimo konsolių nuomą skaitykite <a href="zaidimu-konsoles.html">čia.</a></li>
-                            <li><h6 class="d-inline">VIRTUALIOS REALYBĖS IŠBANDYMAS. </h6>Virtualios realybės patirtis abejingų nepalieka nei vaikų, nei suaugusiųjų. Ją išbandyti tiesiog būtina! Ši pramoga paįvairins jūsų šventę, nustebins jūsų svečius ir įprasmins jūsų laiką. Plačiau apie virtualios realybės akinių nuomą skaitykite <a href="virtuali-realybe.html">čia.</a></li>
-                        </ol>
-                    </div>
-                    <div class="mb-4 mb-md-5">
-                        <img src="../img/Blog/virtual-reality.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
-                        <small class="text-grey">PATARIMAI RENKANTIS · 2021 01 10</small>
-                        <h4 class="text-primary">Kaip išsirinkti virtualios realybės akinius?</h4>
-                        <p class="text-justify">
-                            Šiuo metu siūlome dvejus skirtingus virtualios realybės akinius - Oculus Quest ir Oculus Quest 2. Jei nežinote, kuri įranga jums labiau tinka, ir nenorite permokėti, pateiksime keletą įrangos skirtumų, kurie padės jums lengviau apsispręsti:
-                        </p>
-                        <ol class="text-justify ml-3">
-                            <li>Oculus Quest 2 yra naujausias Oculus modelis. Jei norite išbandyti tai, kad naujausia - rinkitės būtent šiuos virtualios realybės akinius.</li>
-                            <li>Oculus Quest 2 akiniai, lyginant su Oculus Quest, yra šiek tiek lengvesni, patogesni bei pasižymi geresne raiška.</li>
-                            <li>Oculus Quest 2 įrangos nuoma kainuoja šiek tiek brangiau, nei Oculus Quest. Jei virtuali realybė jums yra naujas dalykas, patariame nuomotis senesnį modelį, kadangi didelių skirtumų tarp šių dviejų įrangų nėra. Sutaupysite pinigų daug neprarasdami :)</li>
-                        </ol>
-                        <p class="text-justify">
-                            Plačiau apie virtualios realybės akinių nuomą skaitykite <a href="virtuali-realybe.html">čia.</a>
-                        </p>
-                    </div>
+        <section class="py-4 py-lg-5">
+            <div class="container">
+                <div class="mb-4 mb-md-5">
+                    <img src="../img/Blog/motion.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
+                    <small class="text-grey">ĮDOMU · 2021 01 10</small>
+                    <h4 class="text-primary">Virtuali realybė ir galvos svaigimas</h4>
+                    <p class="text-justify">
+                        Nors virtuali realybė nuo pat jos atsiradimo ženkliai patobulėjo, daugybė žmonių vis dar iki dabar skundžiasi simptomais, panašiais į jūrligę – pykinimas, galvos svaigimas, dezorientacija. Viena iš žinomiausių teorijų, paaiškinančių šiuos simptomus, yra jutiminio konflikto teorija, kurioje yra teigiama, jog tokius simptomus sukelia regos ir vestibiuliarinių pojūčių neatitikimai. Pavyzdžiui, vartotojas virtualioje aplinkoje vaikšto, jo akys siunčia smegenims signalus apie judėjimą, bet realybėje žmogaus kūnas iš tiesų nejuda.<br>
+                        Jeigu virtuali realybė kelia diskomfortą:<br>
+                    </p>
+                    <ol class="text-justify ml-3">
+                        <li><h6 class="d-inline">ATSISĖSKITE. </h6>Sėdėjimas padės išlaikyti jūsų laikyseną ir stabilumą, todėl sumažės dezorientacijos rizika</li>
+                        <li><h6 class="d-inline">SUREGULIUOKITE ĮRANGĄ. </h6>Įsitikinkite, kad įranga laikosi tvirtai, o matomas vaizdas aiškus ir sufokusuotas. Jei nešiojate akinius, naudokitės įranga kartu su akiniais.</li>
+                        <li><h6 class="d-inline">NEŽAISKITE TAM TIKRŲ ŽAIDIMŲ. </h6>Jei naudojantis įranga jums svaigsta galva, rekomenduojame nežaisti žaidimų, kuriuose greičiai keičiasi aplinka arba imituojamas vaikščiojimas. Rinkitės žaidimus kuriose aplinka juda aplink jus, o ne jūs joje.</li>
+                    </ol>
+                    <p class="text-justify">
+                        Plačiau apie virtualios realybės akinių nuomą skaitykite <a href="virtuali-realybe.html">čia.</a>
+                    </p>
                 </div>
-            </section>
-            
-            <section class="bg-light d-none d-md-block py-4">
-                <div class="container">
-                    <div class="d-flex justify-content-center">
-                        <img src="../img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="../img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="../img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
-                        <img src="../img/Brands/viewsonic-black.png" alt="" height="25">
-                    </div>
+                <div class="mb-4 mb-md-5">
+                    <img src="../img/Blog/rent-or-buy.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
+                    <small class="text-grey">ĮDOMU · 2021 01 10</small>
+                    <h4 class="text-primary">Pirkti ar nuomotis?</h4>
+                    <p class="text-justify">
+                        Užsiimame daiktų nuoma jau keletą metų. Iš savo klientų pastebėjome, kad dažna nuomojimosi priežastis yra noras prieš perkant įrangą ją išbandyti. O kas, jei nepatiks?<br>
+                        Taigi būsime atviri - po nuomos klientai ne visada nusprendžia įrangą įsigyti patys. Vieni išsinuomoję konsoles arba virtualios realybės akinius tiesiog „atsižaidžia“, ir supranta, kad jiems šios įrangos tiesiog nereikia. Kiti gali patirti didesnių ar mažesnių nemalonumų, pavyzdžiui, galvos svaigimas naudojant virtualią realybę.<br>
+                        Todėl mūsų atsakymas į klausimą: „pirkti ar nuomotis“ būtų toks - pirkite, jei tikrai žinote, kad įrangos jums reikia. Tačiau jei nesate tikri, arba įrangą planuojate naudoti labai retai, patariame ją nuomotis. Šitaip ne tik sutaupysite pinigų, bet ir prisidėsite prie tvaresnio vartojimo.
+                    </p>
                 </div>
-            </section>
+                <div class="mb-4 mb-md-5">
+                    <img src="../img/Blog/party.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
+                    <small class="text-grey">ĮDOMU · 2021 01 10</small>
+                    <h4 class="text-primary">Idėjos vakarėliui</h4>
+                    <p class="text-justify">
+                        Trūksta idėjų, kaip paįvairinti savo šventę? Turime Jums keletą pasiūlymų:
+                    </p>
+                    <ol class="text-justify ml-3">
+                        <li><h6 class="d-inline">FILMŲ VAKARAS. </h6>Planuojate jaukų pasibuvimą su draugais ar šeima? Siūlome surengti filmų vakarą! O kad filmo žiūrėjimas nebūtų eilinis spoksojimas į kompiuterio ar televizoriaus ekraną - siūlome išsinuomoti projektorių! Šiltuoju paros metu filmą galima žiūrėti ir lauke. Filmų vakarams visada rekomenduojame nuomotis Full HD raiškos projektorius, kad vaizdas būtų kuo kokybiškesnis, o filmo patirtis - kuo ryškesnė. Paruoškite šviesią sieną arba ekraną, išsivirkite karštos kakavos ir mėgaukitės! Plačiau apie projektorių nuomą skaitykite <a href="projektoriai.html">čia.</a></li>
+                        <li><h6 class="d-inline">ŽAIDIMŲ VAKARAS. </h6>Surenkite sau ir savo artimiesiems smagų žaidimų vakarą. Vakarėliams rekomenduojame išbandyti šokių, sporto, nuotykių ir kitus judesio žaidimus, kuriuos vienu metu gali žaisti net iki 4 žmonių. Taip pat siūlome 1 x 1 žaidimus pulteliais - varžykitės krepšinio aikštelėje, bokso ringe, lenkynių trasoje ir daug kitur! Jei norisi dar geresnių emocijų, patariame kartu išsinuomoti ir projektorių žaidimo vaizdui transliuoti. Plačiau apie žaidimo konsolių nuomą skaitykite <a href="zaidimu-konsoles.html">čia.</a></li>
+                        <li><h6 class="d-inline">VIRTUALIOS REALYBĖS IŠBANDYMAS. </h6>Virtualios realybės patirtis abejingų nepalieka nei vaikų, nei suaugusiųjų. Ją išbandyti tiesiog būtina! Ši pramoga paįvairins jūsų šventę, nustebins jūsų svečius ir įprasmins jūsų laiką. Plačiau apie virtualios realybės akinių nuomą skaitykite <a href="virtuali-realybe.html">čia.</a></li>
+                    </ol>
+                </div>
+                <div class="mb-4 mb-md-5">
+                    <img src="../img/Blog/virtual-reality.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
+                    <small class="text-grey">PATARIMAI RENKANTIS · 2021 01 10</small>
+                    <h4 class="text-primary">Kaip išsirinkti virtualios realybės akinius?</h4>
+                    <p class="text-justify">
+                        Šiuo metu siūlome dvejus skirtingus virtualios realybės akinius - Oculus Quest ir Oculus Quest 2. Jei nežinote, kuri įranga jums labiau tinka, ir nenorite permokėti, pateiksime keletą įrangos skirtumų, kurie padės jums lengviau apsispręsti:
+                    </p>
+                    <ol class="text-justify ml-3">
+                        <li>Oculus Quest 2 yra naujausias Oculus modelis. Jei norite išbandyti tai, kad naujausia - rinkitės būtent šiuos virtualios realybės akinius.</li>
+                        <li>Oculus Quest 2 akiniai, lyginant su Oculus Quest, yra šiek tiek lengvesni, patogesni bei pasižymi geresne raiška.</li>
+                        <li>Oculus Quest 2 įrangos nuoma kainuoja šiek tiek brangiau, nei Oculus Quest. Jei virtuali realybė jums yra naujas dalykas, patariame nuomotis senesnį modelį, kadangi didelių skirtumų tarp šių dviejų įrangų nėra. Sutaupysite pinigų daug neprarasdami :)</li>
+                    </ol>
+                    <p class="text-justify">
+                        Plačiau apie virtualios realybės akinių nuomą skaitykite <a href="virtuali-realybe.html">čia.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-light d-none d-md-block py-4">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <img src="../img/Brands/acer-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="../img/Brands/oculus-quest.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="../img/Brands/xbox-black.png" alt="" height="25" class="mr-4 mr-lg-5">
+                    <img src="../img/Brands/viewsonic-black.png" alt="" height="25">
+                </div>
+            </div>
+        </section>
 
-            <!-- FOOTER -->
+        <!-- FOOTER -->
 
-            <footer class="bg-black pt-4 pt-md-5">
-                <div class="container">
-                    <h2 class="text-center text-light mb-4">Susisiekime</h2>
-                    <div class="row pb-4 pb-md-5">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-light">
-                                Susipažink
-                            </h5>
-                            <p class="text-secondary pr-md-3 mb-0">
-                                Party Play!<br>
-                                Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
-                            </p>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <h5 class="text-light">
-                                Išsinuomok
-                            </h5>
-                            <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
-                            <a href="xbox-one.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
-                            <a href="projektoriai.html" class="d-block link-hover-light mb-1">📽️ Projektoriai</a>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="text-light">
-                                Susisiek
-                            </h5>
-                            <a href="tel:+37063880218" class="d-block link-hover-light mb-1">
-                                Tel. nr.: +370 638 80 218
+        <footer class="bg-black pt-4 pt-md-5">
+            <div class="container">
+                <h2 class="text-center text-light mb-4">Susisiekime</h2>
+                <div class="row pb-4 pb-md-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-light">
+                            Susipažink
+                        </h5>
+                        <p class="text-secondary pr-md-3 mb-0">
+                            Party Play!<br>
+                            Teikiame žaidimų konsolių, virtualios realybės akinių, projektorių ir garso įrangos nuomos paslaugas Kaune ir Klaipėdoje.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="text-light">
+                            Išsinuomok
+                        </h5>
+                        <a href="virtuali-realybe.html" class="d-block link-hover-light mb-1">👓 Virtualios realybės akiniai</a>
+                        <a href="xbox-one.html" class="d-block link-hover-light mb-1">🎮 Žaidimų konsolės</a>
+                        <a href="projektoriai.html" class="d-block link-hover-light mb-1">📽️ Projektoriai</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">
+                            Susisiek
+                        </h5>
+                        <a href="tel:+37063880218" class="d-block link-hover-light mb-1">
+                            Tel. nr.: +370 638 80 218
+                        </a>
+                        <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
+                            El. paštas: info@partyplay.lt
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
+                            Adresas: Panevėžio g. 13, Klaipėda<br>
+                        </a>
+                        <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
+                        <div class="d-block mt-2">
+                            <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover-light mr-2">
+                                <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="mailto:info@partyplay.lt" class="d-block link-hover-light mb-1">
-                                El. paštas: info@partyplay.lt
+                            <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover-light">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
-                                Adresas: Panevėžio g. 13, Klaipėda<br>
-                            </a>
-                            <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
-                            <div class="d-block mt-2">
-                                <a href="https://www.facebook.com/PartyPlayNuoma" target="_blank" class="link-hover-light mr-2">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.instagram.com/PartyPlayNuoma/" target="_blank" class="link-hover-light">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
-                    <hr class="my-0">
-                    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-black py-4">
-                        <p class="text-secondary mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
-                        <p class="text-secondary mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover-light">Ficus Media 🌱</a></p>
-                    </div>
                 </div>
-            </footer>
-
-        </div>
+                <hr class="my-0">
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center bg-black py-4">
+                    <p class="text-secondary mb-0 mr-sm-1">© <span id="year"></span> Party Play! |</p>
+                    <p class="text-secondary mb-0">Sukurta: <a href="https://www.ficusmedia.lt/" target="_blank" class="link-hover-light">Ficus Media 🌱</a></p>
+                </div>
+            </div>
+        </footer>
 
         <!-- MODALS -->
 
@@ -276,7 +273,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
         <script src="../js/jquery.waypoints.min.js"></script>
-        <script src="../js/butter.js"></script>
         <script src="../js/animate.js"></script>
         <script src="../js/script.js"></script>
 

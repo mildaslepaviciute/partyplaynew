@@ -458,10 +458,6 @@ QUERIES
         font-size: 5rem;
     }
 
-    .butter-bottom {
-        padding-bottom: 102px;
-    }
-
     .bg-main-header {
         background: url('../img/Backgrounds/main-sm.jpg');
         background-position: center;
@@ -508,10 +504,6 @@ QUERIES
 
     .display-4 {
         font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2rem;
     }
     
     h3 {
@@ -611,4 +603,39 @@ QUERIES
     .display-4 {
         font-size: 3.5rem;
     }
+}
+
+
+
+
+.title-container {
+    height: 100px;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    right:0;
+    overflow: hidden;
+    pointer-events: none;
+    h2 {
+        font-size: 4rem;
+        white-space: nowrap;
+        animation: marquee 20s linear infinite;
+        -webkit-animation: marquee 20s linear infinite;
+}
+    z-index: 10;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0%, 0); }
+    100% { transform: translate(-141.5vw, 0); }
+}
+
+.m-neg {
+    transform: translate(-10px, 10px);
+    -webkit-transform: translate(-10px, 10px);
+    -moz-transform: translate(-10px, 10px);
+    -ms-transform: translate(-10px, 10px);
+    -o-transform: translate(-10px, 10px);
 }
