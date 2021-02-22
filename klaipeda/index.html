@@ -3,6 +3,17 @@
 
     <head>
 
+        <!-- GOOGLE ANALYTICS -->
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144103990-1"></script>
+		<script>
+	  		window.dataLayer = window.dataLayer || [];
+	  		function gtag(){dataLayer.push(arguments);}
+	  		gtag('js', new Date());
+
+	  		gtag('config', 'UA-144103990-1');
+		</script>
+
         <!-- META -->
 
         <meta charset="UTF-8">
@@ -38,6 +49,33 @@
     </head>
 
     <body>
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v9.0'
+            });
+            };
+
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+            attribution="setup_tool"
+            page_id="1000321313452921"
+            theme_color="#d24979"
+            logged_in_greeting="Labas! Susidomėjai? Rašyk!"
+            logged_out_greeting="Labas! Susidomėjai? Rašyk!">
+        </div>
 
         <!-- PRE-NAVBAR -->
 
@@ -248,7 +286,7 @@
                         <h2 class="text-primary text-large mt-negative-lg mr-3">2</h2>
                         <div class="d-flex flex-column">
                             <h5 class="text-left">Atvykite atsiimti</h5>
-                            <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Nemuno g. 26, Kaunas</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
+                            <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Panevėžio g. 13, Klaipėda</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex align-items-start">

@@ -3,6 +3,17 @@
 
     <head>
 
+        <!-- GOOGLE ANALYTICS -->
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144103990-1"></script>
+		<script>
+	  		window.dataLayer = window.dataLayer || [];
+	  		function gtag(){dataLayer.push(arguments);}
+	  		gtag('js', new Date());
+
+	  		gtag('config', 'UA-144103990-1');
+		</script>
+
         <!-- META -->
 
         <meta charset="UTF-8">
@@ -38,6 +49,33 @@
     </head>
 
     <body id="xbox360Slim">
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v9.0'
+            });
+            };
+
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+            attribution="setup_tool"
+            page_id="1000321313452921"
+            theme_color="#d24979"
+            logged_in_greeting="Labas! Susidomėjai? Rašyk!"
+            logged_out_greeting="Labas! Susidomėjai? Rašyk!">
+        </div>
 
         <!-- PRE-NAVBAR -->
 
@@ -274,7 +312,7 @@
                         <h2 class="text-primary text-large mt-negative-lg mr-3">2</h2>
                         <div class="d-flex flex-column">
                             <h5 class="text-left">Atvykite atsiimti</h5>
-                            <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Nemuno g. 26, Kaunas</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
+                            <p class="text-left">Nuomos pradžios dieną atvykite atsiimti įrangos adresu <span><a href="#" data-toggle="modal" data-target="#modalMap">Kauko al. 7, Kaunas</a></span>. Prieš atvykstant būtinai mums paskambinkite.</p>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex">
@@ -296,37 +334,9 @@
                         <h3 class="text-center text-md-left">Naudojimas</h3>
                     </div>
                     <div class="col-md-7">
-                        <h5 class="pointer mb-3" data-toggle="collapse" data-target="#pulteliu-naudojimas">Pulteliai <i class="fas fa-chevron-down fa-xs ml-2"></i></h5>
-                        <div id="pulteliu-naudojimas" class="collapse mb-3 bg-light p-3 rounded-lg">
-                            <ol class="pl-3 mb-3">
-                                <li>Pultelio įjungimo mygtuką rasite pultelio viršuje ( <span><i class="fab fa-xbox"></i></span> ). Norint pultelį įjungti, palaikykite paspaudę įjungimo mygtuką. Pulteliui įsijungus mygtukas turėtų šviesti</li>
-                                <li>Norėdami naršyti konsolės meniu, naudokite kairiąją svietelę.</li>
-                                <li>Norėdami atidaryti, spauskite žalią (A) mygtuką.</li>
-                                <li>Norėdami grįžti atgal, spauskite raudoną (B) mygtuką</li>
-                                <li>Pultelių naudojimas žaidimuose yra skirtingas. Kuriuos mygtukus spausti žaidžiant bus nurodyta pačiame žaidime</li>
-                            </ol>
-                        </div>
                         <h5 class="pointer mb-3" data-toggle="collapse" data-target="#konsoles-pajungimas">Konsolės pajungimas <i class="fas fa-chevron-down fa-xs ml-2"></i></h5>
                         <div id="konsoles-pajungimas" class="collapse mb-3 bg-light p-3 rounded-lg">
-                            <h6 class="text-primary text-uppercase mb-3">1. Konsolės įjungimas</h6>
-                            <ol class="pl-3 mb-3">
-                                <li>Prijunkite maitinimo laidą prie konsolės</li>
-                                <li>HDMI laidu prijunkite konsolę prie vaizdo transliavimo prietaiso (televizoriaus, monitoriaus, projektoriaus ar kt.)</li>
-                                <li>Paspauskite konsolės priekyje esantį įjungimo mygtuką ( <span><i class="fab fa-xbox"></i></span> ). Mygtukas turėtų pradėti šviesti</li>
-                                <li>Ekrane turėtumėte išvysti konsolės pradinį langą</li>
-                            </ol>
-                            <h6 class="text-primary text-uppercase mb-3">2. Žaidimų įjungimas</h6>
-                            <ol class="pl-3 mb-3">
-                                <li>Norėdami įjungti žaidimą, spustelėkite pultelio įjungimo mygtuką ( <span><i class="fab fa-xbox"></i></span> ), kairiniame meniu pasirinkite „My games & apps“ ir „See all“</li>
-                                <li>Atsidariusiame lange rasite visus įrašytus žaidimus. Pasirinkite norimą žaidimą ir spauskite žalią (A) mygtuką</li>
-                                <li>Pilną prenumeruojamų žaidimų sąrašą rasite kairiniame meniu pasirinkę „Full library“ ir „Xbox Game Pass“. Iš sąrašo galėsite atsisiųsti bet kokius norimus prenumeruojamus žaidimus. Prieš siunčiant žaidimus būtinai apie tai praneškite mums</li>
-                            </ol>
-                            <h6 class="text-primary text-uppercase mb-3">3. Baigus naudotis</h6>
-                            <ol class="pl-3 mb-4">
-                                <li>Baigę žaidsti palaikykite paspaudę pultelio įjungimo mygtuką ( <span><i class="fab fa-xbox"></i></span> ) ir paspauskite „Turn off console“</li>
-                                <li>Ištraukite visus laidus ir leiskite konsolei atvėsti</li>
-                                <li>Į krepšį dėkite tik atvėsusią įrangą su visais ištrauktais laidais!</li>
-                            </ol>
+                            <p>Informacija ruošiama</p>
                         </div>
                     </div>
                 </div>
@@ -808,7 +818,7 @@
                             El. paštas: info@partyplay.lt
                         </a>
                         <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover">
-                            Adresas: Nemuno g. 26, Kaunas<br>
+                            Adresas: Kauko al. 7, Kaunas<br>
                         </a>
                         <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
                         <div class="d-block mt-2">

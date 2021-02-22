@@ -3,6 +3,17 @@
 
     <head>
 
+        <!-- GOOGLE ANALYTICS -->
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144103990-1"></script>
+		<script>
+	  		window.dataLayer = window.dataLayer || [];
+	  		function gtag(){dataLayer.push(arguments);}
+	  		gtag('js', new Date());
+
+	  		gtag('config', 'UA-144103990-1');
+		</script>
+
         <!-- META -->
 
         <meta charset="UTF-8">
@@ -38,6 +49,33 @@
     </head>
 
     <body>
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v9.0'
+            });
+            };
+
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+            attribution="setup_tool"
+            page_id="1000321313452921"
+            theme_color="#d24979"
+            logged_in_greeting="Labas! Susidomėjai? Rašyk!"
+            logged_out_greeting="Labas! Susidomėjai? Rašyk!">
+        </div>
 
         <!-- PRE-NAVBAR -->
 
@@ -217,54 +255,6 @@
 
         <section class="py-4 py-md-5">
             <div class="container">
-                <h2 class="text-center text-primary mb-4">Įrangos pajungimas</h2>
-                <div class="row mb-4">
-                    <div class="col-md-3 mb-4 mb-md-0">
-                        <h5 class="text-primary">1. Chromecast priedelio prijungimas prie TV</h5>
-                    </div>
-                    <div class="col-md-8 offset-md-1">
-                        <ol class="pl-3 pl-md-0">
-                            <li>Įjungti TV</li>
-                            <li>Įkišti chromecast HDMI jungtį į televizorių;</li>
-                            <li>Įkišti microUsb jungtį į chromecast;</li>
-                            <li>Televizoriuje turėtų pasirodyti vaizdas;</li>
-                            <li>Palaikyti ~10 sekundžių mygtuką esanti chromecast šone (tėra vienas mygtukas). Taip atliekamas gamyklinis perkrovimas, reikalingas naujam wifi prijungimui.</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row mb-4">
-                    <div class="col-md-3 mb-3 mb-md-0">
-                        <h5 class="text-primary">2. Chromecast pajungimas ir "pririšimas" prie wifi</h5>
-                    </div>
-                    <div class="col-md-8 offset-md-1">
-                        <ol class="pl-3 pl-md-0">
-                            <li>Parsisiųsti "Google home" programėlę į mobilų telefoną;</li>
-                            <li>Įsijungti programėlę ir prisijungti su savo google paskyra (gmail'u).</li>
-                            <li>Po prisijungimo programėlė turėtų ieškoti įrenginių ir rasti "chromecast". (Jeigu pati nepradėjo ieškoti, reikia tai atlikti pačiam - spausti "+" esantį kairiajame viršutiniame kampe ir pasirinkti "set up a device")</li>
-                            <li>Toliau vyksta chromecast poravimas. Spausti "next", "next"...</li>
-                            <li>Toliau turėtų paprašyti pasirinkti vietą, kur bus naudojamas įrenginys (galite pasirinkti bet ką);</li>
-                            <li>Pasirinkite wifi tinklą;</li>
-                            <li>Turėtų sėkmingai prisijungti, toliau esančių pasiųlymų galite atsisakyti.</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 mb-3 mb-md-0">
-                        <h5 class="text-primary">3. Oculus VR akinių vaizdo dalinimasis</h5>
-                    </div>
-                    <div class="col-md-8 offset-md-1">
-                        <ol class="pl-3 pl-md-0">
-                            <li>Įjungiame Oculus VR akinius;</li>
-                            <li>Prijungiame wifi (Spaudžiame settings -> wifi)</li>
-                            <li>Prijungiame chromecast (spaudžiame sharing -> cast -> chromecast)</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pb-4 pb-md-5">
-            <div class="container">
                 <h2 class="text-center text-primary mb-4">Nuomos pratęsimas</h2>
                 <p class="text-justify text-md-center w-md-75 mx-auto">
                     Norėdami pratęsti nuomą, susisiekite su mumis telefonu. Jį rasite mūsų kontaktų skiltyje. Jei įranga nebus rezervuota kitam klientui, galėsite prasitęsti nuomą pagal standartinę kainą. Kainoraštį rasite šiek tiek aukščiau.
@@ -318,7 +308,7 @@
                             El. paštas: info@partyplay.lt
                         </a>
                         <a href="#" data-toggle="modal" data-target="#modalMap" class="d-block link-hover-light">
-                            Adresas: Nemuno g. 26, Kaunas<br>
+                            Adresas: Kauko al. 7, Kaunas<br>
                         </a>
                         <small>(Prieš atvykstant būtina susiderinti iš anksto)</small>
                         <div class="d-block mt-2">

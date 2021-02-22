@@ -3,6 +3,17 @@
 
     <head>
 
+        <!-- GOOGLE ANALYTICS -->
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144103990-1"></script>
+		<script>
+	  		window.dataLayer = window.dataLayer || [];
+	  		function gtag(){dataLayer.push(arguments);}
+	  		gtag('js', new Date());
+
+	  		gtag('config', 'UA-144103990-1');
+		</script>
+
         <!-- META -->
 
         <meta charset="UTF-8">
@@ -38,6 +49,33 @@
     </head>
 
     <body>
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v9.0'
+            });
+            };
+
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+            attribution="setup_tool"
+            page_id="1000321313452921"
+            theme_color="#d24979"
+            logged_in_greeting="Labas! Susidomėjai? Rašyk!"
+            logged_out_greeting="Labas! Susidomėjai? Rašyk!">
+        </div>
 
         <!-- PRE-NAVBAR -->
 
@@ -126,7 +164,7 @@
         <section class="py-4 py-lg-5">
             <div class="container">
                 <div class="mb-4 mb-md-5">
-                    <img src="../img/Blog/motion.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
+                    <img src="../img/Blog/motion.jpg" alt="" class="img-blog rounded-lg mb-2">
                     <small class="text-grey">ĮDOMU · 2021 01 10</small>
                     <h4 class="text-primary">Virtuali realybė ir galvos svaigimas</h4>
                     <p class="text-justify">
@@ -143,7 +181,7 @@
                     </p>
                 </div>
                 <div class="mb-4 mb-md-5">
-                    <img src="../img/Blog/rent-or-buy.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
+                    <img src="../img/Blog/rent-or-buy.jpg" alt="" class="img-blog rounded-lg mb-2">
                     <small class="text-grey">ĮDOMU · 2021 01 10</small>
                     <h4 class="text-primary">Pirkti ar nuomotis?</h4>
                     <p class="text-justify">
@@ -153,7 +191,7 @@
                     </p>
                 </div>
                 <div class="mb-4 mb-md-5">
-                    <img src="../img/Blog/party.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
+                    <img src="../img/Blog/party.jpg" alt="" class="img-blog rounded-lg mb-2">
                     <small class="text-grey">ĮDOMU · 2021 01 10</small>
                     <h4 class="text-primary">Idėjos vakarėliui</h4>
                     <p class="text-justify">
@@ -166,7 +204,7 @@
                     </ol>
                 </div>
                 <div class="mb-4 mb-md-5">
-                    <img src="../img/Blog/virtual-reality.jpg" alt="" class="img-blog rounded-lg mb-2 mb-md-0">
+                    <img src="../img/Blog/virtual-reality.jpg" alt="" class="img-blog rounded-lg mb-2">
                     <small class="text-grey">PATARIMAI RENKANTIS · 2021 01 10</small>
                     <h4 class="text-primary">Kaip išsirinkti virtualios realybės akinius?</h4>
                     <p class="text-justify">
