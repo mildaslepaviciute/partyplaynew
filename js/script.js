@@ -1,6 +1,7 @@
 
 const gamesQuest = {
     beatSaber: ['short', 'party', 'active', 'popular'],
+    climb2: ['adventure', 'party', 'popular'],
     acron: ['short', 'party', 'multiplayer'],
     blaston: ['short', 'shoot', 'active', 'multiplayer'],
     superhot: ['strategy', 'shoot', 'levels', 'popular'],
